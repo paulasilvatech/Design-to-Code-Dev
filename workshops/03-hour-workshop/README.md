@@ -13,70 +13,54 @@ This workshop provides a deeper, hands-on experience building on the concepts fr
 - **00:45-01:30** - Building the component architecture
 - **01:30-02:15** - Implementing styling and responsive behavior
 - **02:15-02:45** - Adding interactivity and state management
-- **02:45-03:00** - Testing, review, and next steps
+- **02:45-03:00** - Review, next steps, and Q&A
 
 ## Workshop Materials
 
-- `workshop-guide.md` - Detailed instruction guide for participants
+- [**step-by-step-guide.md**](./step-by-step-guide.md) - Comprehensive guide for participants to follow along
+- `workshop-guide.md` - General guide for participants
 - `facilitator-guide.md` - Guide for workshop facilitators
 - `starter-code/` - Initial code to begin the workshop
-- `solution/` - Completed code for reference
-- `exercises/` - Step-by-step exercises
-- `assets/` - Images, resources, and Figma files
+- `complete-code/` - Finished code for reference
+- `slides/` - Presentation slides for the workshop
+- `assets/` - Design files and other resources
 
-## Prerequisites for Participants
+## Prerequisites
 
 - Intermediate understanding of HTML, CSS, and JavaScript
-- Basic experience with React (components, props, hooks)
-- GitHub account with Copilot access
-- VS Code with GitHub Copilot extension installed
-- Node.js and npm installed
-- Basic understanding of Git
+- Basic knowledge of React
+- Familiarity with TypeScript is helpful but not required
+- GitHub account (for accessing Copilot)
+- VS Code with necessary extensions installed
+- Node.js (v14+) and npm
 
-## Workshop Setup
+## Setting Up
 
 1. Clone this repository
-2. Navigate to the workshop directory:
-   ```
-   cd workshops/03-hour-workshop
-   ```
-3. Install dependencies:
-   ```
-   cd starter-code
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm start
-   ```
-5. Open the project in VS Code and follow the workshop guide
+2. Navigate to the starter-code directory
+3. Run `npm install` to install dependencies
+4. Run `npm start` to start the development server
+5. Follow along with the [step-by-step guide](./step-by-step-guide.md)
 
-## Learning Objectives
+## Workshop Learning Objectives
 
-By the end of this workshop, participants will be able to:
-
-- Analyze Figma designs to extract design tokens and component structure
-- Create component architecture that follows best practices
+- Analyze Figma designs and extract design tokens
+- Create a scalable component architecture
+- Build reusable React components with TypeScript
 - Implement responsive and accessible components
-- Use GitHub Copilot effectively to accelerate development
-- Add proper interactivity and state management
-- Test and validate implementations against designs
-- Apply optimization techniques for production-ready code
+- Create theme variations (light/dark)
+- Use GitHub Copilot to accelerate development
+- Test and validate component implementations
 
-## Project Outcomes
+## Expected Outcomes
 
-Participants will build a complete component library based on a Figma design, including:
+By the end of this workshop, participants will have:
+- A complete component library with 5+ components
+- Design token system for consistent styling
+- Responsive behavior across devices
+- Theme switching capability
+- Accessible component implementations
 
-1. A design token system derived from Figma variables
-2. A set of atomic components (buttons, inputs, cards, etc.)
-3. A theme provider with light and dark mode support
-4. Responsive layouts that work across devices
-5. Interactive components with proper state management
-6. Accessible components that follow WCAG guidelines
+## Next Steps
 
-## Additional Resources
-
-- [Design-to-Code Playbook](../../README.md) - Comprehensive guide on Figma to code conversion
-- [1-Hour Demo Session](../../demos/01-hour-session/README.md) - Shortened demonstration of key concepts
-- [Component Examples](../reference/) - Additional component implementations
-- [Cheat Sheets](../cheatsheets/) - Quick reference guides for common tasks 
+After completing this workshop, explore the complete [Design-to-Code Playbook](../../README.md) for more advanced topics and techniques. 

@@ -14,6 +14,7 @@ This demonstration is designed to showcase the practical application of the conc
 
 ## Session Materials
 
+- [**step-by-step-guide.md**](./step-by-step-guide.md) - Comprehensive guide for participants to follow along
 - `demo-script.md` - Detailed script for presenters to follow
 - `starter-code/` - Initial code to begin the demonstration
 - `final-code/` - Completed code for reference
@@ -34,7 +35,7 @@ This demonstration is designed to showcase the practical application of the conc
 2. Navigate to the starter-code directory
 3. Run `npm install` to install dependencies
 4. Run `npm start` to start the development server
-5. Follow along with the demonstration
+5. Follow along with the [step-by-step guide](./step-by-step-guide.md)
 
 ## Key Learning Objectives
 
