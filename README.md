@@ -1,6 +1,34 @@
 # 🎨 Design-to-Code Playbook
 
-A comprehensive guide for converting Figma designs into production-ready code using VS Code, GitHub Copilot, and Azure AI.
+## About
+
+The Design-to-Code Playbook is a comprehensive, practical guide for transforming Figma designs into production-ready code. Created for developers, designers, and teams working at the intersection of design and development, this playbook bridges the gap between visual design and implementation.
+
+### What is this playbook?
+
+This playbook provides a structured, step-by-step approach to converting Figma designs into high-quality code using modern tools like VS Code, GitHub Copilot, and Azure AI. Rather than just theoretical concepts, it offers practical workflows, code examples, and hands-on exercises to build real-world components and applications.
+
+### Who is it for?
+
+- **Frontend Developers** looking to streamline their design-to-code workflow
+- **UI/UX Designers** wanting to understand how their designs translate to code
+- **Full-Stack Developers** expanding their frontend skills
+- **Technical Leads** seeking to establish design system implementation practices
+- **Teams** aiming to improve collaboration between design and development
+
+### What's included?
+
+- 📚 **Comprehensive documentation** covering the entire design-to-code process
+- 🧩 **Framework-specific implementation guides** for React, Angular, and more
+- 🧪 **Hands-on workshops** (1-hour demo and 3-hour deep dive)
+- 🔧 **Practical code examples** and component implementations
+- 🛠️ **Best practices** for accessibility, performance, and maintainability
+- 🤖 **AI-assisted workflows** leveraging GitHub Copilot and Azure AI
+- 🧠 **Troubleshooting guides** and common pitfall solutions
+
+### How to use this playbook
+
+This repository is structured as a learning journey. Start with the fundamentals in the documentation section, then explore the framework-specific guides that match your tech stack. When you're ready for hands-on practice, follow the 1-hour demo session or dive deeper with the 3-hour workshop.
 
 ## 📋 Overview
 
