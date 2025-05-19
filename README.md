@@ -118,3 +118,7 @@ This playbook is available under the [MIT License](LICENSE).
 - The Microsoft Azure AI team for their powerful AI services
 - The Figma team for creating an exceptional design tool
 - All contributors and reviewers who helped shape this playbook
+
+## 👤 Credits
+
+This Design-to-Code Playbook was developed by [@paulanunes85](https://github.com/paulanunes85).
