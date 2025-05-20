@@ -1,12 +1,14 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (alternate method)
 
 on:
+  # Executa em pushes para a branch principal
   push:
-    branches:
-      - main
+    branches: ["main"]
+
+  # Permite executar manualmente a partir da aba Actions
   workflow_dispatch:
 
-# Configuração de permissões para o token GITHUB_TOKEN
+# Define permissões para o GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
