@@ -41,11 +41,11 @@ By following this guide, you will establish an optimized workflow that leverages
 This playbook has been specifically developed for teams working with React and Angular, but the principles and many of the techniques can be adapted to other frameworks and libraries. Our goal is to provide a complete resource that helps developers and teams establish an efficient and reproducible process for transforming designs into functional code.
 
 Let's explore how the latest innovations in generative AI and autonomous agents are transforming the frontend development process, allowing you to focus more on business logic and user experience, and less on the manual implementation of layouts and visual components.
-# Preparing Figma Designs for Optimal Conversion
+# 🎨 Preparing Figma Designs for Optimal Conversion
 
 The quality and efficiency of converting Figma designs to code significantly depend on how Figma files are organized and structured. With modern AI and automation tools, proper preparation can make all the difference between generated code that needs extensive manual revisions and code that is nearly production-ready.
 
-## Organizing Figma Files for AI-Powered Code Generation
+## 📁 Organizing Figma Files for AI-Powered Code Generation
 
 The ideal structure of Figma files for working with GitHub Agent, Copilot, and other AI tools follows a clear and logical hierarchy:
 
@@ -70,9 +70,9 @@ Project/
 
 This structure facilitates information extraction by AI agents, allowing them to understand the component hierarchy and the relationship between design elements.
 
-## Essential Figma Features for Optimizing Conversion
+## 🔧 Essential Figma Features for Optimizing Conversion
 
-### Auto Layout
+### 📏 Auto Layout
 
 Auto Layout in Figma is fundamental for generating responsive and well-structured code. It translates directly into flexbox or grid in CSS:
 
@@ -91,7 +91,7 @@ Padding | `padding: 16px;`
 4. Group related elements in frames with Auto Layout
 5. Maintain a clear Auto Layout hierarchy (don't exceed 3-4 levels of nesting)
 
-### Component Variants and Properties
+### 🧩 Component Variants and Properties
 
 Component variants in Figma create a direct mapping to component props in code:
 
@@ -111,7 +111,7 @@ Button (Component)
 
 GitHub Copilot Agent and other AI tools can analyze these variants and automatically generate components with corresponding props.
 
-### Design Tokens and Variables
+### 🔄 Design Tokens and Variables
 
 Using variables in Figma is crucial for maintaining consistency between design and code:
 
@@ -124,7 +124,7 @@ Using variables in Figma is crucial for maintaining consistency between design a
 
 These variables are easily mapped to CSS variables, design tokens, or theme configurations in code.
 
-### Naming and Organization for AI Agents
+### 🏷️ Naming and Organization for AI Agents
 
 To maximize the efficiency of AI agents in converting design to code, adopt these naming practices:
 
@@ -140,7 +140,7 @@ To maximize the efficiency of AI agents in converting design to code, adopt thes
    - Add prefixes that agents can recognize (e.g., "component:", "page:", "atom:")
    - Include state suffixes when relevant (e.g., "Button:hover", "Input:focus")
 
-## Development-Specific Documentation
+## 📝 Development-Specific Documentation
 
 Add annotations directly in Figma to assist AI agents in code generation:
 
@@ -160,7 +160,7 @@ Add annotations directly in Figma to assist AI agents in code generation:
    - Add specific comments for AI agents (e.g., "// Agent: Implement this as a React functional component")
    - Include references to existing code patterns
 
-## Preparation for Extraction with MCP Server
+## 🔌 Preparation for Extraction with MCP Server
 
 To optimize information extraction by the Figma MCP Server, follow these additional steps:
 
@@ -180,7 +180,7 @@ To optimize information extraction by the Figma MCP Server, follow these additio
    - Add a specific page with instructions for AI agents
    - Include preferred code examples and patterns to follow
 
-## Pre-Conversion Validation
+## ✅ Pre-Conversion Validation
 
 Before starting the conversion process with AI agents, run this validation checklist:
 
@@ -770,7 +770,7 @@ When designs change in Figma, GitHub Copilot Agent can:
 4. **Create Pull Requests**: Submit changes for review rather than direct commits
 5. **Document Changes**: Add comments explaining what was updated and why
 
-## Best Practices for GitHub Copilot Agent with Figma
+## 🌟 Best Practices for GitHub Copilot Agent with Figma
 
 To get the most out of GitHub Copilot Agent for Figma-to-code conversion:
 
@@ -1182,7 +1182,7 @@ Visual Copilot offers several workflows for converting designs to code:
 4. Configure token mapping
 5. Export theme configuration and base components
 
-### Configuration Rules for Visual Copilot
+### ⚙️ Configuration Rules for Visual Copilot
 
 Visual Copilot supports a `.builderrules` file for customizing code generation:
 
@@ -1333,7 +1333,7 @@ Each tool has its strengths for different aspects of the Figma-to-code workflow:
 - **Cursor**: Ideal for developers implementing designs who want AI assistance throughout the coding process
 - **GitHub Copilot Agent**: Best for teams already using GitHub ecosystem who want integrated design-to-code workflows
 
-## Combining Tools for an Optimal Workflow
+## 🔄 Combining Tools for an Optimal Workflow
 
 For the most efficient Figma-to-code process, consider combining these tools:
 
@@ -1639,9 +1639,9 @@ This helps in:
 - Enhancing code maintainability
 - Fixing potential memory leaks
 
-## Practical Workflows with Azure AI Foundry
+## 🔄 Practical Workflows with Azure AI Foundry
 
-### Design System Analysis and Implementation
+### 🎯 Design System Analysis and Implementation
 
 This workflow demonstrates how to analyze and implement a complete design system:
 
@@ -1816,7 +1816,7 @@ To get the most out of Azure AI Foundry for Figma-to-code conversion:
 - Use appropriate service tiers for your needs
 - Implement retry logic for API calls
 
-### 3. Combine with Other Tools
+### 🔗 3. Combine with Other Tools
 
 - Use Azure AI Foundry for analysis and optimization
 - Use GitHub Copilot for code refinement
@@ -2817,7 +2817,7 @@ Please:
 ```
 
 By leveraging these React-specific implementation techniques with GitHub Copilot Agent and other AI tools, you can efficiently convert Figma designs into high-quality, performant React components that maintain fidelity to the original design while following best practices for React development.
-# Framework-Specific Implementation: Angular
+# 🅰️ Framework-Specific Implementation: Angular
 
 This section provides detailed guidance on implementing Figma designs as Angular components using GitHub Agent, Copilot, and other AI tools. We'll cover component architecture, styling approaches, state management, and performance optimization specifically for Angular projects.
 
