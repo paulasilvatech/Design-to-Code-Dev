@@ -1,53 +1,108 @@
-# 🛠️ Setting Up Your Development Environment
+# Setting Up the Development Environment
 
-This guide provides detailed instructions for setting up a complete development environment for Figma to code conversion using VS Code, GitHub Copilot, and Azure AI.
+A well-configured development environment is essential for maximizing the efficiency of converting Figma designs to code, especially when using AI-based tools like GitHub Copilot, GitHub Agent, and integrations with Figma MCP Server. This guide aligns with the latest recommendations from the Complete Figma to Code Conversion Playbook.
 
 ## Prerequisites
-
-Before you begin, ensure you have the following:
-
-- A computer with Windows, macOS, or Linux
-- Administrative access to install software
-- A stable internet connection
-- Accounts with:
-  - GitHub (with Copilot subscription)
-  - Figma (Professional or Organization plan recommended)
-  - Microsoft Azure (Free tier is sufficient to start)
+- Windows, macOS, or Linux
+- Admin access to install software
+- Stable internet connection
+- Accounts for GitHub (Copilot subscription), Figma, and Microsoft Azure
 
 ## Installing Visual Studio Code
-
-### For Windows
-1. Visit [code.visualstudio.com](https://code.visualstudio.com/)
-2. Download the Windows installer (.exe)
-3. Run the installer and follow the prompts
-4. Check the options to add "Open with Code" to Windows Explorer context menu
-5. Complete the installation
-
-### For macOS
-1. Visit [code.visualstudio.com](https://code.visualstudio.com/)
-2. Download the macOS version (.zip)
-3. Extract the downloaded file
-4. Drag Visual Studio Code.app to the Applications folder
-5. Optional: Add VS Code to your dock
-
-### For Linux
-```bash
-# For Debian/Ubuntu
-sudo apt update
-sudo apt install software-properties-common apt-transport-https wget
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update
-sudo apt install code
-
-# For Red Hat/Fedora/SUSE
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
-sudo dnf check-update
-sudo dnf install code
-```
+- Download and install VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
+- Follow the official instructions for your OS (Windows, macOS, or Linux)
 
 ## Essential VS Code Extensions
+1. **GitHub Copilot & Copilot Chat**
+   - Install the official GitHub Copilot extension
+   - Enable Copilot Chat and Agent Mode (`Ctrl+Shift+P` > "GitHub Copilot: Enable Agent Mode")
+2. **Figma for VS Code**
+   - Install the official Figma extension
+   - Authenticate with your Figma account
+   - Enable design preview in the editor
+3. **Azure Tools Extension**
+   - Required for integration with Azure AI Foundry
+4. **Framework-Specific Extensions**
+   - React: React Developer Tools, ESLint, Prettier
+   - Angular: Angular Language Service, Angular Snippets
+
+## Recommended VS Code Settings
+Add the following to your `settings.json` for optimal integration:
+
+```json
+{
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "javascript": true,
+    "typescript": true,
+    "html": true,
+    "css": true,
+    "scss": true
+  },
+  "github.copilot.advanced": {
+    "indentationMode": true,
+    "listMode": true
+  },
+  "mcp.servers": {
+    "figma": {
+      "command": "npx",
+      "args": [
+        "figma-developer-mcp",
+        "--figma-api-key=${env:FIGMA_API_KEY}"
+      ]
+    }
+  },
+  "figma.fileNodeCaching": true,
+  "figma.assetFolder": "${workspaceFolder}/src/assets/figma"
+}
+```
+
+## Installing Required Node Modules
+
+### For React Projects
+```bash
+# Essential packages
+npm install react react-dom
+
+# Choose a styling option
+npm install styled-components
+# OR
+npm install tailwindcss postcss autoprefixer
+# OR
+npm install @emotion/react @emotion/styled
+
+# Development tools
+npm install -D typescript @types/react @types/react-dom
+npm install -D eslint eslint-plugin-react eslint-plugin-jsx-a11y
+
+# Component libraries (optional)
+npm install @mui/material @mui/icons-material
+# OR
+npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+
+### For Angular Projects
+```bash
+# Create new Angular project
+ng new my-project --style=scss
+
+# Add Angular Material
+ng add @angular/material
+```
+
+## Troubleshooting
+- Ensure all extensions are up to date
+- Check your GitHub Copilot subscription status
+- Make sure VS Code and Node.js are updated
+- For Figma plugin issues, re-authenticate your account
+
+---
+
+This document is always kept in English and is updated to reflect the latest best practices from the Complete Figma to Code Conversion Playbook.
+
 
 Here's a detailed list of essential extensions and how to configure them:
 
