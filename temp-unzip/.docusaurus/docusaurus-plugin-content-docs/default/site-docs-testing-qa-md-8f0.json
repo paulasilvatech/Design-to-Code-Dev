@@ -1,0 +1,23 @@
+{
+  "id": "testing_qa",
+  "title": "Testing and Quality Assurance",
+  "description": "This section covers best practices for testing and quality assurance in the Figma-to-code conversion process, ensuring your implementations are robust, reliable, and match the original designs.",
+  "source": "@site/docs/testing_qa.md",
+  "sourceDirName": ".",
+  "slug": "/testing_qa",
+  "permalink": "/Design-to-Code-Playbook/docs/testing_qa",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Ensuring Accessibility and Responsiveness",
+    "permalink": "/Design-to-Code-Playbook/docs/accessibility_responsiveness"
+  },
+  "next": {
+    "title": "Workshop 1-Hour: Figma to Code Essentials",
+    "permalink": "/Design-to-Code-Playbook/docs/workshop-1-hour"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "visual_copilot_cursor",
+  "title": "Visual Copilot and Cursor: Specialized Alternatives",
+  "description": "While GitHub Copilot and its Agent capabilities provide powerful tools for Figma-to-code conversion, there are specialized alternatives that focus specifically on design-to-code workflows. This section explores Visual Copilot by Builder.io and Cursor, two cutting-edge solutions that can complement or serve as alternatives to the GitHub ecosystem for converting Figma designs to production-ready code.",
+  "source": "@site/docs/visual_copilot_cursor.md",
+  "sourceDirName": ".",
+  "slug": "/visual_copilot_cursor",
+  "permalink": "/Design-to-Code-Playbook/docs/visual_copilot_cursor",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

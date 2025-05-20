@@ -1,0 +1,14 @@
+{
+  "id": "preparando_designs_figma",
+  "title": "Preparando Designs Figma para Conversão Otimizada",
+  "description": "A qualidade e eficiência da conversão de designs Figma para código dependem significativamente de como os arquivos Figma são organizados e estruturados. Com as ferramentas modernas de IA e automação, uma preparação adequada pode fazer toda a diferença entre um código gerado que precisa de extensas revisões manuais e um que está praticamente pronto para produção.",
+  "source": "@site/docs/preparando_designs_figma.md",
+  "sourceDirName": ".",
+  "slug": "/preparando_designs_figma",
+  "permalink": "/Design-to-Code-Playbook/docs/preparando_designs_figma",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

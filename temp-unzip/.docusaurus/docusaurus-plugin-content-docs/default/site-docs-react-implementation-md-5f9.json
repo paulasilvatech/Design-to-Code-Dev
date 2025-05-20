@@ -1,0 +1,14 @@
+{
+  "id": "react_implementation",
+  "title": "Framework-Specific Implementation: React",
+  "description": "This section provides detailed guidance on implementing Figma designs as React components using GitHub Agent, Copilot, and other AI tools. We'll cover component architecture, styling approaches, state management, and performance optimization specifically for React projects.",
+  "source": "@site/docs/react_implementation.md",
+  "sourceDirName": ".",
+  "slug": "/react_implementation",
+  "permalink": "/Design-to-Code-Playbook/docs/react_implementation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

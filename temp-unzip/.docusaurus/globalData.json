@@ -1,0 +1,229 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/Design-to-Code-Playbook/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/Design-to-Code-Playbook/docs",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "accessibility_responsiveness",
+              "path": "/Design-to-Code-Playbook/docs/accessibility_responsiveness",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "ai-tools-integration",
+              "path": "/Design-to-Code-Playbook/docs/ai-tools-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "angular_implementation",
+              "path": "/Design-to-Code-Playbook/docs/angular_implementation"
+            },
+            {
+              "id": "angular-implementation",
+              "path": "/Design-to-Code-Playbook/docs/angular-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "azure_ai_foundry",
+              "path": "/Design-to-Code-Playbook/docs/azure_ai_foundry"
+            },
+            {
+              "id": "azure-ai-foundry",
+              "path": "/Design-to-Code-Playbook/docs/azure-ai-foundry",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "component_library",
+              "path": "/Design-to-Code-Playbook/docs/component_library",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "conclusion_references",
+              "path": "/Design-to-Code-Playbook/docs/conclusion_references"
+            },
+            {
+              "id": "configurando_ambiente",
+              "path": "/Design-to-Code-Playbook/docs/configurando_ambiente"
+            },
+            {
+              "id": "figma_mcp_server",
+              "path": "/Design-to-Code-Playbook/docs/figma_mcp_server"
+            },
+            {
+              "id": "figma-mcp-server",
+              "path": "/Design-to-Code-Playbook/docs/figma-mcp-server",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "figma-to-code-playbook",
+              "path": "/Design-to-Code-Playbook/docs/figma-to-code-playbook"
+            },
+            {
+              "id": "final_playbook",
+              "path": "/Design-to-Code-Playbook/docs/final_playbook"
+            },
+            {
+              "id": "framework-implementation",
+              "path": "/Design-to-Code-Playbook/docs/framework-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started",
+              "path": "/Design-to-Code-Playbook/docs/getting-started",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "github_copilot_agent",
+              "path": "/Design-to-Code-Playbook/docs/github_copilot_agent"
+            },
+            {
+              "id": "github-copilot-agent",
+              "path": "/Design-to-Code-Playbook/docs/github-copilot-agent",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "indice",
+              "path": "/Design-to-Code-Playbook/docs/indice"
+            },
+            {
+              "id": "intro",
+              "path": "/Design-to-Code-Playbook/docs/intro"
+            },
+            {
+              "id": "introducao",
+              "path": "/Design-to-Code-Playbook/docs/introducao"
+            },
+            {
+              "id": "introduction",
+              "path": "/Design-to-Code-Playbook/docs/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "melhorias_sugeridas",
+              "path": "/Design-to-Code-Playbook/docs/melhorias_sugeridas"
+            },
+            {
+              "id": "preparando_designs_figma",
+              "path": "/Design-to-Code-Playbook/docs/preparando_designs_figma"
+            },
+            {
+              "id": "preparing_figma_designs",
+              "path": "/Design-to-Code-Playbook/docs/preparing_figma_designs"
+            },
+            {
+              "id": "preparing-figma-designs",
+              "path": "/Design-to-Code-Playbook/docs/preparing-figma-designs",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "react_implementation",
+              "path": "/Design-to-Code-Playbook/docs/react_implementation"
+            },
+            {
+              "id": "react-implementation",
+              "path": "/Design-to-Code-Playbook/docs/react-implementation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "setting_up_environment",
+              "path": "/Design-to-Code-Playbook/docs/setting_up_environment"
+            },
+            {
+              "id": "setting-up-environment",
+              "path": "/Design-to-Code-Playbook/docs/setting-up-environment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "site-structure",
+              "path": "/Design-to-Code-Playbook/docs/site-structure"
+            },
+            {
+              "id": "site-structure-en",
+              "path": "/Design-to-Code-Playbook/docs/site-structure-en"
+            },
+            {
+              "id": "table_of_contents",
+              "path": "/Design-to-Code-Playbook/docs/table_of_contents"
+            },
+            {
+              "id": "testing_qa",
+              "path": "/Design-to-Code-Playbook/docs/testing_qa",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "todo",
+              "path": "/Design-to-Code-Playbook/docs/todo"
+            },
+            {
+              "id": "tutorial-basics/congratulations",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/congratulations"
+            },
+            {
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-blog-post"
+            },
+            {
+              "id": "tutorial-basics/create-a-document",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-document"
+            },
+            {
+              "id": "tutorial-basics/create-a-page",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-page"
+            },
+            {
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/deploy-your-site"
+            },
+            {
+              "id": "tutorial-basics/markdown-features",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-basics/markdown-features"
+            },
+            {
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-extras/manage-docs-versions"
+            },
+            {
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/Design-to-Code-Playbook/docs/tutorial-extras/translate-your-site"
+            },
+            {
+              "id": "visual_copilot_cursor",
+              "path": "/Design-to-Code-Playbook/docs/visual_copilot_cursor"
+            },
+            {
+              "id": "visual-copilot-cursor",
+              "path": "/Design-to-Code-Playbook/docs/visual-copilot-cursor",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "workshop-1-hour",
+              "path": "/Design-to-Code-Playbook/docs/workshop-1-hour",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "workshop-3-hour",
+              "path": "/Design-to-Code-Playbook/docs/workshop-3-hour",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/Design-to-Code-Playbook/docs/introduction",
+                "label": "introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

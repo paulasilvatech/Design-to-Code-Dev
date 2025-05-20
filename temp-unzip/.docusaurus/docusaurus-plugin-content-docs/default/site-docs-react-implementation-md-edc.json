@@ -1,0 +1,23 @@
+{
+  "id": "react-implementation",
+  "title": "React Implementation",
+  "description": "This section covers how to implement Figma designs in React using AI-assisted development tools. We'll focus on component architecture, styling approaches, and best practices for React projects.",
+  "source": "@site/docs/react-implementation.md",
+  "sourceDirName": ".",
+  "slug": "/react-implementation",
+  "permalink": "/Design-to-Code-Playbook/docs/react-implementation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Framework Implementation",
+    "permalink": "/Design-to-Code-Playbook/docs/framework-implementation"
+  },
+  "next": {
+    "title": "Angular Implementation",
+    "permalink": "/Design-to-Code-Playbook/docs/angular-implementation"
+  }
+}

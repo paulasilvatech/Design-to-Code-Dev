@@ -1,0 +1,14 @@
+{
+  "id": "angular_implementation",
+  "title": "Framework-Specific Implementation: Angular",
+  "description": "This section provides detailed guidance on implementing Figma designs as Angular components using GitHub Agent, Copilot, and other AI tools. We'll cover component architecture, styling approaches, state management, and performance optimization specifically for Angular projects.",
+  "source": "@site/docs/angular_implementation.md",
+  "sourceDirName": ".",
+  "slug": "/angular_implementation",
+  "permalink": "/Design-to-Code-Playbook/docs/angular_implementation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

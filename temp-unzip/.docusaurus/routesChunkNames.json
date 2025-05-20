@@ -1,0 +1,213 @@
+{
+  "/Design-to-Code-Playbook/markdown-page-e7c": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/Design-to-Code-Playbook/docs-030": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/Design-to-Code-Playbook/docs-c25": {
+    "__comp": "a7bd4aaa",
+    "__props": "53d9138b"
+  },
+  "/Design-to-Code-Playbook/docs-958": {
+    "__comp": "a94703ab"
+  },
+  "/Design-to-Code-Playbook/docs/accessibility_responsiveness-ccf": {
+    "__comp": "17896441",
+    "content": "a66edddc"
+  },
+  "/Design-to-Code-Playbook/docs/ai-tools-integration-584": {
+    "__comp": "17896441",
+    "content": "78a29636"
+  },
+  "/Design-to-Code-Playbook/docs/angular_implementation-83a": {
+    "__comp": "17896441",
+    "content": "6512e999"
+  },
+  "/Design-to-Code-Playbook/docs/angular-implementation-746": {
+    "__comp": "17896441",
+    "content": "800391c3"
+  },
+  "/Design-to-Code-Playbook/docs/azure_ai_foundry-18f": {
+    "__comp": "17896441",
+    "content": "4c4f7fe7"
+  },
+  "/Design-to-Code-Playbook/docs/azure-ai-foundry-9db": {
+    "__comp": "17896441",
+    "content": "400454c2"
+  },
+  "/Design-to-Code-Playbook/docs/component_library-ccf": {
+    "__comp": "17896441",
+    "content": "14d512c1"
+  },
+  "/Design-to-Code-Playbook/docs/conclusion_references-b7d": {
+    "__comp": "17896441",
+    "content": "f630c839"
+  },
+  "/Design-to-Code-Playbook/docs/configurando_ambiente-ec6": {
+    "__comp": "17896441",
+    "content": "90261109"
+  },
+  "/Design-to-Code-Playbook/docs/figma_mcp_server-15e": {
+    "__comp": "17896441",
+    "content": "ca4be440"
+  },
+  "/Design-to-Code-Playbook/docs/figma-mcp-server-f2a": {
+    "__comp": "17896441",
+    "content": "b3ce3078"
+  },
+  "/Design-to-Code-Playbook/docs/figma-to-code-playbook-e91": {
+    "__comp": "17896441",
+    "content": "2dc3f5dd"
+  },
+  "/Design-to-Code-Playbook/docs/final_playbook-635": {
+    "__comp": "17896441",
+    "content": "93fcf54a"
+  },
+  "/Design-to-Code-Playbook/docs/framework-implementation-899": {
+    "__comp": "17896441",
+    "content": "18d09bd8"
+  },
+  "/Design-to-Code-Playbook/docs/getting-started-684": {
+    "__comp": "17896441",
+    "content": "d589d3a7"
+  },
+  "/Design-to-Code-Playbook/docs/github_copilot_agent-ae2": {
+    "__comp": "17896441",
+    "content": "fe6b5bce"
+  },
+  "/Design-to-Code-Playbook/docs/github-copilot-agent-467": {
+    "__comp": "17896441",
+    "content": "35e3b64d"
+  },
+  "/Design-to-Code-Playbook/docs/indice-226": {
+    "__comp": "17896441",
+    "content": "580c45a8"
+  },
+  "/Design-to-Code-Playbook/docs/intro-cc6": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/Design-to-Code-Playbook/docs/introducao-bad": {
+    "__comp": "17896441",
+    "content": "abb28d5f"
+  },
+  "/Design-to-Code-Playbook/docs/introduction-605": {
+    "__comp": "17896441",
+    "content": "a09c2993"
+  },
+  "/Design-to-Code-Playbook/docs/melhorias_sugeridas-6c8": {
+    "__comp": "17896441",
+    "content": "354a4cc6"
+  },
+  "/Design-to-Code-Playbook/docs/preparando_designs_figma-fcf": {
+    "__comp": "17896441",
+    "content": "d0518e7d"
+  },
+  "/Design-to-Code-Playbook/docs/preparing_figma_designs-7cb": {
+    "__comp": "17896441",
+    "content": "31b04649"
+  },
+  "/Design-to-Code-Playbook/docs/preparing-figma-designs-0bf": {
+    "__comp": "17896441",
+    "content": "00451532"
+  },
+  "/Design-to-Code-Playbook/docs/react_implementation-73b": {
+    "__comp": "17896441",
+    "content": "5f937a34"
+  },
+  "/Design-to-Code-Playbook/docs/react-implementation-24a": {
+    "__comp": "17896441",
+    "content": "edc60b02"
+  },
+  "/Design-to-Code-Playbook/docs/setting_up_environment-dbf": {
+    "__comp": "17896441",
+    "content": "e0477fdd"
+  },
+  "/Design-to-Code-Playbook/docs/setting-up-environment-776": {
+    "__comp": "17896441",
+    "content": "2f16c70a"
+  },
+  "/Design-to-Code-Playbook/docs/site-structure-611": {
+    "__comp": "17896441",
+    "content": "8e1edbd7"
+  },
+  "/Design-to-Code-Playbook/docs/site-structure-en-cde": {
+    "__comp": "17896441",
+    "content": "14174886"
+  },
+  "/Design-to-Code-Playbook/docs/table_of_contents-a1d": {
+    "__comp": "17896441",
+    "content": "40a109f7"
+  },
+  "/Design-to-Code-Playbook/docs/testing_qa-b1c": {
+    "__comp": "17896441",
+    "content": "8f0e3bdb"
+  },
+  "/Design-to-Code-Playbook/docs/todo-48d": {
+    "__comp": "17896441",
+    "content": "3edc8e6c"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/congratulations-6d4": {
+    "__comp": "17896441",
+    "content": "822bd8ab"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-blog-post-d1b": {
+    "__comp": "17896441",
+    "content": "533a09ca"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-document-379": {
+    "__comp": "17896441",
+    "content": "1e4232ab"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/create-a-page-c65": {
+    "__comp": "17896441",
+    "content": "5c868d36"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/deploy-your-site-2ba": {
+    "__comp": "17896441",
+    "content": "f55d3e7a"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-basics/markdown-features-481": {
+    "__comp": "17896441",
+    "content": "18c41134"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-extras/manage-docs-versions-0e5": {
+    "__comp": "17896441",
+    "content": "dff1c289"
+  },
+  "/Design-to-Code-Playbook/docs/tutorial-extras/translate-your-site-002": {
+    "__comp": "17896441",
+    "content": "e44a2883"
+  },
+  "/Design-to-Code-Playbook/docs/visual_copilot_cursor-c4b": {
+    "__comp": "17896441",
+    "content": "9ed47359"
+  },
+  "/Design-to-Code-Playbook/docs/visual-copilot-cursor-7df": {
+    "__comp": "17896441",
+    "content": "4f0c581d"
+  },
+  "/Design-to-Code-Playbook/docs/workshop-1-hour-b40": {
+    "__comp": "17896441",
+    "content": "8357f262"
+  },
+  "/Design-to-Code-Playbook/docs/workshop-3-hour-410": {
+    "__comp": "17896441",
+    "content": "e97e128f"
+  },
+  "/Design-to-Code-Playbook/-9fb": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

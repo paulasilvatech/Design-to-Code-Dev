@@ -1,0 +1,23 @@
+{
+  "id": "visual-copilot-cursor",
+  "title": "Visual Copilot and Cursor: Specialized Alternatives",
+  "description": "While GitHub Copilot is a powerful general-purpose AI coding assistant, there are specialized tools specifically designed for design-to-code workflows. This section covers Visual Copilot and Cursor, two alternatives that offer unique features for Figma-to-code conversion.",
+  "source": "@site/docs/visual-copilot-cursor.md",
+  "sourceDirName": ".",
+  "slug": "/visual-copilot-cursor",
+  "permalink": "/Design-to-Code-Playbook/docs/visual-copilot-cursor",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Figma MCP Server Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/figma-mcp-server"
+  },
+  "next": {
+    "title": "Azure AI Foundry Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/azure-ai-foundry"
+  }
+}

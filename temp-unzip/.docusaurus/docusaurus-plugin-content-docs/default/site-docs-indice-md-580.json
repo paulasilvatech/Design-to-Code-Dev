@@ -1,0 +1,14 @@
+{
+  "id": "indice",
+  "title": "Índice do Playbook",
+  "description": "1. Introdução",
+  "source": "@site/docs/indice.md",
+  "sourceDirName": ".",
+  "slug": "/indice",
+  "permalink": "/Design-to-Code-Playbook/docs/indice",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

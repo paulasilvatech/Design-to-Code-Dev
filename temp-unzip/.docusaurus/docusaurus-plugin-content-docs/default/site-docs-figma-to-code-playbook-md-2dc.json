@@ -1,0 +1,14 @@
+{
+  "id": "figma-to-code-playbook",
+  "title": "Complete Figma to Code Conversion Playbook for React & Angular",
+  "description": "Introduction",
+  "source": "@site/docs/figma-to-code-playbook.md",
+  "sourceDirName": ".",
+  "slug": "/figma-to-code-playbook",
+  "permalink": "/Design-to-Code-Playbook/docs/figma-to-code-playbook",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

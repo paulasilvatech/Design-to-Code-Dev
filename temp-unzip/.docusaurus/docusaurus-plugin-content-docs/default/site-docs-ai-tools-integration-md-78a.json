@@ -1,0 +1,23 @@
+{
+  "id": "ai-tools-integration",
+  "title": "AI Tools Integration",
+  "description": "This section provides an overview of the various AI tools that can be integrated into your Figma-to-code workflow.",
+  "source": "@site/docs/ai-tools-integration.md",
+  "sourceDirName": ".",
+  "slug": "/ai-tools-integration",
+  "permalink": "/Design-to-Code-Playbook/docs/ai-tools-integration",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Setting Up the Development Environment",
+    "permalink": "/Design-to-Code-Playbook/docs/setting-up-environment"
+  },
+  "next": {
+    "title": "GitHub Copilot Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/github-copilot-agent"
+  }
+}

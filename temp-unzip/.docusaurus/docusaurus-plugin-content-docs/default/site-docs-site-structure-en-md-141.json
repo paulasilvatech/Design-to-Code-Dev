@@ -1,0 +1,14 @@
+{
+  "id": "site-structure-en",
+  "title": "Figma-to-Code Playbook Website Structure",
+  "description": "Based on the reference template (AKS Labs), here's the structure for our Figma-to-Code Playbook website in English:",
+  "source": "@site/docs/site-structure-en.md",
+  "sourceDirName": ".",
+  "slug": "/site-structure-en",
+  "permalink": "/Design-to-Code-Playbook/docs/site-structure-en",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

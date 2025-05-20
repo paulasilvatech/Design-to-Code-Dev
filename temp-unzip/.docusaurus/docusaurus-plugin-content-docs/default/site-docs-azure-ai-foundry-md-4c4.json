@@ -1,0 +1,14 @@
+{
+  "id": "azure_ai_foundry",
+  "title": "Azure AI Foundry for Design Analysis",
+  "description": "Azure AI Foundry provides powerful capabilities for analyzing and understanding design elements, which can significantly enhance the Figma-to-code conversion process. This section explores how to leverage Azure AI Foundry to improve the quality, accessibility, and performance of code generated from Figma designs.",
+  "source": "@site/docs/azure_ai_foundry.md",
+  "sourceDirName": ".",
+  "slug": "/azure_ai_foundry",
+  "permalink": "/Design-to-Code-Playbook/docs/azure_ai_foundry",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

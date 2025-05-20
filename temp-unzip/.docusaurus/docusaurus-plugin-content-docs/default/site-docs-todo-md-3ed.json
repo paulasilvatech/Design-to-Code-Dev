@@ -1,0 +1,14 @@
+{
+  "id": "todo",
+  "title": "Tasks for Validation and Creation of the New Figma-to-Code Playbook",
+  "description": "Analysis of Current Playbook",
+  "source": "@site/docs/todo.md",
+  "sourceDirName": ".",
+  "slug": "/todo",
+  "permalink": "/Design-to-Code-Playbook/docs/todo",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

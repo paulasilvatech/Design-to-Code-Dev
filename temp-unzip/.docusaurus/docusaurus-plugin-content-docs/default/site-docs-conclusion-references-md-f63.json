@@ -1,0 +1,14 @@
+{
+  "id": "conclusion_references",
+  "title": "Conclusion and References",
+  "description": "Conclusion",
+  "source": "@site/docs/conclusion_references.md",
+  "sourceDirName": ".",
+  "slug": "/conclusion_references",
+  "permalink": "/Design-to-Code-Playbook/docs/conclusion_references",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

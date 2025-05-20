@@ -1,0 +1,14 @@
+{
+  "id": "figma_mcp_server",
+  "title": "Figma MCP Server Integration",
+  "description": "The Model Context Protocol (MCP) represents a significant advancement in how AI tools interact with design systems. For Figma-to-code workflows, the Figma MCP Server provides a standardized way for GitHub Copilot, Cursor, and other AI assistants to directly access and understand Figma design files. This section explores how to set up and leverage Figma MCP Server for efficient design-to-code conversion.",
+  "source": "@site/docs/figma_mcp_server.md",
+  "sourceDirName": ".",
+  "slug": "/figma_mcp_server",
+  "permalink": "/Design-to-Code-Playbook/docs/figma_mcp_server",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

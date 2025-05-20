@@ -1,0 +1,14 @@
+{
+  "id": "introducao",
+  "title": "Playbook Completo de Conversão Figma para Código com GitHub Agent, Copilot e Code Agent",
+  "description": "Introdução",
+  "source": "@site/docs/introducao.md",
+  "sourceDirName": ".",
+  "slug": "/introducao",
+  "permalink": "/Design-to-Code-Playbook/docs/introducao",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

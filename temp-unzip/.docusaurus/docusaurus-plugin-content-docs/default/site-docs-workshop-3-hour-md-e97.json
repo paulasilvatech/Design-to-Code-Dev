@@ -1,0 +1,19 @@
+{
+  "id": "workshop-3-hour",
+  "title": "Workshop 3-Hour: Comprehensive Figma to Code Implementation",
+  "description": "This extended workshop provides a comprehensive approach to converting Figma designs into production-quality code using GitHub Copilot, MCP servers, and Azure AI Foundry. In three hours, you'll learn the complete workflow from design preparation to framework implementation.",
+  "source": "@site/docs/workshop-3-hour.md",
+  "sourceDirName": ".",
+  "slug": "/workshop-3-hour",
+  "permalink": "/Design-to-Code-Playbook/docs/workshop-3-hour",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Workshop 1-Hour: Figma to Code Essentials",
+    "permalink": "/Design-to-Code-Playbook/docs/workshop-1-hour"
+  }
+}

@@ -1,0 +1,761 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "3042": [
+      3042
+    ],
+    "8341": [
+      1869,
+      6061,
+      8401,
+      8341
+    ],
+    "14174886": [
+      9398
+    ],
+    "17896441": [
+      1869,
+      8341,
+      8401
+    ],
+    "90261109": [
+      9967
+    ],
+    "main": [
+      1869,
+      5354,
+      8792
+    ],
+    "runtime~main": [
+      1869,
+      8792,
+      5354
+    ],
+    "00451532": [
+      2855
+    ],
+    "0e384e19": [
+      3976
+    ],
+    "14d512c1": [
+      6252
+    ],
+    "18c41134": [
+      9262
+    ],
+    "18d09bd8": [
+      3557
+    ],
+    "1df93b7f": [
+      1869,
+      4583
+    ],
+    "1e4232ab": [
+      1953
+    ],
+    "1f391b9e": [
+      1869,
+      8341,
+      6061
+    ],
+    "2dc3f5dd": [
+      1616
+    ],
+    "2f16c70a": [
+      4613
+    ],
+    "31b04649": [
+      5534
+    ],
+    "354a4cc6": [
+      9954
+    ],
+    "35e3b64d": [
+      7599
+    ],
+    "393be207": [
+      4134
+    ],
+    "3edc8e6c": [
+      5856
+    ],
+    "400454c2": [
+      4703
+    ],
+    "40a109f7": [
+      85
+    ],
+    "4c4f7fe7": [
+      1913
+    ],
+    "4f0c581d": [
+      3822
+    ],
+    "533a09ca": [
+      3098
+    ],
+    "53d9138b": [
+      5048
+    ],
+    "580c45a8": [
+      5117
+    ],
+    "5c868d36": [
+      1974
+    ],
+    "5e95c892": [
+      9647
+    ],
+    "5f937a34": [
+      5523
+    ],
+    "6512e999": [
+      3181
+    ],
+    "78a29636": [
+      2605
+    ],
+    "800391c3": [
+      5760
+    ],
+    "822bd8ab": [
+      2748
+    ],
+    "8357f262": [
+      8444
+    ],
+    "8e1edbd7": [
+      9781
+    ],
+    "8f0e3bdb": [
+      8057
+    ],
+    "93fcf54a": [
+      9368
+    ],
+    "9ed47359": [
+      8697
+    ],
+    "a09c2993": [
+      5899
+    ],
+    "a66edddc": [
+      442
+    ],
+    "a7456010": [
+      1235
+    ],
+    "a7bd4aaa": [
+      7098
+    ],
+    "a94703ab": [
+      1869,
+      9048
+    ],
+    "aba21aa0": [
+      5742
+    ],
+    "abb28d5f": [
+      907
+    ],
+    "b3ce3078": [
+      6114
+    ],
+    "ca4be440": [
+      8014
+    ],
+    "d0518e7d": [
+      5497
+    ],
+    "d589d3a7": [
+      7924
+    ],
+    "dff1c289": [
+      1724
+    ],
+    "e0477fdd": [
+      3436
+    ],
+    "e44a2883": [
+      4736
+    ],
+    "e97e128f": [
+      2634
+    ],
+    "edc60b02": [
+      7347
+    ],
+    "f55d3e7a": [
+      8863
+    ],
+    "f630c839": [
+      9883
+    ],
+    "fe6b5bce": [
+      3349
+    ],
+    "styles": [
+      4583,
+      5354,
+      6061,
+      8341,
+      8401,
+      8792,
+      9048,
+      1869
+    ]
+  },
+  "assets": {
+    "85": {
+      "js": [
+        {
+          "file": "assets/js/40a109f7.0f41c81a.js",
+          "hash": "23fbab62d42008d4",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/40a109f7.0f41c81a.js"
+        }
+      ]
+    },
+    "442": {
+      "js": [
+        {
+          "file": "assets/js/a66edddc.13c1927d.js",
+          "hash": "1eaf8a5a6d4a3280",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/a66edddc.13c1927d.js"
+        }
+      ]
+    },
+    "907": {
+      "js": [
+        {
+          "file": "assets/js/abb28d5f.5e7f45ba.js",
+          "hash": "43ebffba48816c42",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/abb28d5f.5e7f45ba.js"
+        }
+      ]
+    },
+    "1235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.98a0c5bd.js",
+          "hash": "b5c1cb748e2cf930",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/a7456010.98a0c5bd.js"
+        }
+      ]
+    },
+    "1616": {
+      "js": [
+        {
+          "file": "assets/js/2dc3f5dd.2ec7246f.js",
+          "hash": "10a2b2bc74e292a5",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/2dc3f5dd.2ec7246f.js"
+        }
+      ]
+    },
+    "1724": {
+      "js": [
+        {
+          "file": "assets/js/dff1c289.86e35c2b.js",
+          "hash": "1a7effaa45b694c3",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/dff1c289.86e35c2b.js"
+        }
+      ]
+    },
+    "1869": {
+      "css": [
+        {
+          "file": "assets/css/styles.f7eed81a.css",
+          "hash": "fb567bb85301427a",
+          "publicPath": "/Design-to-Code-Playbook/assets/css/styles.f7eed81a.css"
+        }
+      ]
+    },
+    "1913": {
+      "js": [
+        {
+          "file": "assets/js/4c4f7fe7.35dc27f8.js",
+          "hash": "5c66aae67653fdd0",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/4c4f7fe7.35dc27f8.js"
+        }
+      ]
+    },
+    "1953": {
+      "js": [
+        {
+          "file": "assets/js/1e4232ab.c0326140.js",
+          "hash": "1231fc77a0f46893",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/1e4232ab.c0326140.js"
+        }
+      ]
+    },
+    "1974": {
+      "js": [
+        {
+          "file": "assets/js/5c868d36.68a4bcd7.js",
+          "hash": "82bd039196280da4",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/5c868d36.68a4bcd7.js"
+        }
+      ]
+    },
+    "2605": {
+      "js": [
+        {
+          "file": "assets/js/78a29636.79a6aba5.js",
+          "hash": "21a063ea1e5f6436",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/78a29636.79a6aba5.js"
+        }
+      ]
+    },
+    "2634": {
+      "js": [
+        {
+          "file": "assets/js/e97e128f.7ff53cc3.js",
+          "hash": "930cb8a69a2b49e1",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/e97e128f.7ff53cc3.js"
+        }
+      ]
+    },
+    "2748": {
+      "js": [
+        {
+          "file": "assets/js/822bd8ab.2a2298bb.js",
+          "hash": "0a7b88622611ccb4",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/822bd8ab.2a2298bb.js"
+        }
+      ]
+    },
+    "2855": {
+      "js": [
+        {
+          "file": "assets/js/00451532.47b24a8a.js",
+          "hash": "78057b3bc3c535b3",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/00451532.47b24a8a.js"
+        }
+      ]
+    },
+    "3042": {
+      "js": [
+        {
+          "file": "assets/js/3042.c3a656f1.js",
+          "hash": "86b46c4a6f55cbaf",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/3042.c3a656f1.js"
+        }
+      ]
+    },
+    "3098": {
+      "js": [
+        {
+          "file": "assets/js/533a09ca.33802b4d.js",
+          "hash": "b0764dd99f2159f8",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/533a09ca.33802b4d.js"
+        }
+      ]
+    },
+    "3181": {
+      "js": [
+        {
+          "file": "assets/js/6512e999.eaba33b1.js",
+          "hash": "d746a0a3089f2b63",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/6512e999.eaba33b1.js"
+        }
+      ]
+    },
+    "3349": {
+      "js": [
+        {
+          "file": "assets/js/fe6b5bce.1af6b152.js",
+          "hash": "4c230b48c8773142",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/fe6b5bce.1af6b152.js"
+        }
+      ]
+    },
+    "3436": {
+      "js": [
+        {
+          "file": "assets/js/e0477fdd.87c1cbaa.js",
+          "hash": "42bdb1abd63081d5",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/e0477fdd.87c1cbaa.js"
+        }
+      ]
+    },
+    "3557": {
+      "js": [
+        {
+          "file": "assets/js/18d09bd8.f8e9f2ab.js",
+          "hash": "35c933c1f60881d5",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/18d09bd8.f8e9f2ab.js"
+        }
+      ]
+    },
+    "3822": {
+      "js": [
+        {
+          "file": "assets/js/4f0c581d.98a644d5.js",
+          "hash": "aa12d799b1417711",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/4f0c581d.98a644d5.js"
+        }
+      ]
+    },
+    "3976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.d07d8272.js",
+          "hash": "cb8a4257deaed492",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/0e384e19.d07d8272.js"
+        }
+      ]
+    },
+    "4134": {
+      "js": [
+        {
+          "file": "assets/js/393be207.76e28964.js",
+          "hash": "9a182d9f5636bf3b",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/393be207.76e28964.js"
+        }
+      ]
+    },
+    "4583": {
+      "js": [
+        {
+          "file": "assets/js/1df93b7f.5060ad01.js",
+          "hash": "a107b37d1fd2e7b4",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/1df93b7f.5060ad01.js"
+        }
+      ]
+    },
+    "4613": {
+      "js": [
+        {
+          "file": "assets/js/2f16c70a.b24c89b2.js",
+          "hash": "3d4d931fc8162c1e",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/2f16c70a.b24c89b2.js"
+        }
+      ]
+    },
+    "4703": {
+      "js": [
+        {
+          "file": "assets/js/400454c2.68aee14e.js",
+          "hash": "244bf70370255830",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/400454c2.68aee14e.js"
+        }
+      ]
+    },
+    "4736": {
+      "js": [
+        {
+          "file": "assets/js/e44a2883.c474417b.js",
+          "hash": "8b41be82dbb37f67",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/e44a2883.c474417b.js"
+        }
+      ]
+    },
+    "5048": {
+      "js": [
+        {
+          "file": "assets/js/53d9138b.b28fd00a.js",
+          "hash": "413f629af86ce4b7",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/53d9138b.b28fd00a.js"
+        }
+      ]
+    },
+    "5117": {
+      "js": [
+        {
+          "file": "assets/js/580c45a8.ba55807e.js",
+          "hash": "b065735759e2fc18",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/580c45a8.ba55807e.js"
+        }
+      ]
+    },
+    "5354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.fc1dbcd7.js",
+          "hash": "69079bb7eaf17376",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/runtime~main.fc1dbcd7.js"
+        }
+      ]
+    },
+    "5497": {
+      "js": [
+        {
+          "file": "assets/js/d0518e7d.6b79b2db.js",
+          "hash": "48c44df7c498b04e",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/d0518e7d.6b79b2db.js"
+        }
+      ]
+    },
+    "5523": {
+      "js": [
+        {
+          "file": "assets/js/5f937a34.40644de7.js",
+          "hash": "db067c2f3d7e016d",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/5f937a34.40644de7.js"
+        }
+      ]
+    },
+    "5534": {
+      "js": [
+        {
+          "file": "assets/js/31b04649.59cd09a4.js",
+          "hash": "db81024b7a10bc6b",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/31b04649.59cd09a4.js"
+        }
+      ]
+    },
+    "5742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.2067f55f.js",
+          "hash": "e4cc7400e69463a9",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/aba21aa0.2067f55f.js"
+        }
+      ]
+    },
+    "5760": {
+      "js": [
+        {
+          "file": "assets/js/800391c3.28be36e2.js",
+          "hash": "0ce5c38798b5ee2b",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/800391c3.28be36e2.js"
+        }
+      ]
+    },
+    "5856": {
+      "js": [
+        {
+          "file": "assets/js/3edc8e6c.13950eb2.js",
+          "hash": "600f34348a7b3f21",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/3edc8e6c.13950eb2.js"
+        }
+      ]
+    },
+    "5899": {
+      "js": [
+        {
+          "file": "assets/js/a09c2993.e0d3743c.js",
+          "hash": "878e4d0cb6658cf9",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/a09c2993.e0d3743c.js"
+        }
+      ]
+    },
+    "6061": {
+      "js": [
+        {
+          "file": "assets/js/1f391b9e.23c35a15.js",
+          "hash": "4b0120294d9b6236",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/1f391b9e.23c35a15.js"
+        }
+      ]
+    },
+    "6114": {
+      "js": [
+        {
+          "file": "assets/js/b3ce3078.f90d9610.js",
+          "hash": "5bdbade9419c322d",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/b3ce3078.f90d9610.js"
+        }
+      ]
+    },
+    "6252": {
+      "js": [
+        {
+          "file": "assets/js/14d512c1.b60c6d89.js",
+          "hash": "286db671e054099e",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/14d512c1.b60c6d89.js"
+        }
+      ]
+    },
+    "7098": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.56cbc19c.js",
+          "hash": "7a6a95c0c10915d2",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/a7bd4aaa.56cbc19c.js"
+        }
+      ]
+    },
+    "7347": {
+      "js": [
+        {
+          "file": "assets/js/edc60b02.d574b651.js",
+          "hash": "9628536bf4cc4e18",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/edc60b02.d574b651.js"
+        }
+      ]
+    },
+    "7599": {
+      "js": [
+        {
+          "file": "assets/js/35e3b64d.1395d804.js",
+          "hash": "959d5ac4b7ea5f3f",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/35e3b64d.1395d804.js"
+        }
+      ]
+    },
+    "7924": {
+      "js": [
+        {
+          "file": "assets/js/d589d3a7.4876bea7.js",
+          "hash": "b3d648b91fd70a76",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/d589d3a7.4876bea7.js"
+        }
+      ]
+    },
+    "8014": {
+      "js": [
+        {
+          "file": "assets/js/ca4be440.ac70a2ab.js",
+          "hash": "8c2b46a7282dcbdc",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/ca4be440.ac70a2ab.js"
+        }
+      ]
+    },
+    "8057": {
+      "js": [
+        {
+          "file": "assets/js/8f0e3bdb.654c85d3.js",
+          "hash": "7fcc4443750a78c8",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/8f0e3bdb.654c85d3.js"
+        }
+      ]
+    },
+    "8341": {
+      "js": [
+        {
+          "file": "assets/js/8341.a7f8f8a1.js",
+          "hash": "c3a989f20f0ca770",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/8341.a7f8f8a1.js"
+        }
+      ]
+    },
+    "8401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.3e12602f.js",
+          "hash": "338c3ce8f77bf559",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/17896441.3e12602f.js"
+        }
+      ]
+    },
+    "8444": {
+      "js": [
+        {
+          "file": "assets/js/8357f262.aa55f5a9.js",
+          "hash": "d6bc0c12c4c79901",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/8357f262.aa55f5a9.js"
+        }
+      ]
+    },
+    "8697": {
+      "js": [
+        {
+          "file": "assets/js/9ed47359.51af7833.js",
+          "hash": "7bc5eaf205f2cab0",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/9ed47359.51af7833.js"
+        }
+      ]
+    },
+    "8792": {
+      "js": [
+        {
+          "file": "assets/js/main.068bf4e1.js",
+          "hash": "6b8e939575dee328",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/main.068bf4e1.js"
+        }
+      ]
+    },
+    "8863": {
+      "js": [
+        {
+          "file": "assets/js/f55d3e7a.3ccd7e81.js",
+          "hash": "a52a61d6a9235a96",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/f55d3e7a.3ccd7e81.js"
+        }
+      ]
+    },
+    "9048": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.93a03511.js",
+          "hash": "0124aeda2eb2f27f",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/a94703ab.93a03511.js"
+        }
+      ]
+    },
+    "9262": {
+      "js": [
+        {
+          "file": "assets/js/18c41134.36c3f1c4.js",
+          "hash": "d1e5ea5d319f1a7b",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/18c41134.36c3f1c4.js"
+        }
+      ]
+    },
+    "9368": {
+      "js": [
+        {
+          "file": "assets/js/93fcf54a.368ff3dd.js",
+          "hash": "22447d15e6b56471",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/93fcf54a.368ff3dd.js"
+        }
+      ]
+    },
+    "9398": {
+      "js": [
+        {
+          "file": "assets/js/14174886.93bae8a7.js",
+          "hash": "9f8d8462fae4f1ad",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/14174886.93bae8a7.js"
+        }
+      ]
+    },
+    "9647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.935d34df.js",
+          "hash": "36e0406017375a73",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/5e95c892.935d34df.js"
+        }
+      ]
+    },
+    "9781": {
+      "js": [
+        {
+          "file": "assets/js/8e1edbd7.cefd072f.js",
+          "hash": "b3f6b775cf39c0f8",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/8e1edbd7.cefd072f.js"
+        }
+      ]
+    },
+    "9883": {
+      "js": [
+        {
+          "file": "assets/js/f630c839.84a770c6.js",
+          "hash": "71649ead2b16b732",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/f630c839.84a770c6.js"
+        }
+      ]
+    },
+    "9954": {
+      "js": [
+        {
+          "file": "assets/js/354a4cc6.573d2bd3.js",
+          "hash": "322cecc0e9f9d75c",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/354a4cc6.573d2bd3.js"
+        }
+      ]
+    },
+    "9967": {
+      "js": [
+        {
+          "file": "assets/js/90261109.61dc5561.js",
+          "hash": "c58fb648163a6682",
+          "publicPath": "/Design-to-Code-Playbook/assets/js/90261109.61dc5561.js"
+        }
+      ]
+    }
+  }
+}

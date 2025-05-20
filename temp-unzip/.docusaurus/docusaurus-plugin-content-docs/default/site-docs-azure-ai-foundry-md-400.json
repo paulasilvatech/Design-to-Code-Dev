@@ -1,0 +1,23 @@
+{
+  "id": "azure-ai-foundry",
+  "title": "Azure AI Foundry Integration",
+  "description": "Azure AI Foundry provides powerful AI capabilities that can enhance the Figma-to-code conversion process. This section covers how to set up and leverage Azure AI Foundry for design analysis and code generation.",
+  "source": "@site/docs/azure-ai-foundry.md",
+  "sourceDirName": ".",
+  "slug": "/azure-ai-foundry",
+  "permalink": "/Design-to-Code-Playbook/docs/azure-ai-foundry",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Visual Copilot and Cursor: Specialized Alternatives",
+    "permalink": "/Design-to-Code-Playbook/docs/visual-copilot-cursor"
+  },
+  "next": {
+    "title": "Framework Implementation",
+    "permalink": "/Design-to-Code-Playbook/docs/framework-implementation"
+  }
+}

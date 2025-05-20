@@ -1,0 +1,23 @@
+{
+  "id": "framework-implementation",
+  "title": "Framework Implementation",
+  "description": "This section provides an overview of implementing Figma designs in different frontend frameworks.",
+  "source": "@site/docs/framework-implementation.md",
+  "sourceDirName": ".",
+  "slug": "/framework-implementation",
+  "permalink": "/Design-to-Code-Playbook/docs/framework-implementation",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Azure AI Foundry Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/azure-ai-foundry"
+  },
+  "next": {
+    "title": "React Implementation",
+    "permalink": "/Design-to-Code-Playbook/docs/react-implementation"
+  }
+}

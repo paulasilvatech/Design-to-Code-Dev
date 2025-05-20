@@ -1,0 +1,23 @@
+{
+  "id": "github-copilot-agent",
+  "title": "GitHub Copilot Integration",
+  "description": "GitHub Copilot is a powerful AI pair programmer that can significantly accelerate the Figma-to-code conversion process. This section covers how to effectively use GitHub Copilot for design implementation.",
+  "source": "@site/docs/github-copilot-agent.md",
+  "sourceDirName": ".",
+  "slug": "/github-copilot-agent",
+  "permalink": "/Design-to-Code-Playbook/docs/github-copilot-agent",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Tools Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/ai-tools-integration"
+  },
+  "next": {
+    "title": "Figma MCP Server Integration",
+    "permalink": "/Design-to-Code-Playbook/docs/figma-mcp-server"
+  }
+}
