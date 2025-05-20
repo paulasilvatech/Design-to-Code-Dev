@@ -1,9 +1,4 @@
-<p align="center">
-  <strong>Design-to-Code High-Level Process</strong>
-</p>
-<p align="center">
-  <img alt="Design-to-Code Process Diagram" src="images/design-to-code-process.svg"/>
-</p>
+
 
 # 🎯 Complete Figma to Code Conversion Playbook
 

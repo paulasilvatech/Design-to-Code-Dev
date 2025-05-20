@@ -1,5 +1,12 @@
 # 🎨 Design-to-Code Playbook
 
+<p align="center">
+  <strong>Design-to-Code High-Level Process</strong>
+</p>
+<p align="center">
+  <img alt="Design-to-Code Process Diagram" src="images/design-to-code-process.svg"/>
+</p>
+
 ## About
 
 The Design-to-Code Playbook is a comprehensive, practical guide for transforming Figma designs into production-ready code. Created for developers, designers, and teams working at the intersection of design and development, this playbook bridges the gap between visual design and implementation.
