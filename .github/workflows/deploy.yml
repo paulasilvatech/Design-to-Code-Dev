@@ -25,33 +25,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "18"
-      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
-      - name: Check build directory
+      - name: Check website/build directory
         run: |
-          echo "Using pre-built Docusaurus site in the build directory"
-          if [ ! -d "build" ]; then
-            echo "Build directory not found, creating a simple site"
-            mkdir -p build
-            echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Design to Code Playbook</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></head><body><div class="container py-5"><h1 class="text-center mb-4">Design to Code Playbook</h1><p class="lead text-center mb-5">Convert designs to code efficiently using AI tools</p><div class="row"><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>Comprehensive Design-to-Code</h3><p>Learn the complete workflow from Figma designs to functional code with step-by-step guides.</p></div></div></div><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>AI-Powered Development</h3><p>Leverage GitHub Copilot, Azure AI, and other tools to accelerate your development process.</p></div></div></div><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>Hands-On Experience</h3><p>Follow practical workshops and real-world examples to build your skills with modern frameworks.</p></div></div></div></div><div class="text-center mt-5"><a href="docs/" class="btn btn-primary">Get Started</a></div><footer class="mt-5 pt-5 border-top text-center"><p class="text-muted">Copyright © 2025 Design to Code Playbook</p></footer></div></body></html>' > build/index.html
-          elif [ ! -f "build/index.html" ]; then
-            echo "Creating index.html file"
-            echo '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Design to Code Playbook</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></head><body><div class="container py-5"><h1 class="text-center mb-4">Design to Code Playbook</h1><p class="lead text-center mb-5">Convert designs to code efficiently using AI tools</p><div class="row"><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>Comprehensive Design-to-Code</h3><p>Learn the complete workflow from Figma designs to functional code with step-by-step guides.</p></div></div></div><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>AI-Powered Development</h3><p>Leverage GitHub Copilot, Azure AI, and other tools to accelerate your development process.</p></div></div></div><div class="col-md-4 mb-4"><div class="card h-100"><div class="card-body"><h3>Hands-On Experience</h3><p>Follow practical workshops and real-world examples to build your skills with modern frameworks.</p></div></div></div></div><div class="text-center mt-5"><a href="docs/" class="btn btn-primary">Get Started</a></div><footer class="mt-5 pt-5 border-top text-center"><p class="text-muted">Copyright © 2025 Design to Code Playbook</p></footer></div></body></html>' > build/index.html
+          echo "Using pre-built Docusaurus site in the website/build directory"
+          if [ ! -d "website/build" ]; then
+            echo "Error: website/build directory not found"
+            exit 1
+          elif [ ! -f "website/build/index.html" ]; then
+            echo "Error: website/build/index.html file not found"
+            exit 1
           fi
       
-      - name: List build directory contents
-        run: ls -la build/
+      - name: List website/build directory contents
+        run: ls -la website/build/
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./website/build
 
   # Deployment job
   deploy:
