@@ -1,0 +1,18 @@
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Preparing Figma Designs for Optimal Conversion](#preparing-figma-designs-for-optimal-conversion)
+3. [Setting Up the Development Environment](#setting-up-the-development-environment)
+4. [GitHub Copilot and GitHub Copilot Agent](#github-copilot-and-github-copilot-agent)
+5. [Figma MCP Server Integration](#figma-mcp-server-integration)
+6. [Visual Copilot and Cursor: Specialized Alternatives](#visual-copilot-and-cursor-specialized-alternatives)
+7. [Azure AI Foundry for Design Analysis](#azure-ai-foundry-for-design-analysis)
+8. [Framework-Specific Implementation: React](#framework-specific-implementation-react)
+9. [Framework-Specific Implementation: Angular](#framework-specific-implementation-angular)
+10. [Component Library Implementation](#component-library-implementation)
+11. [Ensuring Accessibility and Responsiveness](#ensuring-accessibility-and-responsiveness)
+12. [Testing and Quality Assurance](#testing-and-quality-assurance)
+13. [Optimized Workflows and Continuous Integration](#optimized-workflows-and-continuous-integration)
+14. [Practical Workshop Guide](#practical-workshop-guide)
+15. [Troubleshooting Guide](#troubleshooting-guide)
+16. [Resources and References](#resources-and-references)
