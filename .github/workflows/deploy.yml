@@ -1,60 +1,19 @@
-name: Deploy to GitHub Pages
+# Este arquivo de workflow foi mantido por compatibilidade, mas todo o conteúdo
+# relacionado ao GitHub Pages foi removido conforme solicitado.
+# 
+# Data: 21/05/2025
+#
+# Este arquivo deve ser excluído em um próximo commit no repositório.
+
+name: Arquivo Descontinuado
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
-# Set permissions for the GITHUB_TOKEN
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  # Build job
-  build:
+  notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      
-      - name: Check website/build directory
+      - name: Notificar sobre workflow obsoleto
         run: |
-          echo "Using pre-built Docusaurus site in the website/build directory"
-          if [ ! -d "website/build" ]; then
-            echo "Error: website/build directory not found"
-            exit 1
-          elif [ ! -f "website/build/index.html" ]; then
-            echo "Error: website/build/index.html file not found"
-            exit 1
-          fi
-      
-      - name: List website/build directory contents
-        run: ls -la website/build/
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./website/build
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          echo "Este workflow está obsoleto e deve ser removido diretamente do repositório GitHub"

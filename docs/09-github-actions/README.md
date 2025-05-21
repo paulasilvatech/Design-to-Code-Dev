@@ -102,7 +102,7 @@ jobs:
       run: npm run build
 ```
 
-### Storybook Deployment Workflow
+### Storybook Build Workflow
 
 ```yaml
 # .github/workflows/storybook.yml
@@ -114,7 +114,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
@@ -131,12 +131,6 @@ jobs:
     
     - name: Build Storybook
       run: npm run build-storybook
-    
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: storybook-static
-        branch: gh-pages
 ```
 
 ### Release Workflow
@@ -392,7 +386,7 @@ jobs:
 
 ```yaml
 # .github/workflows/docs.yml
-name: Design System Docs
+name: Design System Documentation Build
 
 on:
   push:
@@ -423,12 +417,6 @@ jobs:
     
     - name: Build documentation site
       run: npm run build-docs
-    
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: docs-build
-        branch: gh-pages
 ```
 
 ## Continuous Integration and Deployment
@@ -1005,7 +993,7 @@ jobs:
 ## 💡 Try It Yourself
 
 1. Create a basic CI workflow for your design-to-code project
-2. Set up a Storybook deployment workflow
+2. Set up a Storybook build workflow
 3. Implement visual regression testing with Chromatic
 4. Create a notification workflow for Slack or Discord
 5. Add code quality checks and accessibility testing

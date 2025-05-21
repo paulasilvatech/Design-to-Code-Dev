@@ -458,7 +458,7 @@ Set up Storybook and document all components.
 ### Objectives
 - Set up GitHub Actions workflows for your design system
 - Implement automated testing and linting
-- Create a deployment pipeline for Storybook
+- Create a build pipeline for Storybook
 - Set up versioning and package publishing
 
 ### Instructions
@@ -467,9 +467,9 @@ Set up Storybook and document all components.
 
 Set up CI workflows for testing and linting.
 
-#### Step 2: Implement Storybook Deployment
+#### Step 2: Implement Storybook Build
 
-Create a workflow to deploy Storybook to GitHub Pages.
+Create a workflow to build Storybook for testing and review.
 
 #### Step 3: Set Up Visual Testing
 
