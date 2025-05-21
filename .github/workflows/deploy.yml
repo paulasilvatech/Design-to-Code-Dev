@@ -30,19 +30,25 @@ jobs:
           node-version: "18"
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Package source from existing build directory
+      - name: Install Docusaurus dependencies and build site
         run: |
-          # Create artifact directory
-          mkdir -p site-artifact
+          # Install Node.js dependencies for Docusaurus
+          cd build
+          npm install
           
-          # Copy source files directly from checked out build directory
-          cp -r build/* site-artifact/
+          # Build the Docusaurus site
+          npm run build
           
-          # Create build directory for deployment
+          # Move the built site to the artifact directory
+          mkdir -p ../site-artifact
+          cp -r build/* ../site-artifact/
+          
+          # Replace the build directory with the built site
+          cd ..
           rm -rf build
           mv site-artifact build
           
-          echo "Successfully copied Docusaurus source files"
+          echo "Successfully built Docusaurus site"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
