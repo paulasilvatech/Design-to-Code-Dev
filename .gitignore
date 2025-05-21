@@ -13,6 +13,7 @@ website-build/
 # Generated files
 .DS_Store
 .env
+*.zip
 .env.local
 .env.development.local
 .env.test.local
