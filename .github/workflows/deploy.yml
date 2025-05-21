@@ -30,103 +30,19 @@ jobs:
           node-version: "18"
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Deploy Docusaurus template from release
+      - name: Package source from existing build directory
         run: |
-          # Download the latest release from GitHub release assets
-          curl -L -o docusaurus-template.zip "https://github.com/paulasilvatech/Design-to-Code-Playbook/releases/download/v1.0/docusaurus-template.zip" || {
-            echo "Could not download release template, using local files..."
-          }
+          # Create artifact directory
+          mkdir -p site-artifact
           
-          # Create and prepare directory structure
-          mkdir -p build docs static/img
+          # Copy source files directly from checked out build directory
+          cp -r build/* site-artifact/
           
-          # Try to extract the template if download succeeded
-          if [ -f docusaurus-template.zip ]; then
-            unzip -o docusaurus-template.zip -d build/
-            echo "Successfully extracted Docusaurus template"
-          else
-            # Copy source files to build dir
-            cp -r docs/* build/
-            cp -r images/* static/img/
-            cp *.md build/
-            
-            # Create a basic index.html file
-            cat > build/index.html << 'EOF'
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Design-to-Code Playbook</title>
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-              <style>
-                body { padding-top: 3rem; }
-                .header { text-align: center; margin-bottom: 3rem; }
-                .markdown-body { max-width: 900px; margin: 0 auto; }
-                .hero-section { background-color: #f8f9fa; padding: 4rem 0; margin-bottom: 2rem; }
-                .footer { margin-top: 4rem; padding: 2rem 0; background-color: #f8f9fa; text-align: center; }
-              </style>
-            </head>
-            <body>
-              <div class="container">
-                <div class="header">
-                  <h1>Design-to-Code Playbook</h1>
-                  <p class="lead">A comprehensive guide to transform Figma designs into production-ready code</p>
-                </div>
-                
-                <div class="hero-section text-center">
-                  <div class="container">
-                    <img src="static/img/design-to-code-process.svg" alt="Design to Code Process" class="img-fluid" style="max-width: 80%;">
-                    <h2 class="mt-4">Convert designs to code efficiently using AI tools</h2>
-                  </div>
-                </div>
-                
-                <div class="markdown-body">
-                  <h2>Getting Started</h2>
-                  <p>The Design-to-Code Playbook is a comprehensive, practical guide for transforming Figma designs into production-ready code. Created for developers, designers, and teams working at the intersection of design and development.</p>
-                  
-                  <h2>Documentation Sections</h2>
-                  <div class="row mt-4">
-                    <div class="col-md-6">
-                      <div class="card mb-4">
-                        <div class="card-body">
-                          <h5 class="card-title">Environment Setup</h5>
-                          <p class="card-text">Setting up your development environment for efficient design-to-code workflow.</p>
-                          <a href="docs/01-environment/README.md" class="btn btn-primary">Read More</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="card mb-4">
-                        <div class="card-body">
-                          <h5 class="card-title">Figma Preparation</h5>
-                          <p class="card-text">How to prepare and organize your Figma designs for code conversion.</p>
-                          <a href="docs/02-figma-prep/README.md" class="btn btn-primary">Read More</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <h2>Workshops & Demos</h2>
-                  <p>Practice hands-on with our workshops and demos:</p>
-                  <ul>
-                    <li><a href="demos/01-hour-session/README.md">1-Hour Demo Session</a></li>
-                    <li><a href="workshops/03-hour-workshop/README.md">3-Hour Workshop</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-              <footer class="footer">
-                <div class="container">
-                  <p>MIT License &copy; 2025 | <a href="https://github.com/paulasilvatech/Design-to-Code-Playbook">GitHub Repository</a></p>
-                </div>
-              </footer>
-              
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-            </body>
-            </html>
-            EOF
-          fi
+          # Create build directory for deployment
+          rm -rf build
+          mv site-artifact build
+          
+          echo "Successfully copied Docusaurus source files"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
