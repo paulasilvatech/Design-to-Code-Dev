@@ -57,7 +57,9 @@ jobs:
         run: |
           if [ ! -f "build/index.html" ]; then
             echo "Creating index.html file"
-            echo '<!DOCTYPE html>
+            mkdir -p build
+            cat > build/index.html << 'EOL'
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -84,7 +86,8 @@ jobs:
     </footer>
   </div>
 </body>
-</html>' > build/index.html
+</html>
+EOL
           fi
       
       - name: List build directory contents
