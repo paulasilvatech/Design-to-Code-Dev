@@ -6,19 +6,19 @@ on:
       - main
   workflow_dispatch:
 
-# Configuração de permissões para o token GITHUB_TOKEN
+# Set permissions for the GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Permite apenas uma execução simultânea
+# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Job de build
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -29,19 +29,18 @@ jobs:
         with:
           node-version: "18"
           cache: npm
-          cache-dependency-path: './temp-unzip/package-lock.json'
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: cd temp-unzip && npm ci
+        run: npm ci
       - name: Build website
-        run: cd temp-unzip && npm run build
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./temp-unzip/build
+          path: ./build
 
-  # Job de deployment
+  # Deployment job
   deploy:
     environment:
       name: github-pages
