@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfigma_to_code_docusaurus=self.webpackChunkfigma_to_code_docusaurus||[]).push([[1235],{8552:u=>{u.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
