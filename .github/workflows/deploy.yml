@@ -30,18 +30,15 @@ jobs:
           node-version: "18"
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Create basic package.json
+      - name: Create new build directory
         run: |
-          echo '{
-            "name": "design-to-code-playbook",
-            "version": "1.0.0",
-            "description": "Design to Code Playbook",
-            "scripts": {
-              "build": "echo \"Building static site\" && mkdir -p build && cp -r docs images README.md build/"
-            }
-          }' > package.json
-      - name: Build website
-        run: npm run build
+          mkdir -p new-build
+          cp -r docs images *.md new-build/
+          
+      - name: Prepare build directory
+        run: |
+          rm -rf build
+          mv new-build build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
