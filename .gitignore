@@ -2,7 +2,10 @@
 node_modules/
 
 # Build directory
-build/
+/build/
+
+# Docusaurus build
+website-build/
 
 # Docusaurus cache
 .docusaurus/
