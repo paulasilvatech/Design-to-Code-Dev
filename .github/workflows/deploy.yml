@@ -35,6 +35,92 @@ jobs:
           mkdir -p new-build
           cp -r docs images *.md new-build/
           
+      - name: Create index.html in build directory
+        run: |
+          cat > new-build/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Design-to-Code Playbook</title>
+            <style>
+              body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 2rem;
+              }
+              h1 { 
+                text-align: center;
+                margin-bottom: 1rem;
+              }
+              .process-img {
+                display: block;
+                margin: 2rem auto;
+                max-width: 100%;
+                height: auto;
+              }
+              .toc {
+                background-color: #f8f9fa;
+                padding: 1.5rem;
+                border-radius: 5px;
+                margin: 2rem 0;
+              }
+              a {
+                color: #0366d6;
+                text-decoration: none;
+              }
+              a:hover {
+                text-decoration: underline;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>🎨 Design-to-Code Playbook</h1>
+            
+            <p style="text-align: center;"><strong>Design-to-Code High-Level Process</strong></p>
+            <img class="process-img" alt="Design-to-Code Process Diagram" src="images/design-to-code-process.svg"/>
+            
+            <h2>About</h2>
+            <p>The Design-to-Code Playbook is a comprehensive, practical guide for transforming Figma designs into production-ready code. Created for developers, designers, and teams working at the intersection of design and development, this playbook bridges the gap between visual design and implementation.</p>
+            
+            <h2>Table of Contents</h2>
+            <div class="toc">
+              <ol>
+                <li><a href="docs/01-environment/README.md">Setting Up Your Development Environment</a></li>
+                <li><a href="docs/02-figma-prep/README.md">Preparing Figma Designs for Optimal Conversion</a></li>
+                <li><a href="docs/03-copilot/README.md">Using GitHub Copilot for Code Generation</a></li>
+                <li><a href="docs/04-azure-ai/README.md">Integrating with Azure AI Foundry</a></li>
+                <li><a href="docs/05-react/README.md">Framework Implementation: React</a></li>
+                <li><a href="docs/06-angular/README.md">Framework Implementation: Angular</a></li>
+                <li><a href="docs/07-component-library/README.md">Component Library Implementation</a></li>
+                <li><a href="docs/08-testing/README.md">Testing and Quality Assurance</a></li>
+                <li><a href="docs/09-github-actions/README.md">Workflow Automation with GitHub Actions</a></li>
+                <li><a href="docs/10-workshops/README.md">Workshop Guides: Hands-on Practice</a></li>
+                <li><a href="docs/11-best-practices/README.md">Best Practices and Optimization Techniques</a></li>
+                <li><a href="docs/12-troubleshooting/README.md">Troubleshooting Guide</a></li>
+                <li><a href="docs/13-resources/README.md">References and Resources</a></li>
+              </ol>
+              
+              <h3>Hands-On Learning</h3>
+              <ul>
+                <li><a href="demos/01-hour-session/README.md">1-Hour Demo Session</a> - A concise demonstration of the design-to-code workflow</li>
+                <li><a href="workshops/03-hour-workshop/README.md">3-Hour Workshop</a> - A comprehensive hands-on workshop for deep learning</li>
+              </ul>
+            </div>
+            
+            <p>For more details, please visit the <a href="https://github.com/paulasilvatech/Design-to-Code-Playbook">GitHub repository</a>.</p>
+            
+            <footer style="text-align: center; margin-top: 3rem; border-top: 1px solid #eee; padding-top: 1rem;">
+              <p>MIT License &copy; 2025</p>
+            </footer>
+          </body>
+          </html>
+          EOF
+          
       - name: Prepare build directory
         run: |
           rm -rf build
