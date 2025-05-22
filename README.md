@@ -44,6 +44,10 @@ Advanced design-to-code workflows enable progression through four maturity stage
 3. **Automated**: Full design system synchronization and component generation
 4. **Intelligent**: Self-optimizing components with performance and accessibility enhancements
 
+<div align="center">
+  <img src="docs/images/ai-design-to-code-architecture.svg" alt="AI Design-to-Code Architecture" width="700">
+</div>
+
 ## 📋 Workshop Structure
 
 The workshop is organized into progressive modules, allowing you to choose the depth of coverage based on your time and experience:
