@@ -1,4 +1,4 @@
-<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#0066CC;stop-opacity:1" />
@@ -14,7 +14,7 @@
   </defs>
   
   <!-- Background -->
-  <rect width="700" height="200" fill="#FAFBFC" rx="10"/>
+  <rect width="700" height="180" fill="#FAFBFC" rx="10"/>
   
   <!-- Title -->
   <text x="350" y="25" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#1B2937">
@@ -29,7 +29,7 @@
     <text x="50" y="60" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500" fill="white">
       Figma Design
     </text>
-    <text x="50" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
+    <text x="50" y="160" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
       Component Design
     </text>
   </g>
@@ -48,7 +48,7 @@
     <text x="50" y="60" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500" fill="white">
       AI Analysis
     </text>
-    <text x="50" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
+    <text x="50" y="160" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
       Pattern Recognition
     </text>
   </g>
@@ -67,7 +67,7 @@
     <text x="50" y="60" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500" fill="white">
       Code Generation
     </text>
-    <text x="50" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
+    <text x="50" y="160" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
       Framework Output
     </text>
   </g>
@@ -87,7 +87,7 @@
     <text x="50" y="60" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500" fill="white">
       Design System
     </text>
-    <text x="50" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
+    <text x="50" y="160" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
       Component Library
     </text>
   </g>
@@ -103,7 +103,7 @@
     <text x="30" y="60" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="500" fill="white">
       Production
     </text>
-    <text x="30" y="145" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
+    <text x="30" y="160" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="400" fill="#374151">
       Live App
     </text>
   </g>
