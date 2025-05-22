@@ -10,7 +10,7 @@ Welcome to the **Design-to-Code Enterprise Playbook**! This hands-on workshop gu
   <img src="docs/images/design-to-code-process-diagram.svg" alt="Design-to-Code Process Diagram" width="700">
 </div>
 
-## 🌐 Official Workshop Website: design-to-code.dev
+## 🌐 Official Workshop Website: [design-to-code.dev](https://design-to-code.dev)
 
 ## 📖 The Journey to AI-Enhanced Design-to-Code
 
