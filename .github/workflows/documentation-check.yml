@@ -1,0 +1,255 @@
+name: Documentation Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run weekly to check for broken links
+    - cron: '0 10 * * 1'
+
+jobs:
+  markdown-lint:
+    runs-on: ubuntu-latest
+    name: Markdown Lint Check
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Lint Markdown Files
+      uses: articulate/actions-markdownlint@v1
+      with:
+        config: .markdownlint.json
+        files: '**/*.md'
+        ignore: 'node_modules/**'
+
+  link-check:
+    runs-on: ubuntu-latest
+    name: Check Markdown Links
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Check Links
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        config-file: '.github/markdown-link-check-config.json'
+
+  spell-check:
+    runs-on: ubuntu-latest
+    name: Spell Check
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Check Spelling
+      uses: rojopolis/spellcheck-github-actions@0.35.0
+      with:
+        config_path: .github/spellcheck-config.yml
+        task_name: Markdown
+        
+  validate-structure:
+    runs-on: ubuntu-latest
+    name: Validate Repository Structure
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Validate Required Files
+      run: |
+        echo "Checking for required files..."
+        
+        # Check main documentation files
+        required_files=(
+          "README.md"
+          "CONTRIBUTING.md"
+          "QUICK_START.md"
+          "LICENSE"
+          "intro-design-to-code.md"
+          "workshop-structure-guide.md"
+          "advanced-troubleshooting-guide.md"
+        )
+        
+        missing_files=()
+        
+        for file in "${required_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            missing_files+=("$file")
+          fi
+        done
+        
+        # Check workshop parts
+        for i in {01..08}; do
+          workshop_file="design-to-code-workshop-part-${i}.md"
+          if [ ! -f "$workshop_file" ]; then
+            missing_files+=("$workshop_file")
+          fi
+        done
+        
+        if [ ${#missing_files[@]} -eq 0 ]; then
+          echo "✅ All required files are present"
+        else
+          echo "❌ Missing required files:"
+          printf '%s\n' "${missing_files[@]}"
+          exit 1
+        fi
+        
+    - name: Check README Links
+      run: |
+        echo "Validating README internal links..."
+        
+        # Extract markdown links from README
+        grep -o '\[.*\](.*\.md[^)]*)' README.md | while read -r link; do
+          # Extract file path from the link
+          file_path=$(echo "$link" | sed -n 's/.*(\([^)]*\)).*/\1/p' | cut -d'#' -f1)
+          
+          if [ ! -f "$file_path" ]; then
+            echo "❌ Broken link in README: $link -> $file_path"
+            exit 1
+          else
+            echo "✅ Valid link: $file_path"
+          fi
+        done
+        
+        echo "README internal links validation completed"
+
+  workshop-structure-check:
+    runs-on: ubuntu-latest
+    name: Validate Workshop Structure
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Check Workshop Progression
+      run: |
+        echo "Checking workshop structure and progression..."
+        
+        # Verify all workshop parts exist and are properly numbered
+        workshop_parts=()
+        for i in {01..08}; do
+          file="design-to-code-workshop-part-${i}.md"
+          if [ -f "$file" ]; then
+            workshop_parts+=("$file")
+            echo "✅ Found: $file"
+            
+            # Check if file has proper title structure
+            if ! grep -q "^# .*Part $((10#$i))" "$file"; then
+              echo "⚠️  Warning: $file may not have proper title format"
+            fi
+          else
+            echo "❌ Missing: $file"
+          fi
+        done
+        
+        echo "Found ${#workshop_parts[@]} workshop parts"
+        
+        if [ ${#workshop_parts[@]} -lt 8 ]; then
+          echo "❌ Incomplete workshop series"
+          exit 1
+        fi
+        
+        echo "✅ Workshop structure validation completed"
+
+  accessibility-check:
+    runs-on: ubuntu-latest
+    name: Accessibility Check
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Check Image Alt Text
+      run: |
+        echo "Checking for proper image alt text..."
+        
+        # Find all markdown files and check image syntax
+        find . -name "*.md" -type f | while read -r file; do
+          echo "Checking $file..."
+          
+          # Look for images without alt text
+          if grep -q '!\[\](' "$file"; then
+            echo "❌ Found images without alt text in: $file"
+            grep -n '!\[\](' "$file"
+            exit 1
+          fi
+          
+          # Look for images with empty alt text
+          if grep -q '!\[ \](' "$file"; then
+            echo "⚠️  Found images with minimal alt text in: $file"
+          fi
+        done
+        
+        echo "✅ Image accessibility check completed"
+
+  generate-summary:
+    runs-on: ubuntu-latest
+    name: Generate Documentation Summary
+    needs: [markdown-lint, link-check, validate-structure, workshop-structure-check]
+    if: always()
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Generate Summary
+      run: |
+        echo "# Documentation Check Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## Repository Statistics" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        # Count markdown files
+        md_count=$(find . -name "*.md" -type f | wc -l)
+        echo "- Total Markdown files: $md_count" >> $GITHUB_STEP_SUMMARY
+        
+        # Count workshop parts
+        workshop_count=$(ls design-to-code-workshop-part-*.md 2>/dev/null | wc -l)
+        echo "- Workshop parts: $workshop_count" >> $GITHUB_STEP_SUMMARY
+        
+        # Count words in main files
+        main_files="README.md intro-design-to-code.md workshop-structure-guide.md"
+        total_words=0
+        for file in $main_files; do
+          if [ -f "$file" ]; then
+            words=$(wc -w < "$file")
+            total_words=$((total_words + words))
+            echo "- $file: $words words" >> $GITHUB_STEP_SUMMARY
+          fi
+        done
+        
+        echo "- Total words in main documentation: $total_words" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## Check Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ needs.markdown-lint.result }}" = "success" ]; then
+          echo "✅ Markdown lint check passed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Markdown lint check failed" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.link-check.result }}" = "success" ]; then
+          echo "✅ Link check passed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Link check failed" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.validate-structure.result }}" = "success" ]; then
+          echo "✅ Structure validation passed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Structure validation failed" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.workshop-structure-check.result }}" = "success" ]; then
+          echo "✅ Workshop structure check passed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Workshop structure check failed" >> $GITHUB_STEP_SUMMARY
+        fi 

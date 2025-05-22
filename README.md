@@ -1,131 +1,175 @@
-# 🎨 Design-to-Code Playbook
+# 🚀 Design-to-Code Enterprise Workshop
 
-<p align="center">
-  <strong>Design-to-Code High-Level Process</strong>
-</p>
-<p align="center">
-  <img alt="Design-to-Code Process Diagram" src="images/design-to-code-process.svg"/>
-</p>
+Welcome to the **Design-to-Code Enterprise Playbook**! This hands-on workshop guides you through implementing comprehensive design-to-code solutions using Figma, GitHub Copilot, and Azure AI Foundry for modern UI development.
 
-## About
+[![Workshop Website](https://img.shields.io/badge/Workshop_Website-design--to--code.dev-blue)](https://design-to-code.dev) [![GitHub Stars](https://img.shields.io/github/stars/paulasilvatech/Design-to-Code-Dev?style=social)](https://github.com/paulasilvatech/Design-to-Code-Dev/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 
-The Design-to-Code Playbook is a comprehensive, practical guide for transforming Figma designs into production-ready code. Created for developers, designers, and teams working at the intersection of design and development, this playbook bridges the gap between visual design and implementation.
+## Design-to-Code Workflow - AI-Powered Implementation
 
-### What is this playbook?
+<div align="center">
+  <img src="docs/images/design-to-code-process-diagram.svg" alt="Design-to-Code Process Diagram" width="700">
+</div>
 
-This playbook provides a structured, step-by-step approach to converting Figma designs into high-quality code using modern tools like VS Code, GitHub Copilot, and Azure AI. Rather than just theoretical concepts, it offers practical workflows, code examples, and hands-on exercises to build real-world components and applications.
+## 🌐 Official Workshop Website: design-to-code.dev
 
-### Who is it for?
+## 📖 The Journey to AI-Enhanced Design-to-Code
 
-- **Frontend Developers** looking to streamline their design-to-code workflow
-- **UI/UX Designers** wanting to understand how their designs translate to code
-- **Full-Stack Developers** expanding their frontend skills
-- **Technical Leads** seeking to establish design system implementation practices
-- **Teams** aiming to improve collaboration between design and development
+Welcome to the Design-to-Code Enterprise Workshop! This repository takes you on a transformative journey from traditional manual design interpretation to the world of AI-assisted design-to-code workflows and automated component generation.
 
-### What's included?
+As a developer in today's fast-paced design-driven environment, you face a critical challenge: **most of your time isn't spent creating new features**. According to industry studies:
 
-- 📚 **Comprehensive documentation** covering the entire design-to-code process
-- 🧩 **Framework-specific implementation guides** for React, Angular, and more
-- 🧪 **Hands-on workshops** (1-hour demo and 3-hour deep dive)
-- 🔧 **Practical code examples** and component implementations
-- 🛠️ **Best practices** for accessibility, performance, and maintainability
-- 🤖 **AI-assisted workflows** leveraging GitHub Copilot and Azure AI
-- 🧠 **Troubleshooting guides** and common pitfall solutions
+- Traditional design-to-code approaches require extensive manual interpretation
+- High inconsistency leads to design system drift and maintenance overhead
+- Difficult to maintain design fidelity across multiple frameworks
+- Reactive bug fixing instead of proactive component optimization
 
-### How to use this playbook
+This workshop provides hands-on guidance to implement modern design-to-code workflows using AI-powered tools. We'll demonstrate how GitHub Copilot, Figma API, and Azure AI Foundry can transform your frontend development strategy.
 
-This repository is structured as a learning journey. Start with the fundamentals in the documentation section, then explore the framework-specific guides that match your tech stack. When you're ready for hands-on practice, follow the 1-hour demo session or dive deeper with the 3-hour workshop.
+> *"Design-to-code is not about replacing designers or developers, but about amplifying their abilities to create consistent, accessible, and maintainable user interfaces faster than ever before."*
 
-## 📋 Overview
+## ⭐ Business Impact
 
-The Design-to-Code Playbook is a structured, educational resource that provides a complete workflow for transforming Figma designs into high-quality, accessible, and maintainable code. This playbook covers everything from environment setup to advanced optimization techniques, with practical examples and hands-on exercises.
+Organizations implementing comprehensive design-to-code automation report significant benefits:
 
-## 🎯 Who This Playbook Is For
+- **Faster Development Cycles**: Reduce component development time from days to hours
+- **Design System Consistency**: Maintain 99% design fidelity across implementations
+- **Reduced Technical Debt**: 70% reduction in design-related bugs and inconsistencies
+- **Cross-Framework Efficiency**: Generate components for multiple frameworks simultaneously
+- **Team Productivity**: Shift from 60% manual coding to 70% strategic feature development
 
-- **Frontend Developers** looking to streamline their design-to-code workflow
-- **UI/UX Designers** wanting to understand the development implementation process
-- **Full-Stack Developers** expanding their frontend skills
-- **Technical Leads** seeking to establish best practices for their teams
-- **Students and Beginners** learning modern frontend development practices
+Advanced design-to-code workflows enable progression through four maturity stages:
 
-## 📚 What You'll Learn
+1. **Manual**: Traditional design interpretation and hand-coding
+2. **Assisted**: AI-powered code generation with manual refinement
+3. **Automated**: Full design system synchronization and component generation
+4. **Intelligent**: Self-optimizing components with performance and accessibility enhancements
 
-- Setting up a complete development environment
-- Analyzing and preparing Figma designs for conversion
-- Using GitHub Copilot to accelerate development
-- Leveraging Azure AI for enhanced design analysis
-- Implementing components in React and Angular
-- Creating and maintaining a component library
-- Testing and quality assurance best practices
-- Automating workflows with GitHub Actions
-- Optimizing for performance, accessibility, and maintainability
-- Troubleshooting common issues in the design-to-code process
+## 📋 Workshop Structure
 
-## 📖 Table of Contents
+The workshop is organized into progressive modules, allowing you to choose the depth of coverage based on your time and experience:
 
-### Core Playbook Content
+| Level         | Duration | Focus                           | Best For                               |
+| ------------- | -------- | ------------------------------- | -------------------------------------- |
+| **Basic**     | 90 min   | Core concepts and first component | Beginners, quick introductions         |
+| **Intermediate** | 2-3 hours | Complete component library     | Standard workshops, team training      |
+| **Advanced**  | 6+ hours | Enterprise-scale implementation | Experienced practitioners, deep dives  |
 
-1. [Setting Up Your Development Environment](docs/01-environment/README.md)
-2. [Preparing Figma Designs for Optimal Conversion](docs/02-figma-prep/README.md)
-3. [Using GitHub Copilot for Code Generation](docs/03-copilot/README.md)
-4. [Integrating with Azure AI Foundry](docs/04-azure-ai/README.md)
-5. [Framework Implementation: React](docs/05-react/README.md)
-6. [Framework Implementation: Angular](docs/06-angular/README.md)
-7. [Component Library Implementation](docs/07-component-library/README.md)
-8. [Testing and Quality Assurance](docs/08-testing/README.md)
-9. [Workflow Automation with GitHub Actions](docs/09-github-actions/README.md)
-10. [Workshop Guides: Hands-on Practice](docs/10-workshops/README.md)
-11. [Best Practices and Optimization Techniques](docs/11-best-practices/README.md)
-12. [Troubleshooting Guide](docs/12-troubleshooting/README.md)
-13. [References and Resources](docs/13-resources/README.md)
+## 🗺️ Learning Path
 
-### Hands-On Learning
+### 1️⃣ Introduction to Design-to-Code Technologies
 
-- [1-Hour Demo Session](demos/01-hour-session/README.md) - A concise demonstration of the design-to-code workflow
-- [3-Hour Workshop](workshops/03-hour-workshop/README.md) - A comprehensive hands-on workshop for deep learning
+- Foundation concepts and modern workflow paradigms
+- The design-to-code pipeline: Figma → AI → Framework → Production
+- Tools ecosystem overview and integration strategies
 
-## 🚀 Getting Started
+### 2️⃣ Environment Setup & Basics
 
-### Prerequisites
+- Workshop preparation and tool configuration
+- Creating your first AI-generated component
+- Exploring Figma Dev Mode fundamentals
 
+### 3️⃣ Figma Analysis & Component Extraction
+
+- Advanced design analysis techniques
+- Component structure identification
+- Design token extraction and management
+
+### 4️⃣ AI-Powered Code Generation
+
+- GitHub Copilot optimization for component development
+- Custom prompt engineering for design systems
+- Advanced code generation patterns
+
+### 5️⃣ Design System Implementation
+
+- Automated design token synchronization
+- Cross-framework component architecture
+- Scalable design system patterns
+
+### 6️⃣ Advanced Component Patterns
+
+- Complex interaction implementations
+- State management integration
+- Performance optimization techniques
+
+### 7️⃣ Responsive Design & Accessibility
+
+- Mobile-first responsive generation
+- WCAG compliance automation
+- Cross-device testing strategies
+
+### 8️⃣ Testing & Quality Assurance
+
+- Visual regression testing setup
+- Component testing automation
+- Performance monitoring implementation
+
+### 9️⃣ Production Deployment & Optimization
+
+- CI/CD pipeline integration
+- Component library publishing
+- Performance optimization in production
+
+### 🧩 Advanced Troubleshooting Guide
+
+- Common issues and solutions
+- Advanced debugging techniques
+- Performance optimization strategies
+
+## 🔑 Prerequisites
+
+### Required Accounts
+
+- GitHub account with Copilot access (Free trial, Individual, or Enterprise)
+- Figma account (Free or Pro)
+- Azure account for AI Foundry features (Free tier available)
+
+### Technical Requirements
+
+- Development environment: VS Code, Node.js 18+, Git
 - Basic understanding of HTML, CSS, and JavaScript
-- Familiarity with React or Angular concepts
-- GitHub account (for Copilot access)
-- Figma account (free tier is sufficient to start)
-- VS Code installed on your computer
+- Familiarity with component-based frameworks (React, Angular, or Vue)
 
-### Quick Start
+## 🛠️ Getting Started
 
-1. Clone this repository:
+1. **Fork and Clone this Repository**
    ```bash
-   git clone https://github.com/yourusername/design-to-code-playbook.git
-   cd design-to-code-playbook
+   git clone https://github.com/YourUsername/Design-to-Code-Dev.git
+   cd Design-to-Code-Dev
    ```
 
-2. Start by reading the [Setting Up Your Development Environment](docs/01-environment/README.md) guide.
+2. **Quick Start (30 minutes)**
+   - Follow our [Quick Start Guide](QUICK_START.md) for immediate hands-on experience
+   - Complete setup verification and first component generation
 
-3. Progress through the playbook sections in order, or jump to specific topics based on your needs.
+3. **Follow the Workshop Structure**
+   - Start with [Introduction to Design-to-Code Technologies](intro-design-to-code.md)
+   - Progress through modules based on your experience level
+   - Use the [Advanced Troubleshooting Guide](advanced-troubleshooting-guide.md) if needed
 
-4. For hands-on practice:
-   - Try the [1-Hour Demo Session](demos/01-hour-session/README.md) for a quick overview
-   - Complete the [3-Hour Workshop](workshops/03-hour-workshop/README.md) for deep learning
+## 🌟 Key Features
 
-## 🤝 Contributing
+- **AI-Enhanced Development**: Learn to implement GitHub Copilot for intelligent component generation
+- **Multi-Framework Support**: Build unified components for React, Angular, Vue, and vanilla JavaScript
+- **Real-World Scenarios**: Practice with authentic enterprise design system challenges
+- **Progressive Learning**: Start from basics and advance to enterprise-scale solutions
+- **Figma Integration**: Master Figma API and Dev Mode for seamless design-to-code workflows
 
-We welcome contributions to improve this playbook! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
+## 📱 Connect With Us
 
-## 📄 License
+- **Official Website**: https://design-to-code.dev
 
-This playbook is available under the [MIT License](LICENSE).
+## 🔗 Related Repositories
 
-## 🙏 Acknowledgements
+### Azure AI Ops Observability Workshop
 
-- The GitHub Copilot team for their revolutionary AI tool
-- The Microsoft Azure AI team for their powerful AI services
-- The Figma team for creating an exceptional design tool
-- All contributors and reviewers who helped shape this playbook
+A comprehensive guide for implementing AI-enhanced observability solutions using Azure Monitor, Application Insights, and Azure SRE Agent. This workshop provides hands-on experience with modern monitoring strategies, multi-cloud observability, and intelligent incident detection for enterprise cloud applications.
+
+### Enterprise AI-Assisted Code Optimization
+
+A complete guide for leveraging AI tools like GitHub Copilot to optimize and improve code quality in enterprise environments. This repository covers advanced AI-assisted workflows, refactoring techniques, code optimization strategies, and best practices for integrating AI tools into your development process.
 
 ## 👤 Credits
 
-This Design-to-Code Playbook was developed by [@paulanunes85](https://github.com/paulanunes85).
+This Design-to-Code Enterprise Workshop was developed by [Paula Silva](https://github.com/paulasilvatech), focusing on bridging the gap between design and development through AI-powered automation. The workshop provides a comprehensive approach to implementing modern design-to-code workflows for enterprise software applications.
+
