@@ -836,6 +836,12 @@ The workshop continues with hands-on coding exercises where you'll use GitHub Co
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 2](design-to-code-workshop-part-02.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [📚 Introduction](intro-design-to-code.md) | [📖 Main README](../README.md) | [📊 Part 2: Figma Analysis](design-to-code-workshop-part-02.md) |
+
+**Workshop Progress**: Part 1 of 8 • **Estimated Time**: 90 minutes
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

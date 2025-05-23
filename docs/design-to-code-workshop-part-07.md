@@ -3630,6 +3630,12 @@ In the final part, you'll:
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 6](design-to-code-workshop-part-06.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 8](design-to-code-workshop-part-08.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 6: Azure AI Design Analysis](design-to-code-workshop-part-06.md) | [📖 Main README](../README.md) | [➡️ Part 8: Complete Integration](design-to-code-workshop-part-08.md) |
+
+**Workshop Progress**: Part 7 of 8 • **Estimated Time**: 3 hours • **Level**: Advanced • **Focus**: Enterprise Orchestration
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

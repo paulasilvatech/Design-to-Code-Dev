@@ -661,6 +661,12 @@ Ready to join a workshop or facilitate one? Check out the [Quick Start Guide](QU
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [📖 Main README](../README.md) | [📋 Quick Start](QUICK_START.md) | [📚 Introduction](intro-design-to-code.md) |
+
+**For Facilitators**: [🎯 Facilitation Tips](#workshop-facilitation-guide) | [📊 Assessment Guide](#assessment-and-certification) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)
+
+**For Learners**: [🚀 Start Workshop](design-to-code-workshop-part-01.md) | [📋 Quick Start](QUICK_START.md) | [📚 Read Introduction](intro-design-to-code.md)

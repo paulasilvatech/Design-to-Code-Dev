@@ -2373,6 +2373,12 @@ This final part will complete your journey to becoming an expert in AI-powered d
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 3](design-to-code-workshop-part-03.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 5](design-to-code-workshop-part-05.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 3: AI Code Generation](design-to-code-workshop-part-03.md) | [📖 Main README](../README.md) | [➡️ Part 5: Azure AI Foundry Setup](design-to-code-workshop-part-05.md) |
+
+**Workshop Progress**: Part 4 of 8 • **Estimated Time**: 3 hours • **Level**: Advanced
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

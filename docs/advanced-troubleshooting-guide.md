@@ -1359,6 +1359,12 @@ For hands-on practice with these troubleshooting techniques, check out the [Work
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [🏗️ Workshop Structure](workshop-structure-guide.md) | [📖 Main README](../README.md) | [📋 Quick Start](QUICK_START.md) |
+
+**Need Immediate Help?**: [🚑 Emergency Recovery](#emergency-recovery-procedures) | [📞 Community Support](https://github.com/paulasilvatech/Design-to-Code-Dev/discussions) | [📚 Documentation](../README.md)
+
+**Workshop Parts**: [🚀 Part 1](design-to-code-workshop-part-01.md) | [📊 Part 2](design-to-code-workshop-part-02.md) | [🤖 Part 3](design-to-code-workshop-part-03.md) | [🏗️ All Parts](workshop-structure-guide.md)

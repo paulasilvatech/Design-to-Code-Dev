@@ -1007,6 +1007,12 @@ In the next part, you'll implement the Azure AI Design Analyzer that uses these 
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 4](design-to-code-workshop-part-04.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 6](design-to-code-workshop-part-06.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 4: Design System Implementation](design-to-code-workshop-part-04.md) | [📖 Main README](../README.md) | [➡️ Part 6: Azure AI Design Analysis](design-to-code-workshop-part-06.md) |
+
+**Workshop Progress**: Part 5 of 8 • **Estimated Time**: 3 hours • **Level**: Advanced • **Focus**: Azure AI Setup
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

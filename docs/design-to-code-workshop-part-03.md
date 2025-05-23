@@ -1492,6 +1492,12 @@ These advanced topics will transform your design-to-code workflow into a fully a
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 2](design-to-code-workshop-part-02.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 4](design-to-code-workshop-part-04.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 2: Figma Analysis](design-to-code-workshop-part-02.md) | [📖 Main README](../README.md) | [➡️ Part 4: Design System Implementation](design-to-code-workshop-part-04.md) |
+
+**Workshop Progress**: Part 3 of 8 • **Estimated Time**: 2 hours • **Level**: Intermediate
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

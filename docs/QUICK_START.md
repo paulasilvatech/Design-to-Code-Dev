@@ -213,6 +213,10 @@ Once you've completed the quick start:
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) → 
+| Previous | Up | Next |
+|----------|----|----- |
+| [📖 Main README](../README.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🚀 Start Learning: Introduction](intro-design-to-code.md) |
+
+**Ready to Begin?**: [📚 Read Introduction](intro-design-to-code.md) • [🚀 Jump to Part 1](design-to-code-workshop-part-01.md) • [🛠️ Need Help?](advanced-troubleshooting-guide.md) 

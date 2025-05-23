@@ -1455,6 +1455,12 @@ Each subsequent workshop builds on these foundations to create increasingly soph
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 1](design-to-code-workshop-part-01.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 3](design-to-code-workshop-part-03.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 1: Environment Setup](design-to-code-workshop-part-01.md) | [📖 Main README](../README.md) | [➡️ Part 3: AI Code Generation](design-to-code-workshop-part-03.md) |
+
+**Workshop Progress**: Part 2 of 8 • **Estimated Time**: 2 hours
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

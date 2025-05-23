@@ -2989,6 +2989,12 @@ In the next part, you'll build the Enterprise Design System Orchestrator that:
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Part 5](design-to-code-workshop-part-05.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 7](design-to-code-workshop-part-07.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [⬅️ Part 5: Azure AI Foundry Setup](design-to-code-workshop-part-05.md) | [📖 Main README](../README.md) | [➡️ Part 7: Enterprise Design System](design-to-code-workshop-part-07.md) |
+
+**Workshop Progress**: Part 6 of 8 • **Estimated Time**: 3 hours • **Level**: Advanced • **Focus**: AI Design Analysis
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)
