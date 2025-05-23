@@ -1,4 +1,4 @@
-# 🤖 Complete Design-to-Code Workshop Guide - Part 6
+# 🤖 Complete Design-to-Code Workshop Guide - Module 6
 ## 🤖 Azure AI Design Analysis Implementation
 
 ### Quick Navigation
@@ -13,7 +13,7 @@
 
 ---
 
-## Part 6 Overview
+## 📋 Module 6 Overview
 
 ### What You'll Build in This Section
 - **AI Design Analyzer**: Complete implementation using Azure AI services
@@ -34,7 +34,7 @@
 
 ---
 
-## Module 1: Building the AI Design Analyzer (60 minutes)
+## 🤖 Module 1: Building the AI Design Analyzer (60 minutes)
 
 ### 1.1 Core Design Analyzer Implementation
 **Time Required**: 20 minutes
@@ -2310,7 +2310,7 @@ export const Default: Story = {
 
 ---
 
-## Module 2: Testing the AI Design Analyzer (30 minutes)
+## 🧪 Module 2: Testing the AI Design Analyzer (30 minutes)
 
 ### 2.1 Creating Test Infrastructure
 **Time Required**: 10 minutes
@@ -2601,7 +2601,7 @@ describe('Design Analyzer Integration Tests', () => {
 
 ---
 
-## Module 3: Practical Examples (30 minutes)
+## 🎨 Module 3: Practical Examples (30 minutes)
 
 ### 3.1 Command Line Interface
 **Time Required**: 15 minutes
@@ -2873,7 +2873,7 @@ export default App;
 
 Generated from Figma design using Azure AI.
 
-## Features
+## ✨ Features
 
 - **Responsive Design**: Adapts to different screen sizes
 - **Accessibility**: WCAG AA compliant with proper ARIA labels
@@ -2882,13 +2882,13 @@ Generated from Figma design using Azure AI.
 - **Styled Components**: Themeable and customizable
 - **Testing**: Unit tests and Storybook stories included
 
-## Design Tokens
+## 🎨 Design Tokens
 
 \`\`\`typescript
 ${JSON.stringify(analysis.colors, null, 2)}
 \`\`\`
 
-## Usage
+## 🛠️ Usage
 
 \`\`\`tsx
 import { ProductCard } from './components/ProductCard';
@@ -2904,7 +2904,7 @@ import { ProductCard } from './components/ProductCard';
 />
 \`\`\`
 
-## Accessibility Features
+## ♿ Accessibility Features
 
 - Proper heading hierarchy
 - Alt text for images
@@ -2912,7 +2912,7 @@ import { ProductCard } from './components/ProductCard';
 - Screen reader announcements
 - Color contrast compliance
 
-## Performance Optimizations
+## ⚡ Performance Optimizations
 
 - Lazy loading images
 - Optimized re-renders
@@ -2938,7 +2938,7 @@ if (require.main === module) {
 
 ---
 
-## Summary and Next Steps
+## 🎯 Summary and Next Steps
 
 ### What You've Completed in Part 6
 

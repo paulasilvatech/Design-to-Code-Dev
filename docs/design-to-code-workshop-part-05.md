@@ -1,4 +1,4 @@
-# ☁️ Complete Design-to-Code Workshop Guide - Part 5
+# ☁️ Complete Design-to-Code Workshop Guide - Module 5
 ## ☁️ Advanced Workshop Part 2: Azure AI Foundry Setup and Configuration
 
 ### Quick Navigation
@@ -13,7 +13,7 @@
 
 ---
 
-## Part 5 Overview
+## 📋 Module 5 Overview
 
 ### What You'll Learn in This Section
 - **Azure AI Foundry Setup**: Complete configuration of Azure AI services
@@ -29,7 +29,7 @@
 
 ---
 
-## Module 1: Azure AI Foundry Deep Dive (45 minutes)
+## ☁️ Module 1: Azure AI Foundry Deep Dive (45 minutes)
 
 ### 1.1 Advanced Azure AI Setup
 **Time Required**: 15 minutes
@@ -390,7 +390,7 @@ export const azureConfig = AzureConfigManager.getInstance();
 
 ---
 
-## Module 2: Testing Azure AI Services (30 minutes)
+## 🧪 Module 2: Testing Azure AI Services (30 minutes)
 
 ### 2.1 Creating Service Connection Tests
 **Time Required**: 15 minutes
@@ -646,7 +646,7 @@ npm run test:azure
 
 ---
 
-## Module 3: Security Best Practices (15 minutes)
+## 🔒 Module 3: Security Best Practices (15 minutes)
 
 ### 3.1 Securing Credentials
 **Time Required**: 10 minutes
@@ -765,7 +765,7 @@ AZURE_KEY_VAULT_URL=https://design-code-vault-prod.vault.azure.net/
 
 ---
 
-## Module 4: Troubleshooting Common Issues (15 minutes)
+## 🛠️ Module 4: Troubleshooting Common Issues (15 minutes)
 
 ### 4.1 Common Azure AI Issues and Solutions
 
@@ -948,7 +948,7 @@ if (require.main === module) {
 
 ---
 
-## Summary and Next Steps
+## 🎯 Summary and Next Steps
 
 ### What You've Completed in Part 5
 

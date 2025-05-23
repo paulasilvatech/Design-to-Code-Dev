@@ -1,4 +1,4 @@
-# 🚀 Complete Design-to-Code Workshop Guide - Part 1
+# 🚀 Complete Design-to-Code Workshop Guide - Module 1
 ## 🎨 From Figma Design to Production Code with AI Assistance
 
 [![Part 1](https://img.shields.io/badge/part-1-blue.svg)](#)
@@ -15,37 +15,37 @@
 - [Module 1: Understanding Design-to-Code Workflow](#module-1-understanding-design-to-code-workflow-20-minutes)
 - [Module 2: Setting Up Your First Figma Design](#module-2-setting-up-your-first-figma-design-20-minutes)
 
-**[Part 2](design-to-code-workshop-part-02.md)** - Basic Workshop Modules 3-5
+**[Module 2](design-to-code-workshop-part-02.md)** - Basic Workshop Modules 3-5
 - Module 3: GitHub Copilot for Component Generation
 - Module 4: Converting Your First Design
 - Module 5: Final Exercise - Complete Landing Page
 
-**[Part 3](design-to-code-workshop-part-03.md)** - Intermediate Workshop (2 hours)
+**[Module 3](design-to-code-workshop-part-03.md)** - Intermediate Workshop (2 hours)
 - Module 1: Advanced Figma Features and Auto Layout
 - Module 2: Component Library Creation
 - Module 3: Design Systems Integration
 - Module 4: Responsive Design Implementation
 
-**[Part 4](design-to-code-workshop-part-04.md)** - Advanced Workshop Part 1 (3 hours)
+**[Module 4](design-to-code-workshop-part-04.md)** - Advanced Workshop Part 1 (3 hours)
 - Module 1: Figma MCP Server Integration
 - Module 2: GitHub Agent Mode for Design Automation
 
-**[Part 5](design-to-code-workshop-part-05.md)** - Azure AI Foundry Setup (3 hours)
+**[Module 5](design-to-code-workshop-part-05.md)** - Azure AI Foundry Setup (3 hours)
 - Module 1: Azure AI Services Configuration
 - Module 2: Environment Setup and Testing
 - Module 3: Credential Management
 
-**[Part 6](design-to-code-workshop-part-06.md)** - Azure AI Design Analysis (3 hours)
+**[Module 6](design-to-code-workshop-part-06.md)** - Azure AI Design Analysis (3 hours)
 - Module 1: Multi-Modal AI Implementation
 - Module 2: Component Detection System
 - Module 3: Code Generation Pipeline
 
-**[Part 7](design-to-code-workshop-part-07.md)** - Enterprise Design System Orchestration (3 hours)
+**[Module 7](design-to-code-workshop-part-07.md)** - Enterprise Design System Orchestration (3 hours)
 - Module 1: Enterprise-Scale Architecture
 - Module 2: Design System Governance
 - Module 3: Automated Quality Assurance
 
-**[Part 8](design-to-code-workshop-part-08.md)** - Complete Integration and Challenge Lab (3 hours)
+**[Module 8](design-to-code-workshop-part-08.md)** - Complete Integration and Challenge Lab (3 hours)
 - Module 1: End-to-End Integration
 - Module 2: Challenge Lab Exercise
 - Module 3: Production Deployment
@@ -855,8 +855,8 @@ The workshop continues with hands-on coding exercises where you'll use GitHub Co
 
 | Previous | Up | Next |
 |----------|----|----- |
-| [📚 Introduction](intro-design-to-code.md) | [📖 Main README](../README.md) | [📊 Part 2: Figma Analysis](design-to-code-workshop-part-02.md) |
+| [📚 Introduction](intro-design-to-code.md) | [📖 Main README](../README.md) | [📊 Module 2: Figma Analysis](design-to-code-workshop-part-02.md) |
 
-**Workshop Progress**: Part 1 of 8 • **Estimated Time**: 90 minutes
+**Workshop Progress**: Module 1 of 8 • **Estimated Time**: 90 minutes
 
 **Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

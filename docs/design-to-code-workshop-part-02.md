@@ -1,12 +1,12 @@
-# 🤖 Complete Design-to-Code Workshop Guide - Part 2
+# 🤖 Complete Design-to-Code Workshop Guide - Module 2
 ## 🚀 Basic Workshop Modules 3-5: GitHub Copilot and Component Generation
 
 ### 🧭 Quick Navigation
-- **Part 1**: Setup and Basic Workshop Foundation ✅
-- **Part 2**: Basic Workshop Modules 3-5 (This Document) 📍
-- **Part 3**: Intermediate Workshop (2 hours)
-- **Part 4**: Advanced Workshop Part 1 (3 hours)
-- **Part 5**: Advanced Workshop Part 2 (3 hours)
+- **Module 1**: Setup and Basic Workshop Foundation ✅
+- **Module 2**: Basic Workshop Modules 3-5 (This Document) 📍
+- **Module 3**: Intermediate Workshop (2 hours)
+- **Module 4**: Advanced Workshop Module 1 (3 hours)
+- **Module 5**: Advanced Workshop Module 2 (3 hours)
 
 ---
 
@@ -331,7 +331,7 @@ Create `src/components/Button/Button.css`:
 
 ---
 
-## Module 4: Converting Your First Design (25 minutes)
+## 🎨 Module 4: Converting Your First Design (25 minutes)
 
 ### 4.1 Creating a Card Component from Figma
 **Time Required**: 10 minutes
@@ -846,7 +846,7 @@ npm run dev
 
 ---
 
-## Module 5: Final Exercise - Complete Landing Page (25 minutes)
+## 🏆 Module 5: Final Exercise - Complete Landing Page (25 minutes)
 
 ### 5.1 Analyzing the Landing Page Design
 **Time Required**: 5 minutes
@@ -1348,7 +1348,7 @@ Add the additional styles to `src/App.css`:
 
 ---
 
-## Workshop Summary and Next Steps
+## 🎯 Workshop Summary and Next Steps
 
 ### What You've Accomplished
 
@@ -1443,7 +1443,7 @@ In this basic workshop, you have:
 
 ---
 
-## Ready for More?
+## 🚀 Ready for More?
 
 You've completed the Basic Workshop! To continue your journey:
 
@@ -1459,8 +1459,8 @@ Each subsequent workshop builds on these foundations to create increasingly soph
 
 | Previous | Up | Next |
 |----------|----|----- |
-| [⬅️ Part 1: Environment Setup](design-to-code-workshop-part-01.md) | [📖 Main README](../README.md) | [➡️ Part 3: AI Code Generation](design-to-code-workshop-part-03.md) |
+| [⬅️ Module 1: Environment Setup](design-to-code-workshop-part-01.md) | [📖 Main README](../README.md) | [➡️ Module 3: AI Code Generation](design-to-code-workshop-part-03.md) |
 
-**Workshop Progress**: Part 2 of 8 • **Estimated Time**: 2 hours
+**Workshop Progress**: Module 2 of 8 • **Estimated Time**: 2 hours
 
 **Quick Links**: [📋 Quick Start](QUICK_START.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)
