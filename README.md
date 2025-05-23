@@ -1,4 +1,4 @@
-# 🚀 Design-to-Code Workshop
+# 🚀 Design to Code with AI
 
 Welcome to the **Design-to-Code Enterprise Playbook**! This hands-on workshop guides you through implementing comprehensive design-to-code solutions using Figma, GitHub Copilot, and Azure AI Foundry for modern UI development.
 
