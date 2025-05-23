@@ -124,9 +124,11 @@ The workshop is organized into progressive modules, allowing you to choose the d
 
 ### Required Accounts
 
-- GitHub account with Copilot access (Free trial, Individual, or Enterprise)
-- Figma account (Free or Pro)
-- Azure account for AI Foundry features (Free tier available)
+- Create [Azure Free Account](https://go.microsoft.com/fwlink/?linkid=859151)
+- Azure AI Foundry (Free tier available)
+- GitHub account with [GitHub Copilot Free](https://code.visualstudio.com/docs/copilot/setup-simplified)
+- Create [Figma Free Account](https://www.figma.com/signup?locale=en-us)
+
 
 ### Technical Requirements
 
@@ -172,9 +174,9 @@ A comprehensive guide for transforming Figma designs into production-ready code.
 A complete guide for leveraging AI tools like GitHub Copilot to optimize and improve code quality in enterprise environments. This repository covers advanced AI-assisted workflows, refactoring techniques, code optimization strategies, and best practices for integrating AI tools into your development process.
 
 ### [Agentic Operations & Observability](https://github.com/paulasilvatech/Agentic-Ops-Dev)
-A complete guide for leveraging AI tools like GitHub Copilot to optimize and improve code quality in enterprise environments. This repository covers advanced AI-assisted workflows, refactoring techniques, code optimization strategies, and best practices for integrating AI tools into your development process.
+A hands-on workshop for implementing comprehensive observability solutions for cloud applications using Azure Monitor, Application Insights, and AI-powered tools like Azure SRE Agent. This repository guides you through the journey from traditional monitoring to AI-enhanced observability, covering the three pillars (metrics, logs, traces), multi-cloud integration, and agentic DevOps practices.
 
 ## 👤 Credits
 
-This Design-to-Code Enterprise Workshop was developed by [Paula Silva](https://github.com/paulasilvatech), focusing on bridging the gap between design and development through AI-powered automation. The workshop provides a comprehensive approach to implementing modern design-to-code workflows for enterprise software applications.
+This Design to Code Workshop was developed by [Paula Silva](https://github.com/paulasilvatech), Developer Productivity [Global Black Belt at Microsoft Americas](https://www.linkedin.com/in/paulanunes/).focusing on bridging the gap between design and development through AI-powered automation. The workshop provides a comprehensive approach to implementing modern design-to-code workflows for enterprise software applications.
 
