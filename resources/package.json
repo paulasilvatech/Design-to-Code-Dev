@@ -1,0 +1,64 @@
+{
+  "name": "design-to-code-workshop",
+  "version": "1.0.0",
+  "description": "Design-to-Code Workshop with Azure AI Services",
+  "main": "index.js",
+  "scripts": {
+    "setup": "chmod +x *.sh && ./01-azure-setup.sh",
+    "test": "./02-test-connections.sh",
+    "cleanup": "./03-cleanup.sh",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "design-to-code",
+    "azure",
+    "ai",
+    "figma",
+    "github-copilot",
+    "computer-vision",
+    "form-recognizer",
+    "openai"
+  ],
+  "author": "Design-to-Code Workshop",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/ai-form-recognizer": "^5.0.0",
+    "@azure/cognitiveservices-computervision": "^8.2.0",
+    "@azure/identity": "^4.0.1",
+    "@azure/keyvault-secrets": "^4.7.0",
+    "@azure/ms-rest-js": "^2.7.0",
+    "@azure/openai": "^1.0.0-beta.12",
+    "dotenv": "^16.3.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.6",
+    "sharp": "^0.32.6",
+    "jimp": "^0.22.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/inquirer": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulasilvatech/Design-to-Code-Dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulasilvatech/Design-to-Code-Dev/issues"
+  },
+  "homepage": "https://design-to-code.dev"
+}
