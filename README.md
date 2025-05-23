@@ -60,61 +60,61 @@ The workshop is organized into progressive modules, allowing you to choose the d
 
 ## 🗺️ Learning Path
 
-### 1️⃣ Introduction to Design-to-Code Technologies
+### 1️⃣ [Introduction to Design-to-Code Technologies](docs/intro-design-to-code.md)
 
 - Foundation concepts and modern workflow paradigms
 - The design-to-code pipeline: Figma → AI → Framework → Production
 - Tools ecosystem overview and integration strategies
 
-### 2️⃣ Environment Setup & Basics
+### 2️⃣ [Environment Setup & Basics](docs/design-to-code-workshop-part-01.md)
 
 - Workshop preparation and tool configuration
 - Creating your first AI-generated component
 - Exploring Figma Dev Mode fundamentals
 
-### 3️⃣ Figma Analysis & Component Extraction
+### 3️⃣ [Figma Analysis & Component Extraction](docs/design-to-code-workshop-part-02.md)
 
 - Advanced design analysis techniques
 - Component structure identification
 - Design token extraction and management
 
-### 4️⃣ AI-Powered Code Generation
+### 4️⃣ [AI-Powered Code Generation](docs/design-to-code-workshop-part-03.md)
 
 - GitHub Copilot optimization for component development
 - Custom prompt engineering for design systems
 - Advanced code generation patterns
 
-### 5️⃣ Design System Implementation
+### 5️⃣ [Design System Implementation](docs/design-to-code-workshop-part-04.md)
 
 - Automated design token synchronization
 - Cross-framework component architecture
 - Scalable design system patterns
 
-### 6️⃣ Advanced Component Patterns
+### 6️⃣ [Advanced Component Patterns](docs/design-to-code-workshop-part-05.md)
 
 - Complex interaction implementations
 - State management integration
 - Performance optimization techniques
 
-### 7️⃣ Responsive Design & Accessibility
+### 7️⃣ [Responsive Design & Accessibility](docs/design-to-code-workshop-part-06.md)
 
 - Mobile-first responsive generation
 - WCAG compliance automation
 - Cross-device testing strategies
 
-### 8️⃣ Testing & Quality Assurance
+### 8️⃣ [Testing & Quality Assurance](docs/design-to-code-workshop-part-07.md)
 
 - Visual regression testing setup
 - Component testing automation
 - Performance monitoring implementation
 
-### 9️⃣ Production Deployment & Optimization
+### 9️⃣ [Production Deployment & Optimization](docs/design-to-code-workshop-part-08.md)
 
 - CI/CD pipeline integration
 - Component library publishing
 - Performance optimization in production
 
-### 🧩 Advanced Troubleshooting Guide
+### 🧩 [Advanced Troubleshooting Guide](docs/advanced-troubleshooting-guide.md)
 
 - Common issues and solutions
 - Advanced debugging techniques
