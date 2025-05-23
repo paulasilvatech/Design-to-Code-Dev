@@ -1,5 +1,5 @@
-# Complete Design-to-Code Workshop Guide - Part 5
-## Advanced Workshop Part 2: Azure AI Foundry Setup and Configuration
+# ☁️ Complete Design-to-Code Workshop Guide - Part 5
+## ☁️ Advanced Workshop Part 2: Azure AI Foundry Setup and Configuration
 
 ### Quick Navigation
 - **Part 1**: Setup and Basic Workshop Foundation ✅

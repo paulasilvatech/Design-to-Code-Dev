@@ -1,5 +1,5 @@
-# Complete Design-to-Code Workshop Guide - Part 4
-## Advanced Workshop Part 1: MCP Server and GitHub Agent Automation (3 hours)
+# 🔗 Complete Design-to-Code Workshop Guide - Part 4
+## 🤖 Advanced Workshop Part 1: MCP Server and GitHub Agent Automation (3 hours)
 
 ### Quick Navigation
 - **Part 1**: Setup and Basic Workshop Foundation ✅
@@ -10,7 +10,7 @@
 
 ---
 
-## Advanced Workshop Overview
+## 📋 Advanced Workshop Overview
 
 ### What You'll Learn
 - **MCP Server Integration**: Connect Figma directly to your development workflow
@@ -34,7 +34,7 @@
 
 ---
 
-## Module 1: Figma MCP Server Integration (45 minutes)
+## 🎨 Module 1: Figma MCP Server Integration (45 minutes)
 
 ### 1.1 Understanding MCP (Model Context Protocol)
 **Time Required**: 15 minutes
@@ -268,7 +268,7 @@ testMCPConnection();
 
 ---
 
-## Module 2: GitHub Agent Mode for Design Automation (45 minutes)
+## 🤖 Module 2: GitHub Agent Mode for Design Automation (45 minutes)
 
 ### 2.1 Understanding GitHub Agent Mode
 **Time Required**: 15 minutes
@@ -407,7 +407,7 @@ Create `.github/copilot/prompts/design-to-code.md`:
 ```markdown
 # Design-to-Code Agent Prompts
 
-## Component Generation Prompt
+## 📝 Component Generation Prompt
 
 When analyzing a Figma component, follow these steps:
 
@@ -433,7 +433,7 @@ When analyzing a Figma component, follow these steps:
    - Accessibility tests
    - Visual regression tests
 
-## Code Quality Requirements
+## ✅ Code Quality Requirements
 
 - Use TypeScript with strict mode
 - Follow ESLint rules
@@ -441,7 +441,7 @@ When analyzing a Figma component, follow these steps:
 - Add comprehensive JSDoc comments
 - Include Storybook stories
 
-## File Naming Conventions
+## 📁 File Naming Conventions
 
 - Components: PascalCase (Button.tsx)
 - Styles: PascalCase.styles.ts (Button.styles.ts)
@@ -852,7 +852,7 @@ module.exports = { DesignToCodeGenerator };
 
 ---
 
-## Module 3: Advanced MCP Workflows (45 minutes)
+## 🔗 Module 3: Advanced MCP Workflows (45 minutes)
 
 ### 3.1 Building Custom MCP Commands
 **Time Required**: 15 minutes
@@ -1566,7 +1566,7 @@ jobs:
 
 ---
 
-## Module 4: Monitoring and Optimization (45 minutes)
+## 📊 Module 4: Monitoring and Optimization (45 minutes)
 
 ### 4.1 Setting Up Pipeline Monitoring
 **Time Required**: 15 minutes
@@ -2306,7 +2306,7 @@ export const errorRecovery = new ErrorRecoveryManager();
 
 ---
 
-## Workshop Summary and Next Steps
+## 🎯 Workshop Summary and Next Steps
 
 ### What You've Accomplished in Part 4
 
@@ -2360,7 +2360,7 @@ export const errorRecovery = new ErrorRecoveryManager();
 
 ---
 
-## Ready for the Final Part?
+## 🚀 Ready for the Final Part?
 
 You're now ready for the advanced Azure AI workshops:
 

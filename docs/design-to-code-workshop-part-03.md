@@ -10,7 +10,7 @@
 
 ---
 
-## Intermediate Workshop Overview
+## 📋 Intermediate Workshop Overview
 
 ### What You'll Learn
 - **Advanced Figma Features**: Master Auto Layout, Variants, and Component Properties
@@ -27,7 +27,7 @@
 
 ---
 
-## Module 1: Advanced Figma Features and Auto Layout (30 minutes)
+## 🎨 Module 1: Advanced Figma Features and Auto Layout (30 minutes)
 
 ### 1.1 Mastering Auto Layout for Complex Components
 **Time Required**: 15 minutes
@@ -58,7 +58,7 @@ Auto Layout in Figma is more powerful than basic flexbox. Let's explore advanced
    - Name it: "ProductCard/Advanced"
 
 2. **Build the Structure**:
-```
+```text
 ProductCard (Vertical Auto Layout)
 ├── ImageContainer (Fixed Height: 240px)
 │   ├── ProductImage (Fill)
@@ -126,7 +126,7 @@ In Figma's right panel:
 Let's build a comprehensive input component with all states and variants:
 
 1. **Base Input Structure**:
-```
+```text
 InputField (Vertical Auto Layout)
 ├── Label (Optional)
 ├── InputWrapper (Horizontal Auto Layout)
@@ -189,7 +189,7 @@ Switch to Dev Mode and note:
 
 ---
 
-## Module 2: Component Library Creation (30 minutes)
+## 📚 Module 2: Component Library Creation (30 minutes)
 
 ### 2.1 Setting Up a Scalable Component Library
 **Time Required**: 15 minutes
@@ -629,7 +629,7 @@ Input.displayName = 'Input';
 
 ---
 
-## Module 3: Design Systems Integration (30 minutes)
+## 🔗 Module 3: Design Systems Integration (30 minutes)
 
 ### 3.1 Automated Design Token Synchronization
 **Time Required**: 15 minutes
@@ -1083,7 +1083,7 @@ export const InteractiveValidation: Story = {
 
 ---
 
-## Module 4: Responsive Design Implementation (30 minutes)
+## 📱 Module 4: Responsive Design Implementation (30 minutes)
 
 ### 4.1 Building Truly Responsive Components
 **Time Required**: 15 minutes
@@ -1408,7 +1408,7 @@ export const DashboardLayout: React.FC<DashboardLayoutProps> = ({
 
 ---
 
-## Workshop Summary and Next Steps
+## 🎯 Workshop Summary and Next Steps
 
 ### What You've Accomplished in the Intermediate Workshop
 
@@ -1478,7 +1478,7 @@ Before proceeding to Parts 4 and 5:
 
 ---
 
-## Continue Your Journey
+## 🚀 Continue Your Journey
 
 You're now ready for the advanced workshops where you'll learn:
 

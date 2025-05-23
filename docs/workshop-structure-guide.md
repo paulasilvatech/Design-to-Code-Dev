@@ -6,7 +6,7 @@ This guide provides a detailed overview of the Design-to-Code workshop structure
 [![Facilitator Guide](https://img.shields.io/badge/facilitator-guide-blue.svg)](#)
 [![Progressive Learning](https://img.shields.io/badge/learning-progressive-purple.svg)](#)
 
-## Table of Contents
+## 📋 Table of Contents
 - [Workshop Overview](#workshop-overview)
 - [Learning Pathways](#learning-pathways)
 - [Basic Workshop Structure](#basic-workshop-structure)
@@ -74,7 +74,7 @@ graph LR
 - **DevOps Engineers** automating pipelines
 - **Innovation Teams** pushing boundaries
 
-## Learning Pathways
+## 🗺️ Learning Pathways
 
 ### Pathway 1: Designer to Developer
 Perfect for designers learning to code their designs
@@ -141,7 +141,7 @@ gantt
     Scale and optimize    :ongoing, after month3, 8w
 ```
 
-## Basic Workshop Structure
+## 🚀 Basic Workshop Structure
 
 ### Duration: 90 minutes
 
@@ -272,7 +272,7 @@ basic-workshop/
     └── quick-reference.md
 ```
 
-## Intermediate Workshop Structure
+## 🛠️ Intermediate Workshop Structure
 
 ### Duration: 2 hours
 
@@ -368,7 +368,7 @@ intermediate-workshop/
     └── certification-requirements.md
 ```
 
-## Advanced Workshop Structure
+## 🎨 Advanced Workshop Structure
 
 ### Duration: 6 hours (with breaks)
 
@@ -475,7 +475,7 @@ advanced-workshop/
     └── expert-certification/
 ```
 
-## Workshop Facilitation Guide
+## 🎯 Workshop Facilitation Guide
 
 ### Facilitator Preparation
 
@@ -536,7 +536,7 @@ const autoFix = async (issues) => {
 - **Mixed Group**: Use breakout rooms
 - **Time Management**: Built-in buffers
 
-## Assessment and Certification
+## 🏆 Assessment and Certification
 
 ### Assessment Criteria
 
@@ -599,7 +599,7 @@ const autoFix = async (issues) => {
    - Q&A session
    - Future planning
 
-## Post-Workshop Resources
+## 📚 Post-Workshop Resources
 
 ### Continued Learning
 

@@ -1,5 +1,5 @@
-# Complete Design-to-Code Workshop Guide - Part 6
-## Azure AI Design Analysis Implementation
+# 🤖 Complete Design-to-Code Workshop Guide - Part 6
+## 🤖 Azure AI Design Analysis Implementation
 
 ### Quick Navigation
 - **Part 1**: Setup and Basic Workshop Foundation ✅

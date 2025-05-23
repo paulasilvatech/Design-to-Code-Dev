@@ -1,5 +1,5 @@
 # 🚀 Complete Design-to-Code Workshop Guide - Part 1
-## From Figma Design to Production Code with AI Assistance
+## 🎨 From Figma Design to Production Code with AI Assistance
 
 [![Part 1](https://img.shields.io/badge/part-1-blue.svg)](#)
 [![Beginner Friendly](https://img.shields.io/badge/level-beginner-green.svg)](#)
@@ -30,10 +30,25 @@
 - Module 1: Figma MCP Server Integration
 - Module 2: GitHub Agent Mode for Design Automation
 
-**[Part 5](design-to-code-workshop-part-05.md)** - Advanced Workshop Part 2 (3 hours)
-- Module 3: Azure AI Foundry for Design Analysis
-- Module 4: Enterprise Design System Automation
-- Challenge Lab: End-to-End Design-to-Code Pipeline
+**[Part 5](design-to-code-workshop-part-05.md)** - Azure AI Foundry Setup (3 hours)
+- Module 1: Azure AI Services Configuration
+- Module 2: Environment Setup and Testing
+- Module 3: Credential Management
+
+**[Part 6](design-to-code-workshop-part-06.md)** - Azure AI Design Analysis (3 hours)
+- Module 1: Multi-Modal AI Implementation
+- Module 2: Component Detection System
+- Module 3: Code Generation Pipeline
+
+**[Part 7](design-to-code-workshop-part-07.md)** - Enterprise Design System Orchestration (3 hours)
+- Module 1: Enterprise-Scale Architecture
+- Module 2: Design System Governance
+- Module 3: Automated Quality Assurance
+
+**[Part 8](design-to-code-workshop-part-08.md)** - Complete Integration and Challenge Lab (3 hours)
+- Module 1: End-to-End Integration
+- Module 2: Challenge Lab Exercise
+- Module 3: Production Deployment
 
 ---
 
@@ -70,7 +85,7 @@ By completing these workshops, you will:
 
 ---
 
-## Step 1: Create Required Accounts
+## 🔑 Step 1: Create Required Accounts
 
 ### 1.1 Figma Account Setup
 **Time Required**: 10 minutes
@@ -153,7 +168,7 @@ By completing these workshops, you will:
 
 ---
 
-## Step 2: Install Required Tools
+## 🛠️ Step 2: Install Required Tools
 
 ### 2.1 Install Visual Studio Code
 **Time Required**: 10 minutes
@@ -425,7 +440,7 @@ EOF
 
 ---
 
-## Basic Workshop (90 minutes)
+## 🚀 Basic Workshop (90 minutes)
 
 ### Introduction: The Design-to-Code Revolution (10 minutes)
 
@@ -479,7 +494,7 @@ EOF
 
 ---
 
-## Module 1: Understanding Design-to-Code Workflow (20 minutes)
+## 📋 Module 1: Understanding Design-to-Code Workflow (20 minutes)
 
 ### 1.1 The Design-to-Code Pipeline
 **Time Required**: 10 minutes
@@ -673,7 +688,7 @@ export const typography = {
 
 ---
 
-## Module 2: Setting Up Your First Figma Design (20 minutes)
+## 🎨 Module 2: Setting Up Your First Figma Design (20 minutes)
 
 ### 2.1 Understanding Figma for Developers
 **Time Required**: 10 minutes
@@ -817,7 +832,7 @@ export const typography = {
 
 ---
 
-## Continue to Part 2
+## 🚀 Continue to Part 2
 
 This document has covered:
 - ✅ Complete workshop preparation and setup

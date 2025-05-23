@@ -1,5 +1,5 @@
-# Complete Design-to-Code Workshop Guide - Part 7
-## Enterprise Design System Orchestration
+# 🏢 Complete Design-to-Code Workshop Guide - Part 7
+## 🏢 Enterprise Design System Orchestration
 
 ### Quick Navigation
 - **Part 1**: Setup and Basic Workshop Foundation ✅
