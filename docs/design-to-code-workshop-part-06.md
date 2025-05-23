@@ -2986,3 +2986,9 @@ In the next part, you'll build the Enterprise Design System Orchestrator that:
 - Coordinates multiple repositories and platforms
 - Implements continuous design-to-code pipeline
 - Handles enterprise-level complexity
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

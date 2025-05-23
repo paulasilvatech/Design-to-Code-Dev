@@ -50,16 +50,44 @@ MCP (Model Context Protocol) is a protocol that enables AI assistants to interac
 
 #### MCP Architecture
 
-```
-┌─────────────────┐     ┌──────────────┐     ┌─────────────┐
-│   AI Assistant  │────▶│  MCP Server  │────▶│ Figma API   │
-│  (Copilot/GPT)  │◀────│              │◀────│             │
-└─────────────────┘     └──────────────┘     └─────────────┘
-         │                      │                      │
-         ▼                      ▼                      ▼
-    Code Generation      Protocol Handler        Design Data
-    Context Aware        Message Routing         Components
-    Intelligent          State Management        Styles/Tokens
+```mermaid
+graph TB
+    subgraph "AI Layer"
+        A[AI Assistant<br/>Copilot/GPT]
+        A1[Code Generation]
+        A2[Context Aware]
+        A3[Intelligent Suggestions]
+        A --> A1
+        A --> A2
+        A --> A3
+    end
+    
+    subgraph "Protocol Layer"
+        B[MCP Server]
+        B1[Protocol Handler]
+        B2[Message Routing]
+        B3[State Management]
+        B --> B1
+        B --> B2
+        B --> B3
+    end
+    
+    subgraph "Data Source"
+        C[Figma API]
+        C1[Design Data]
+        C2[Components]
+        C3[Styles/Tokens]
+        C --> C1
+        C --> C2
+        C --> C3
+    end
+    
+    A <--> B
+    B <--> C
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
 ```
 
 ### 1.2 Setting Up Figma MCP Server
@@ -256,23 +284,45 @@ GitHub Agent Mode enables GitHub Copilot to work autonomously on complex tasks:
 
 #### Agent Mode Architecture
 
-```
-┌─────────────────┐     ┌──────────────┐     ┌─────────────┐
-│  Design Input   │────▶│ GitHub Agent │────▶│   Output    │
-│  (Figma/MCP)   │     │              │     │   (Code)    │
-└─────────────────┘     └──────────────┘     └─────────────┘
-         │                      │                      │
-         │              ┌──────▼──────┐               │
-         │              │   Planner   │               │
-         │              └──────┬──────┘               │
-         │                     │                      │
-         │              ┌──────▼──────┐               │
-         │              │   Executor  │               │
-         │              └──────┬──────┘               │
-         │                     │                      │
-         │              ┌──────▼──────┐               │
-         └─────────────▶│  Validator  │◀──────────────┘
-                        └─────────────┘
+```mermaid
+graph TD
+    A[Design Input<br/>Figma/MCP] --> B[GitHub Agent]
+    B --> C[Output<br/>Generated Code]
+    
+    subgraph "Agent Processing Pipeline"
+        D[Planner<br/>Task Breakdown]
+        E[Executor<br/>Code Generation]
+        F[Validator<br/>Quality Check]
+        
+        D --> E
+        E --> F
+        F --> G{Validation Passed?}
+        G -->|Yes| H[Complete]
+        G -->|No| E
+    end
+    
+    B --> D
+    F --> C
+    A -.-> F
+    
+    subgraph "Agent Capabilities"
+        I[Multi-file Operations]
+        J[Context Persistence]
+        K[Error Recovery]
+        L[Pattern Learning]
+    end
+    
+    B --- I
+    B --- J
+    B --- K
+    B --- L
+    
+    style A fill:#e1f5fe
+    style C fill:#e8f5e8
+    style B fill:#fff3e0
+    style D fill:#f3e5f5
+    style E fill:#e8f5e8
+    style F fill:#fff8e1
 ```
 
 ### 2.2 Enabling and Configuring Agent Mode
@@ -2319,3 +2369,9 @@ You're now ready for **Part 5** where you'll learn:
 - Complete end-to-end automation challenge
 
 This final part will complete your journey to becoming an expert in AI-powered design-to-code workflows!
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

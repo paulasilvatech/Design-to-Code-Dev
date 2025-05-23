@@ -1452,3 +1452,9 @@ You've completed the Basic Workshop! To continue your journey:
 - **Part 5**: Advanced Workshop Part 2 - Azure AI Foundry and enterprise-scale automation
 
 Each subsequent workshop builds on these foundations to create increasingly sophisticated design-to-code workflows.
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

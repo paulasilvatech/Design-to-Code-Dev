@@ -1486,3 +1486,9 @@ You're now ready for the advanced workshops where you'll learn:
 - **Part 5**: Azure AI Foundry integration and enterprise-scale design system automation
 
 These advanced topics will transform your design-to-code workflow into a fully automated, AI-powered system capable of handling enterprise-scale projects.
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

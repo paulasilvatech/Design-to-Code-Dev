@@ -2,6 +2,10 @@
 
 This guide provides a detailed overview of the Design-to-Code workshop structure, helping facilitators and participants understand the learning path and outcomes.
 
+[![Workshop Ready](https://img.shields.io/badge/workshop-ready-green.svg)](#)
+[![Facilitator Guide](https://img.shields.io/badge/facilitator-guide-blue.svg)](#)
+[![Progressive Learning](https://img.shields.io/badge/learning-progressive-purple.svg)](#)
+
 ## Table of Contents
 - [Workshop Overview](#workshop-overview)
 - [Learning Pathways](#learning-pathways)
@@ -12,20 +16,37 @@ This guide provides a detailed overview of the Design-to-Code workshop structure
 - [Assessment and Certification](#assessment-and-certification)
 - [Post-Workshop Resources](#post-workshop-resources)
 
-## Workshop Overview
+## 📚 Workshop Overview
 
-### Workshop Philosophy
+### 💡 Workshop Philosophy
 
 Our workshops follow a **progressive learning model** that builds skills incrementally:
 
-```
-Foundation → Application → Mastery → Innovation
-    ↓            ↓            ↓           ↓
-  Basic    Intermediate   Advanced    Expert
-(90 min)     (2 hours)    (6 hours)  (Ongoing)
+```mermaid
+graph LR
+    A[Foundation<br/>🟢 Basic<br/>90 min] --> B[Application<br/>🟡 Intermediate<br/>2 hours]
+    B --> C[Mastery<br/>🔴 Advanced<br/>6 hours]
+    C --> D[Innovation<br/>🏆 Expert<br/>Ongoing]
+    
+    subgraph "Learning Outcomes"
+        A1[Tool Setup<br/>Basic Components]
+        B1[Design Systems<br/>Advanced Patterns]
+        C1[Enterprise Scale<br/>AI Automation]
+        D1[Innovation<br/>Leadership]
+    end
+    
+    A -.-> A1
+    B -.-> B1
+    C -.-> C1
+    D -.-> D1
+    
+    style A fill:#e8f5e8
+    style B fill:#fff7e6
+    style C fill:#ffe6e6
+    style D fill:#f3e5f5
 ```
 
-### Core Learning Principles
+### 🎯 Core Learning Principles
 
 1. **Hands-On First**: 80% practice, 20% theory
 2. **Real-World Focus**: Industry-relevant examples
@@ -33,7 +54,7 @@ Foundation → Application → Mastery → Innovation
 4. **Immediate Application**: Build usable components
 5. **Progressive Complexity**: Start simple, build up
 
-### Target Audiences
+### 👥 Target Audiences
 
 #### Basic Workshop (90 minutes)
 - **Frontend Developers** new to design-to-code
@@ -58,50 +79,66 @@ Foundation → Application → Mastery → Innovation
 ### Pathway 1: Designer to Developer
 Perfect for designers learning to code their designs
 
-```
-Week 1: Basic Workshop
-  ↓
-Week 2: Practice exercises
-  ↓
-Week 3: Intermediate Workshop
-  ↓
-Week 4-6: Build portfolio project
-  ↓
-Week 7: Advanced Workshop
-  ↓
-Ongoing: Contribute to design system
+```mermaid
+gantt
+    title Designer to Developer Journey
+    dateFormat X
+    axisFormat Week %s
+    
+    section Foundation
+    Basic Workshop         :active, week1, 0, 1w
+    Practice exercises     :week2, after week1, 1w
+    
+    section Development
+    Intermediate Workshop  :week3, after week2, 1w
+    Portfolio project      :week4, after week3, 3w
+    
+    section Mastery
+    Advanced Workshop      :week7, after week4, 1w
+    Design system contrib  :ongoing, after week7, 4w
 ```
 
 ### Pathway 2: Developer to Design-Aware
 For developers wanting to work better with designs
 
-```
-Day 1: Basic Workshop + Figma basics
-  ↓
-Week 1: Component library creation
-  ↓
-Week 2: Intermediate Workshop
-  ↓
-Week 3-4: Implement complete feature
-  ↓
-Month 2: Advanced automation techniques
+```mermaid
+gantt
+    title Developer to Design-Aware Journey
+    dateFormat X
+    axisFormat Week %s
+    
+    section Quick Start
+    Basic Workshop + Figma :day1, 0, 1d
+    Component library      :week1, 1, 1w
+    
+    section Skill Building
+    Intermediate Workshop  :week2, 2, 1w
+    Complete feature       :week3, 3, 2w
+    
+    section Advanced
+    Automation techniques  :month2, 5, 4w
 ```
 
 ### Pathway 3: Team Transformation
 For teams adopting design-to-code workflows
 
-```
-Week 1: Team Basic Workshop
-  ↓
-Week 2-3: Pilot project
-  ↓
-Week 4: Intermediate Workshop
-  ↓
-Month 2: Establish design system
-  ↓
-Month 3: Advanced Workshop + CI/CD
-  ↓
-Ongoing: Scale and optimize
+```mermaid
+gantt
+    title Team Transformation Journey
+    dateFormat X
+    axisFormat Week %s
+    
+    section Team Training
+    Team Basic Workshop    :week1, 0, 1w
+    Pilot project         :week2, after week1, 2w
+    
+    section System Building
+    Intermediate Workshop  :week4, after week2, 1w
+    Design system         :month2, 5, 4w
+    
+    section Scale
+    Advanced Workshop     :month3, 9, 1w
+    Scale and optimize    :ongoing, after month3, 8w
 ```
 
 ## Basic Workshop Structure
@@ -115,6 +152,45 @@ Ongoing: Scale and optimize
 - **Quick Survey**: Assess participant experience levels
 
 #### Module Breakdown
+
+```mermaid
+graph TD
+    A[Workshop Start] --> B[Introduction<br/>10 min]
+    B --> C[Module 1: Design Fundamentals<br/>20 min]
+    C --> D[Module 2: AI-Powered Generation<br/>25 min]
+    D --> E[Module 3: Design System Integration<br/>25 min]
+    E --> F[Wrap-Up<br/>10 min]
+    
+    subgraph "Learning Objectives"
+        B1[Understanding & Demo]
+        C1[Figma Navigation<br/>Component Creation]
+        D1[Copilot Setup<br/>Code Generation]
+        E1[Design Tokens<br/>Component Library]
+        F1[Review & Next Steps]
+    end
+    
+    subgraph "Deliverables"
+        C2[Figma Component<br/>with Variants]
+        D2[Working React<br/>Component]
+        E2[Basic Design<br/>System]
+    end
+    
+    B -.-> B1
+    C -.-> C1
+    D -.-> D1
+    E -.-> E1
+    F -.-> F1
+    
+    C --> C2
+    D --> D2
+    E --> E2
+    
+    style A fill:#e8f5e8
+    style F fill:#e8f5e8
+    style C2 fill:#fff3e0
+    style D2 fill:#fff3e0
+    style E2 fill:#fff3e0
+```
 
 ##### Introduction (10 minutes)
 **Objectives**:
@@ -582,3 +658,9 @@ const autoFix = async (issues) => {
 ## 🔜 Next Steps
 
 Ready to join a workshop or facilitate one? Check out the [Workshop Guides: Hands-on Practice](../10-workshops/README.md) for detailed exercise instructions and materials.
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

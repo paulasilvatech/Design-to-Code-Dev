@@ -7,7 +7,7 @@ Welcome to the **Design to Code** Workshop! This hands-on workshop guides you th
 ## Design-to-Code Workflow - AI-Powered Implementation
 
 <div align="center">
-  <img src="docs/images/design-to-code-process-diagram.svg" alt="Design-to-Code Process Diagram" width="700">
+  <img src="images/design-to-code-process-diagram.svg" alt="Design-to-Code Process Diagram" width="700">
 </div>
 
 ## 🌐 Official Workshop Website: [design-to-code.dev](https://design-to-code.dev)
@@ -45,7 +45,7 @@ Advanced design-to-code workflows enable progression through four maturity stage
 4. **Intelligent**: Self-optimizing components with performance and accessibility enhancements
 
 <div align="center">
-  <img src="docs/images/ai-design-to-code-architecture.svg" alt="AI Design-to-Code Architecture" width="700">
+  <img src="images/ai-design-to-code-architecture.svg" alt="AI Design-to-Code Architecture" width="700">
 </div>
 
 ## 📋 Workshop Structure
@@ -146,13 +146,13 @@ The workshop is organized into progressive modules, allowing you to choose the d
    ```
 
 2. **Quick Start (30 minutes)**
-   - Follow our [Quick Start Guide](QUICK_START.md) for immediate hands-on experience
+   - Follow our [Quick Start Guide](docs/QUICK_START.md) for immediate hands-on experience
    - Complete setup verification and first component generation
 
 3. **Follow the Workshop Structure**
-   - Start with [Introduction to Design-to-Code Technologies](intro-design-to-code.md)
+   - Start with [Introduction to Design-to-Code Technologies](docs/intro-design-to-code.md)
    - Progress through modules based on your experience level
-   - Use the [Advanced Troubleshooting Guide](advanced-troubleshooting-guide.md) if needed
+   - Use the [Advanced Troubleshooting Guide](docs/advanced-troubleshooting-guide.md) if needed
 
 ## 🌟 Key Features
 

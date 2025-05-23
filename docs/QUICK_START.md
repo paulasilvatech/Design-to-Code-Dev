@@ -2,6 +2,10 @@
 
 Get up and running with the Design-to-Code Enterprise Playbook in under 30 minutes!
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Workshop Status](https://img.shields.io/badge/workshop-ready-green.svg)](#)
+[![AI Powered](https://img.shields.io/badge/AI-powered-purple.svg)](#)
+
 ## 📋 Prerequisites Checklist
 
 Before you begin, make sure you have:
@@ -38,6 +42,36 @@ Follow the [Part 1: Environment Setup & Basics](design-to-code-workshop-part-01.
 
 Based on your experience and available time:
 
+```mermaid
+graph TD
+    A[Start Here] --> B{Experience Level?}
+    
+    B -->|New to Design-to-Code| C[🟢 Beginner Path<br/>90 minutes total]
+    B -->|Some Experience| D[🟡 Intermediate Path<br/>2-3 hours total]
+    B -->|Advanced/Enterprise| E[🔴 Expert Path<br/>6+ hours total]
+    
+    C --> C1[Part 1: Environment Setup<br/>30 min]
+    C1 --> C2[Part 2: Figma Analysis<br/>30 min]
+    C2 --> C3[Part 3: AI Code Generation<br/>30 min]
+    C3 --> F[Start Building Projects]
+    
+    D --> D1[Workshop Structure Guide<br/>15 min]
+    D1 --> D2[Part 4: Design System Implementation<br/>60 min]
+    D2 --> D3[Part 5: Advanced Component Patterns<br/>45 min]
+    D3 --> D4[Part 6: Responsive Design<br/>60 min]
+    D4 --> G[Create Component Library]
+    
+    E --> E1[Complete Parts 1-6<br/>3 hours foundation]
+    E1 --> E2[Part 7: Testing & QA<br/>90 min]
+    E2 --> E3[Part 8: Production Deployment<br/>90 min]
+    E3 --> E4[Advanced Troubleshooting Guide<br/>60 min]
+    E4 --> H[Enterprise Implementation]
+    
+    style C fill:#e8f5e8
+    style D fill:#fff7e6
+    style E fill:#ffe6e6
+```
+
 ### 🟢 New to Design-to-Code (90 minutes total)
 1. Start with [Part 1: Environment Setup](design-to-code-workshop-part-01.md) (30 min)
 2. Continue to [Part 2: Figma Analysis](design-to-code-workshop-part-02.md) (30 min)
@@ -57,18 +91,18 @@ Based on your experience and available time:
 
 ## 🛠️ Essential Tools Setup
 
-### GitHub Copilot
+### 🤖 GitHub Copilot
 ```bash
 # Install VS Code extension
 code --install-extension GitHub.copilot
 ```
 
-### Figma Dev Mode
+### 🎨 Figma Dev Mode
 1. Open any Figma file
 2. Click "Dev Mode" in top-right
 3. Explore component inspection features
 
-### React Development Environment
+### ⚛️ React Development Environment
 ```bash
 # Create new React app
 npx create-react-app my-design-system
@@ -86,7 +120,7 @@ To practice with real designs, use these Figma community files:
 
 ## 🚨 Common First-Time Issues
 
-### GitHub Copilot Not Working
+### 🤖 GitHub Copilot Not Working
 ```bash
 # Check Copilot status
 code --list-extensions | grep copilot
@@ -95,12 +129,12 @@ code --list-extensions | grep copilot
 gh auth login
 ```
 
-### Figma Access Issues
+### 🎨 Figma Access Issues
 - Ensure you're logged into Figma
 - Check file permissions (view or edit access needed)
 - Try opening files in incognito mode
 
-### Node.js Version Issues
+### 📦 Node.js Version Issues
 ```bash
 # Check Node version
 node --version
@@ -111,7 +145,7 @@ node --version
 
 ## 📚 Key Concepts to Understand
 
-### Design Tokens
+### 🎯 Design Tokens
 Values that represent design decisions (colors, spacing, typography):
 ```css
 :root {
@@ -121,7 +155,7 @@ Values that represent design decisions (colors, spacing, typography):
 }
 ```
 
-### Component-Based Architecture
+### 🧩 Component-Based Architecture
 Building UIs from reusable, isolated components:
 ```jsx
 // Atomic component
@@ -132,11 +166,14 @@ const Button = ({ variant, children }) => (
 );
 ```
 
-### Figma Auto Layout → CSS Flexbox
-Figma's Auto Layout translates directly to CSS Flexbox properties:
-- **Direction** → `flex-direction`
-- **Spacing** → `gap`
-- **Alignment** → `align-items`, `justify-content`
+### 📐 Figma Auto Layout → CSS Flexbox
+
+| Figma Property | CSS Property | Description |
+|---|---|---|
+| **Direction** | `flex-direction` | Controls layout direction (row/column) |
+| **Spacing** | `gap` | Sets space between items |
+| **Padding** | `padding` | Internal spacing |
+| **Alignment** | `align-items`, `justify-content` | Controls item positioning |
 
 ## 🎯 Success Metrics
 
@@ -150,18 +187,13 @@ After completing the quick start, you should be able to:
 
 ## 🆘 Need Help?
 
-### Immediate Help
-- Check the [Advanced Troubleshooting Guide](advanced-troubleshooting-guide.md)
-- Search existing [GitHub Issues](https://github.com/paulasilvatech/Design-to-Code-Dev/issues)
-
-### Community Support
-- [Open a new issue](https://github.com/paulasilvatech/Design-to-Code-Dev/issues/new) for bugs or questions
-- Join discussions in our [Discussions tab](https://github.com/paulasilvatech/Design-to-Code-Dev/discussions)
-
-### Enterprise Support
-For enterprise implementations and custom training:
-- Contact [@paulasilvatech](https://github.com/paulasilvatech)
-- Request enterprise workshop sessions
+| Support Type | Resource | Best For |
+|---|---|---|
+| 🚨 **Immediate Help** | [Troubleshooting Guide](advanced-troubleshooting-guide.md) | Quick fixes and common issues |
+| 🔍 **Search Issues** | [GitHub Issues](https://github.com/paulasilvatech/Design-to-Code-Dev/issues) | Known problems and solutions |
+| 💬 **Community** | [GitHub Discussions](https://github.com/paulasilvatech/Design-to-Code-Dev/discussions) | Questions and collaboration |
+| 🏢 **Enterprise** | [@paulasilvatech](https://github.com/paulasilvatech) | Custom training and implementation |
+| 🆕 **Report Bug** | [New Issue](https://github.com/paulasilvatech/Design-to-Code-Dev/issues/new) | Bug reports and feature requests |
 
 ## 🎉 What's Next?
 
@@ -177,4 +209,10 @@ Once you've completed the quick start:
 <div align="center">
   <strong>Ready to revolutionize your design-to-code workflow?</strong><br>
   <a href="intro-design-to-code.md">Start with the Full Introduction →</a>
-</div> 
+</div>
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) → 

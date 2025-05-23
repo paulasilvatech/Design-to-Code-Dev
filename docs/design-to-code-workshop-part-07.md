@@ -3627,3 +3627,9 @@ In the final part, you'll:
 - Complete hands-on challenge labs
 - Build an end-to-end project
 - Receive your workshop certification
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

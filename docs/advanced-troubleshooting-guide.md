@@ -2,6 +2,10 @@
 
 This comprehensive guide addresses complex issues and edge cases in the design-to-code workflow, providing advanced solutions and debugging strategies.
 
+[![Expert Level](https://img.shields.io/badge/level-expert-red.svg)](#)
+[![Troubleshooting](https://img.shields.io/badge/type-troubleshooting-orange.svg)](#)
+[![Comprehensive](https://img.shields.io/badge/coverage-comprehensive-purple.svg)](#)
+
 ## Table of Contents
 - [AI Tool Troubleshooting](#ai-tool-troubleshooting)
 - [Complex Integration Issues](#complex-integration-issues)
@@ -12,20 +16,41 @@ This comprehensive guide addresses complex issues and edge cases in the design-t
 - [Emergency Recovery Procedures](#emergency-recovery-procedures)
 - [Preventive Measures](#preventive-measures)
 
-## AI Tool Troubleshooting
+## 🤖 AI Tool Troubleshooting
 
-### GitHub Copilot Advanced Issues
+### 🤖 GitHub Copilot Advanced Issues
 
-#### Issue: Copilot Generates Incorrect Patterns
-**Symptoms**: 
-- Generated code doesn't match your design system
-- Inconsistent naming conventions
-- Wrong framework patterns
+#### 🚨 Issue: Copilot Generates Incorrect Patterns
 
-**Root Causes**:
-1. Insufficient context in workspace
-2. Conflicting code patterns in project
-3. Outdated Copilot model cache
+```mermaid
+flowchart TD
+    A[Copilot Generates Wrong Code] --> B{Check Context}
+    
+    B -->|Insufficient Context| C[Add Context Files<br/>📁 .github/copilot-context.js]
+    B -->|Conflicting Patterns| D[Clean Up Codebase<br/>🔄 Remove conflicting code]
+    B -->|Outdated Cache| E[Clear Copilot Cache<br/>🗄️ Reset model cache]
+    
+    C --> F[Configure Workspace Settings]
+    D --> G[Establish Coding Standards]
+    E --> H[Restart VS Code]
+    
+    F --> I{Problem Resolved?}
+    G --> I
+    H --> I
+    
+    I -->|Yes| J[✅ Success]
+    I -->|No| K[Advanced Diagnostics]
+    
+    K --> L[Check Extension Logs]
+    K --> M[Monitor Performance]
+    K --> N[Contact Support]
+```
+
+| **Symptoms** | **Root Causes** |
+|---|---|
+| ❌ Generated code doesn't match design system | 📁 Insufficient context in workspace |
+| ❌ Inconsistent naming conventions | 🔄 Conflicting code patterns in project |
+| ❌ Wrong framework patterns | 🗄️ Outdated Copilot model cache |
 
 **Advanced Solutions**:
 
@@ -1132,6 +1157,38 @@ xcrun altool --notarize-app \
 ### Catastrophic Failure Recovery
 
 #### Scenario: Complete Environment Corruption
+
+```mermaid
+graph TD
+    A[System Failure Detected] --> B{Data Backup Available?}
+    
+    B -->|Yes| C[Load Latest Backup]
+    B -->|No| D[Emergency Reconstruction]
+    
+    C --> E[Validate Backup Integrity]
+    D --> F[Clean Environment Setup]
+    
+    E --> G{Backup Valid?}
+    G -->|Yes| H[Restore From Backup]
+    G -->|No| F
+    
+    F --> I[Reinstall Dependencies]
+    H --> J[Verify Core Functions]
+    I --> J
+    
+    J --> K{System Operational?}
+    K -->|Yes| L[✅ Recovery Complete]
+    K -->|No| M[Advanced Recovery]
+    
+    M --> N[Contact Expert Support]
+    M --> O[Manual Reconstruction]
+    M --> P[Alternative Solutions]
+    
+    style A fill:#ffebee
+    style L fill:#e8f5e8
+    style M fill:#fff3e0
+```
+
 **Steps**:
 
 1. **Create Clean Environment**:
@@ -1299,3 +1356,9 @@ jobs:
 ## 🔜 Next Steps
 
 For hands-on practice with these troubleshooting techniques, check out the [Workshop Structure Guide](../workshop-structure/README.md) which includes debugging exercises and real-world scenarios.
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

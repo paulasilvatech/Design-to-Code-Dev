@@ -1,5 +1,9 @@
-# Complete Design-to-Code Workshop Guide - Part 1
+# 🚀 Complete Design-to-Code Workshop Guide - Part 1
 ## From Figma Design to Production Code with AI Assistance
+
+[![Part 1](https://img.shields.io/badge/part-1-blue.svg)](#)
+[![Beginner Friendly](https://img.shields.io/badge/level-beginner-green.svg)](#)
+[![90 Minutes](https://img.shields.io/badge/duration-90%20min-yellow.svg)](#)
 
 ### Table of Contents - Complete Workshop Series
 
@@ -33,9 +37,9 @@
 
 ---
 
-## Pre-Workshop Preparation
+## 🛠️ Pre-Workshop Preparation
 
-### What You'll Learn
+### 🎯 What You'll Learn
 By completing these workshops, you will:
 - **Master the design-to-code workflow** from Figma to production-ready components
 - **Use AI-powered tools** like GitHub Copilot and Azure AI Foundry effectively
@@ -481,16 +485,57 @@ EOF
 **Time Required**: 10 minutes
 
 #### Pipeline Overview
-```
-┌─────────────┐    ┌──────────────┐    ┌────────────┐    ┌──────────────┐
-│   Design    │    │   Analysis   │    │ Generation │    │ Integration  │
-│   (Figma)   │───▶│  (AI Tools)  │───▶│ (Copilot)  │───▶│ (React/Vue)  │
-└─────────────┘    └──────────────┘    └────────────┘    └──────────────┘
-      │                    │                   │                  │
-      ▼                    ▼                   ▼                  ▼
-  Components          Properties           Code Output      Production App
-  Styles              Structure            Components       Design System
-  Tokens              Behavior             Styles           Documentation
+
+```mermaid
+graph LR
+    subgraph "Design Phase"
+        A[Figma Design]
+        A1[Components]
+        A2[Styles]
+        A3[Tokens]
+        A --> A1
+        A --> A2
+        A --> A3
+    end
+    
+    subgraph "Analysis Phase"
+        B[AI Analysis]
+        B1[Properties]
+        B2[Structure]
+        B3[Behavior]
+        B --> B1
+        B --> B2
+        B --> B3
+    end
+    
+    subgraph "Generation Phase"
+        C[Code Generation]
+        C1[Components]
+        C2[Styles]
+        C3[Tests]
+        C --> C1
+        C --> C2
+        C --> C3
+    end
+    
+    subgraph "Integration Phase"
+        D[Production App]
+        D1[Design System]
+        D2[Documentation]
+        D3[Deployment]
+        D --> D1
+        D --> D2
+        D --> D3
+    end
+    
+    A --> B
+    B --> C
+    C --> D
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
 ```
 
 #### Key Stages Explained
@@ -788,3 +833,9 @@ This document has covered:
 - Troubleshooting Guide
 
 The workshop continues with hands-on coding exercises where you'll use GitHub Copilot to generate React components from your Figma designs.
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →

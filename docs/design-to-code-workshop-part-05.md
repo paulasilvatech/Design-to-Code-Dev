@@ -1004,3 +1004,9 @@ In the next part, you'll implement the Azure AI Design Analyzer that uses these 
 - Build the complete AI-powered design-to-code pipeline
 
 **Next**: [Part 6 - Azure AI Design Analysis Implementation →]
+
+---
+
+## 🔙 Navigation
+
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
