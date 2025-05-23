@@ -25,6 +25,31 @@
 - Familiarity with CSS-in-JS or CSS Modules
 - GitHub Copilot configured and working
 
+### 📚 Workshop Resources Available
+
+This module builds upon the comprehensive resources provided:
+
+1. **Practice Exercises** (`resources/exercises/workshop-exercises.md`):
+   - Module 3 specific exercises for Figma analysis
+   - Component structure analysis tasks
+   - Design token extraction challenges
+   - Variant mapping exercises
+
+2. **Solution References** (`resources/solutions/`):
+   - Example solutions for each exercise
+   - Best practices and patterns
+   - Common pitfalls to avoid
+
+3. **Pre-built Templates**:
+   - Use the Figma templates as starting points
+   - Modify and extend for your needs
+   - Learn from professional component structures
+
+4. **Automation Tools**:
+   - Component generation scripts ready to use
+   - Token extraction utilities
+   - Workflow templates for CI/CD
+
 ---
 
 ## 🎨 Module 1: Advanced Figma Features and Auto Layout (30 minutes)

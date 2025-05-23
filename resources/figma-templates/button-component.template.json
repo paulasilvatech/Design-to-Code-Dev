@@ -1,0 +1,108 @@
+{
+  "name": "Button Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Comprehensive button component with all states and variants",
+  "variants": {
+    "Variant": {
+      "values": ["Primary", "Secondary", "Tertiary", "Danger", "Ghost"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large"]
+    },
+    "State": {
+      "values": ["Default", "Hover", "Pressed", "Disabled", "Loading"]
+    },
+    "Icon": {
+      "values": ["None", "Leading", "Trailing", "Only"]
+    }
+  },
+  "properties": {
+    "paddingX": {
+      "small": 12,
+      "medium": 16,
+      "large": 24
+    },
+    "paddingY": {
+      "small": 6,
+      "medium": 10,
+      "large": 14
+    },
+    "fontSize": {
+      "small": 14,
+      "medium": 16,
+      "large": 18
+    },
+    "borderRadius": 8,
+    "minWidth": {
+      "small": 80,
+      "medium": 120,
+      "large": 160
+    }
+  },
+  "colors": {
+    "primary": {
+      "default": "#2196F3",
+      "hover": "#1976D2",
+      "pressed": "#1565C0",
+      "disabled": "rgba(33, 150, 243, 0.4)"
+    },
+    "secondary": {
+      "default": "#F5F5F5",
+      "hover": "#E0E0E0",
+      "pressed": "#D5D5D5",
+      "disabled": "rgba(245, 245, 245, 0.6)"
+    },
+    "tertiary": {
+      "default": "transparent",
+      "hover": "rgba(33, 150, 243, 0.08)",
+      "pressed": "rgba(33, 150, 243, 0.12)",
+      "disabled": "transparent"
+    },
+    "danger": {
+      "default": "#F44336",
+      "hover": "#D32F2F",
+      "pressed": "#C62828",
+      "disabled": "rgba(244, 67, 54, 0.4)"
+    },
+    "ghost": {
+      "default": "transparent",
+      "hover": "rgba(0, 0, 0, 0.04)",
+      "pressed": "rgba(0, 0, 0, 0.08)",
+      "disabled": "transparent"
+    }
+  },
+  "typography": {
+    "fontFamily": "Inter",
+    "fontWeight": {
+      "default": 500,
+      "icon": 400
+    },
+    "lineHeight": 1.5,
+    "letterSpacing": 0.02
+  },
+  "effects": {
+    "elevation": {
+      "primary": {
+        "default": "0 2px 4px rgba(0, 0, 0, 0.1)",
+        "hover": "0 4px 8px rgba(0, 0, 0, 0.15)",
+        "pressed": "0 1px 2px rgba(0, 0, 0, 0.08)"
+      },
+      "secondary": {
+        "default": "none",
+        "hover": "0 2px 4px rgba(0, 0, 0, 0.08)",
+        "pressed": "none"
+      }
+    },
+    "transition": "all 0.2s ease-in-out"
+  },
+  "accessibility": {
+    "ariaLabel": "Button",
+    "role": "button",
+    "minTouchTarget": 44,
+    "focusRing": {
+      "color": "#2196F3",
+      "width": 2,
+      "offset": 2
+    }
+  }
+} 

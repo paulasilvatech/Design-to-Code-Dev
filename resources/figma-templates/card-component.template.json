@@ -1,0 +1,192 @@
+{
+  "name": "Card Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Versatile card component for content display",
+  "variants": {
+    "Type": {
+      "values": ["Basic", "Media", "Interactive", "Product", "Profile", "Stats"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large", "Full"]
+    },
+    "Elevation": {
+      "values": ["Flat", "Raised", "Floating", "Pressed"]
+    },
+    "State": {
+      "values": ["Default", "Hover", "Active", "Disabled"]
+    },
+    "Orientation": {
+      "values": ["Vertical", "Horizontal"]
+    }
+  },
+  "structure": {
+    "layers": [
+      {
+        "name": "Container",
+        "type": "FRAME",
+        "autoLayout": true
+      },
+      {
+        "name": "Media",
+        "type": "FRAME",
+        "optional": true,
+        "aspectRatio": "16:9"
+      },
+      {
+        "name": "Content",
+        "type": "FRAME",
+        "autoLayout": true,
+        "children": [
+          {
+            "name": "Header",
+            "type": "FRAME",
+            "autoLayout": true
+          },
+          {
+            "name": "Body",
+            "type": "FRAME",
+            "autoLayout": true
+          },
+          {
+            "name": "Actions",
+            "type": "FRAME",
+            "autoLayout": true,
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "width": {
+      "small": 280,
+      "medium": 360,
+      "large": 480,
+      "full": "100%"
+    },
+    "minHeight": {
+      "small": 200,
+      "medium": 280,
+      "large": 360
+    },
+    "padding": {
+      "small": 16,
+      "medium": 20,
+      "large": 24
+    },
+    "borderRadius": 12,
+    "gap": {
+      "content": 16,
+      "header": 8,
+      "actions": 12
+    }
+  },
+  "colors": {
+    "background": {
+      "default": "#FFFFFF",
+      "hover": "#FAFAFA",
+      "disabled": "#F5F5F5"
+    },
+    "border": {
+      "default": "transparent",
+      "hover": "#E0E0E0",
+      "focus": "#2196F3"
+    },
+    "text": {
+      "title": "#212121",
+      "subtitle": "#616161",
+      "body": "#424242",
+      "caption": "#757575",
+      "disabled": "#BDBDBD"
+    },
+    "overlay": {
+      "gradient": "linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%)"
+    }
+  },
+  "typography": {
+    "title": {
+      "fontSize": {
+        "small": 18,
+        "medium": 20,
+        "large": 24
+      },
+      "fontWeight": 600,
+      "lineHeight": 1.3
+    },
+    "subtitle": {
+      "fontSize": {
+        "small": 14,
+        "medium": 16,
+        "large": 18
+      },
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    },
+    "body": {
+      "fontSize": {
+        "small": 14,
+        "medium": 15,
+        "large": 16
+      },
+      "fontWeight": 400,
+      "lineHeight": 1.6
+    },
+    "caption": {
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    }
+  },
+  "effects": {
+    "shadow": {
+      "flat": "none",
+      "raised": "0 2px 4px rgba(0, 0, 0, 0.08)",
+      "floating": "0 8px 16px rgba(0, 0, 0, 0.12)",
+      "pressed": "0 1px 2px rgba(0, 0, 0, 0.06)"
+    },
+    "hover": {
+      "transform": "translateY(-2px)",
+      "transition": "all 0.3s ease-in-out"
+    }
+  },
+  "media": {
+    "aspectRatios": {
+      "square": "1:1",
+      "landscape": "16:9",
+      "portrait": "4:5",
+      "wide": "21:9"
+    },
+    "objectFit": "cover",
+    "borderRadius": {
+      "top": 12,
+      "internal": 8
+    }
+  },
+  "interactions": {
+    "clickable": {
+      "cursor": "pointer",
+      "outline": "none",
+      "tabIndex": 0
+    },
+    "draggable": {
+      "cursor": "grab",
+      "userSelect": "none"
+    }
+  },
+  "badges": {
+    "position": {
+      "x": 16,
+      "y": 16
+    },
+    "types": ["New", "Sale", "Featured", "Limited"]
+  },
+  "accessibility": {
+    "role": "article",
+    "ariaLabel": "Card",
+    "focusRing": {
+      "color": "#2196F3",
+      "width": 2,
+      "offset": 4
+    }
+  }
+} 

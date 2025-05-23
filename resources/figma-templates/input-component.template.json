@@ -1,0 +1,140 @@
+{
+  "name": "Input Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Comprehensive input field component with all states and variants",
+  "variants": {
+    "Type": {
+      "values": ["Text", "Email", "Password", "Number", "Search", "Textarea"]
+    },
+    "State": {
+      "values": ["Default", "Hover", "Focus", "Filled", "Disabled", "Error", "Success"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large"]
+    },
+    "Label": {
+      "values": ["None", "Top", "Floating"]
+    },
+    "Helper": {
+      "values": ["None", "Helper Text", "Error Text", "Success Text"]
+    },
+    "Icon": {
+      "values": ["None", "Leading", "Trailing", "Both"]
+    }
+  },
+  "properties": {
+    "height": {
+      "small": 36,
+      "medium": 44,
+      "large": 52,
+      "textarea": 120
+    },
+    "paddingX": 16,
+    "paddingY": {
+      "small": 8,
+      "medium": 10,
+      "large": 12
+    },
+    "fontSize": {
+      "small": 14,
+      "medium": 16,
+      "large": 18
+    },
+    "borderRadius": 8,
+    "borderWidth": 2,
+    "minWidth": 200
+  },
+  "colors": {
+    "border": {
+      "default": "#E0E0E0",
+      "hover": "#BDBDBD",
+      "focus": "#2196F3",
+      "error": "#F44336",
+      "success": "#4CAF50",
+      "disabled": "#F5F5F5"
+    },
+    "background": {
+      "default": "#FFFFFF",
+      "hover": "#FAFAFA",
+      "focus": "#FFFFFF",
+      "disabled": "#F5F5F5",
+      "filled": "#FFFFFF"
+    },
+    "text": {
+      "value": "#212121",
+      "placeholder": "#9E9E9E",
+      "label": "#616161",
+      "helper": "#757575",
+      "error": "#F44336",
+      "success": "#4CAF50",
+      "disabled": "#BDBDBD"
+    },
+    "icon": {
+      "default": "#757575",
+      "active": "#212121",
+      "disabled": "#BDBDBD"
+    }
+  },
+  "typography": {
+    "fontFamily": "Inter",
+    "input": {
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    "label": {
+      "fontSize": {
+        "default": 14,
+        "floating": 12
+      },
+      "fontWeight": 500,
+      "lineHeight": 1.2
+    },
+    "helper": {
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.4
+    }
+  },
+  "spacing": {
+    "labelGap": 8,
+    "helperGap": 4,
+    "iconGap": 12
+  },
+  "effects": {
+    "focusRing": {
+      "color": "rgba(33, 150, 243, 0.2)",
+      "width": 4,
+      "offset": 0
+    },
+    "transition": {
+      "border": "border-color 0.2s ease-in-out",
+      "background": "background-color 0.2s ease-in-out",
+      "label": "all 0.2s ease-in-out"
+    }
+  },
+  "animations": {
+    "labelFloat": {
+      "transform": "translateY(-20px) scale(0.85)",
+      "transformOrigin": "left top"
+    }
+  },
+  "accessibility": {
+    "ariaLabel": "Input field",
+    "role": "textbox",
+    "ariaRequired": true,
+    "ariaInvalid": false,
+    "ariaDescribedBy": "helper-text"
+  },
+  "validation": {
+    "patterns": {
+      "email": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+      "number": "^[0-9]*$"
+    },
+    "messages": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minLength": "Minimum {min} characters required",
+      "maxLength": "Maximum {max} characters allowed"
+    }
+  }
+} 

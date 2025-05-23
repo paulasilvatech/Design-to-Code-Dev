@@ -1,0 +1,282 @@
+{
+  "name": "Table Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Advanced data table/grid component with sorting, filtering, and pagination",
+  "variants": {
+    "Type": {
+      "values": ["Simple", "Advanced", "Responsive", "Virtualized"]
+    },
+    "Density": {
+      "values": ["Compact", "Normal", "Comfortable"]
+    },
+    "Theme": {
+      "values": ["Light", "Dark", "Striped"]
+    },
+    "Features": {
+      "values": ["Basic", "Sortable", "Filterable", "Selectable", "Full"]
+    }
+  },
+  "structure": {
+    "container": {
+      "type": "FRAME",
+      "autoLayout": true,
+      "direction": "VERTICAL",
+      "children": [
+        {
+          "name": "Header",
+          "type": "FRAME",
+          "optional": true,
+          "includes": ["title", "search", "actions"]
+        },
+        {
+          "name": "Table Container",
+          "type": "FRAME",
+          "scrollable": true,
+          "children": [
+            {
+              "name": "Table Head",
+              "type": "FRAME",
+              "sticky": true
+            },
+            {
+              "name": "Table Body",
+              "type": "FRAME"
+            }
+          ]
+        },
+        {
+          "name": "Footer",
+          "type": "FRAME",
+          "optional": true,
+          "includes": ["pagination", "info", "controls"]
+        }
+      ]
+    }
+  },
+  "properties": {
+    "width": "100%",
+    "maxWidth": 1400,
+    "minWidth": 600,
+    "borderRadius": 8,
+    "border": "1px solid #E0E0E0",
+    "overflow": "hidden"
+  },
+  "header": {
+    "height": {
+      "compact": 40,
+      "normal": 48,
+      "comfortable": 56
+    },
+    "padding": 16,
+    "background": "#FAFAFA",
+    "borderBottom": "2px solid #E0E0E0",
+    "sticky": true,
+    "zIndex": 10
+  },
+  "columns": {
+    "minWidth": 80,
+    "maxWidth": 400,
+    "padding": {
+      "compact": 8,
+      "normal": 12,
+      "comfortable": 16
+    },
+    "alignment": {
+      "text": "left",
+      "number": "right",
+      "date": "left",
+      "boolean": "center",
+      "actions": "center"
+    },
+    "resizable": true,
+    "draggable": true
+  },
+  "rows": {
+    "height": {
+      "compact": 36,
+      "normal": 48,
+      "comfortable": 64
+    },
+    "hover": {
+      "background": "#F5F5F5",
+      "transition": "background-color 0.2s ease"
+    },
+    "selected": {
+      "background": "#E3F2FD",
+      "border": "1px solid #2196F3"
+    },
+    "striped": {
+      "even": "#FAFAFA",
+      "odd": "#FFFFFF"
+    }
+  },
+  "cells": {
+    "padding": {
+      "compact": "4px 8px",
+      "normal": "8px 12px",
+      "comfortable": "12px 16px"
+    },
+    "typography": {
+      "fontSize": {
+        "compact": 13,
+        "normal": 14,
+        "comfortable": 16
+      },
+      "lineHeight": 1.5
+    },
+    "truncate": true,
+    "tooltip": true
+  },
+  "sorting": {
+    "indicators": {
+      "unsorted": "↕️",
+      "ascending": "↑",
+      "descending": "↓"
+    },
+    "clickable": true,
+    "multiColumn": true,
+    "clearable": true
+  },
+  "filtering": {
+    "position": "header",
+    "types": {
+      "text": "search",
+      "number": "range",
+      "date": "datepicker",
+      "select": "dropdown",
+      "boolean": "checkbox"
+    },
+    "clearButton": true,
+    "operators": ["equals", "contains", "starts_with", "ends_with", "greater_than", "less_than"]
+  },
+  "selection": {
+    "checkbox": {
+      "size": 18,
+      "position": "first",
+      "sticky": true
+    },
+    "modes": ["single", "multiple", "range"],
+    "selectAll": true,
+    "indeterminate": true
+  },
+  "pagination": {
+    "position": "bottom",
+    "height": 56,
+    "options": {
+      "pageSizes": [10, 25, 50, 100],
+      "showTotal": true,
+      "showRange": true,
+      "jumpToPage": true
+    },
+    "buttons": {
+      "first": "⏮",
+      "previous": "◀",
+      "next": "▶",
+      "last": "⏭"
+    }
+  },
+  "scrolling": {
+    "horizontal": {
+      "enabled": true,
+      "sticky": ["first", "last", "actions"]
+    },
+    "vertical": {
+      "enabled": true,
+      "virtual": true,
+      "overscan": 3
+    },
+    "shadows": {
+      "horizontal": "0 0 10px rgba(0,0,0,0.1)",
+      "vertical": "0 0 10px rgba(0,0,0,0.1)"
+    }
+  },
+  "loading": {
+    "skeleton": {
+      "rows": 5,
+      "animation": "pulse",
+      "duration": 1500
+    },
+    "spinner": {
+      "size": 40,
+      "position": "center"
+    },
+    "overlay": {
+      "background": "rgba(255,255,255,0.8)",
+      "backdropFilter": "blur(2px)"
+    }
+  },
+  "empty": {
+    "height": 200,
+    "icon": true,
+    "message": "No data available",
+    "action": {
+      "text": "Add new item",
+      "variant": "primary"
+    }
+  },
+  "responsive": {
+    "breakpoint": 768,
+    "mobile": {
+      "layout": "cards",
+      "swipeable": true,
+      "stackedLabels": true
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "headerBg": "#FAFAFA",
+      "border": "#E0E0E0",
+      "text": {
+        "primary": "#212121",
+        "secondary": "#616161"
+      }
+    },
+    "dark": {
+      "background": "#1E1E1E",
+      "headerBg": "#2D2D2D",
+      "border": "#424242",
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#BDBDBD"
+      }
+    }
+  },
+  "actions": {
+    "row": {
+      "position": "end",
+      "sticky": true,
+      "items": ["view", "edit", "delete"],
+      "menu": {
+        "trigger": "dots",
+        "position": "bottom-end"
+      }
+    },
+    "bulk": {
+      "position": "header",
+      "items": ["export", "delete", "archive"],
+      "showOnSelection": true
+    }
+  },
+  "accessibility": {
+    "role": "table",
+    "ariaLabel": "Data table",
+    "headerRole": "rowheader",
+    "sortable": {
+      "ariaLabel": "Sort by {column}",
+      "announceChange": true
+    },
+    "navigation": {
+      "keyboard": true,
+      "focusStyle": "2px solid #2196F3"
+    }
+  },
+  "export": {
+    "formats": ["CSV", "Excel", "JSON", "PDF"],
+    "options": {
+      "includeHeaders": true,
+      "selectedOnly": false,
+      "formatting": true
+    }
+  }
+} 

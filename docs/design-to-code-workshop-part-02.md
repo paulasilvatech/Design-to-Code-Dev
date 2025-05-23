@@ -32,6 +32,31 @@
    - Understands CSS-in-JS libraries
    - Suggests accessibility best practices
 
+#### Using Workshop Resources
+
+The workshop provides pre-built templates and examples to guide your component creation:
+
+1. **Figma Component Templates** (`resources/figma-templates/`):
+   - **Button**: Complete with 5 variants, 3 sizes, and all states
+   - **Input**: 6 types with validation states and helper text
+   - **Card**: 6 types including media, interactive, and product cards
+   - **Navigation**: Responsive with mega menu support
+   - **Modal**: Alert, confirm, form variants with animations
+   - **Table**: Advanced data grid with sorting and filtering
+   - **Form**: Complete form system with validation
+   - **Tabs**: Multiple styles with icons and badges
+
+2. **Example Components** (`resources/figma-examples/example-components.json`):
+   - Real Figma component structures
+   - Design tokens and styling
+   - Component hierarchies
+   - Use these as references for your own designs
+
+3. **AI Prompts** (`resources/prompts/component-generation.md`):
+   - Pre-written prompts for common components
+   - Advanced prompting strategies
+   - Framework-specific templates
+
 #### Effective Prompting Strategies
 
 **DO:**

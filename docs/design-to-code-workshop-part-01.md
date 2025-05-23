@@ -436,7 +436,46 @@ cat > tsconfig.json << EOF
 EOF
 ```
 
-**✅ Checkpoint**: Project structure created with all necessary configuration files
+### 2.6 Using Workshop Resources
+**Time Required**: 5 minutes
+
+The workshop includes comprehensive resources to accelerate your learning:
+
+#### Available Resources:
+
+1. **Environment Configuration**:
+   ```bash
+   # Copy the environment template
+   cp ../resources/env.template .env
+   
+   # Edit with your credentials
+   nano .env
+   ```
+
+2. **Figma Templates**:
+   - Pre-built component templates in `resources/figma-templates/`
+   - Button, Input, Card, Navigation, Modal, Table, Form, and Tabs
+   - Each template includes variants, states, and design tokens
+
+3. **MCP Configuration**:
+   ```bash
+   # Use the pre-configured MCP setup
+   cp ../resources/mcp-config/mcp.config.json .
+   ```
+
+4. **Automation Scripts**:
+   - Component generation: `resources/scripts/generate-component.js`
+   - Design token sync: See workflow templates
+
+5. **Docker Setup** (for advanced users):
+   - Production-ready containers in `resources/docker/`
+   - Includes MCP Server, Redis, Storybook, and Nginx
+
+6. **GitHub Workflows**:
+   - Automated design-to-code pipeline: `resources/workflows/design-to-code.yml`
+   - Design synchronization: `resources/workflows/design-sync-pipeline.yml`
+
+**✅ Checkpoint**: Project structure created with all necessary configuration files and access to workshop resources
 
 ---
 

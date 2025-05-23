@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "servers": {
+    "figma": {
+      "protocol": "http",
+      "host": "localhost",
+      "port": 3000,
+      "auth": {
+        "type": "bearer",
+        "token": "${MCP_AUTH_TOKEN}"
+      },
+      "capabilities": [
+        "read_designs",
+        "extract_components",
+        "analyze_layouts",
+        "generate_code",
+        "detect_changes",
+        "version_control"
+      ],
+      "config": {
+        "maxConcurrentRequests": 5,
+        "requestTimeout": 30000,
+        "retryAttempts": 3,
+        "cacheEnabled": true,
+        "cacheTTL": 3600
+      }
+    }
+  },
+  "prompts": {
+    "component_generation": {
+      "template": "Generate a React component from Figma component {{componentId}} with TypeScript and styled-components",
+      "context": [
+        "design_tokens",
+        "component_props",
+        "responsive_behavior",
+        "accessibility_requirements"
+      ],
+      "options": {
+        "includeTests": true,
+        "includeStorybook": true,
+        "includeDocumentation": true
+      }
+    },
+    "design_analysis": {
+      "template": "Analyze the design structure and suggest optimal component architecture",
+      "context": [
+        "component_hierarchy",
+        "reusability_patterns",
+        "design_system_alignment",
+        "performance_considerations"
+      ]
+    },
+    "accessibility_audit": {
+      "template": "Check accessibility compliance and suggest improvements",
+      "context": [
+        "wcag_guidelines",
+        "aria_attributes",
+        "keyboard_navigation",
+        "screen_reader_support"
+      ]
+    },
+    "responsive_analysis": {
+      "template": "Analyze responsive behavior and generate breakpoint strategies",
+      "context": [
+        "viewport_sizes",
+        "layout_changes",
+        "content_reflow",
+        "touch_targets"
+      ]
+    }
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "autoCreatePR": true,
+      "branchNamingPattern": "design-update/{{componentName}}-{{timestamp}}",
+      "commitMessageTemplate": "feat: update {{componentName}} from Figma design"
+    },
+    "azure": {
+      "enabled": true,
+      "services": [
+        "computer_vision",
+        "form_recognizer",
+        "openai"
+      ]
+    },
+    "slack": {
+      "enabled": false,
+      "webhookUrl": "${SLACK_WEBHOOK_URL}",
+      "notifications": [
+        "component_generated",
+        "design_changed",
+        "build_failed"
+      ]
+    }
+  },
+  "rules": {
+    "naming": {
+      "components": "PascalCase",
+      "files": "PascalCase",
+      "css": "kebab-case",
+      "constants": "UPPER_SNAKE_CASE"
+    },
+    "codeGeneration": {
+      "typescript": true,
+      "strictMode": true,
+      "esLintConfig": "recommended",
+      "prettierConfig": {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    },
+    "quality": {
+      "minTestCoverage": 80,
+      "maxComplexity": 10,
+      "enforceAccessibility": true,
+      "requireDocumentation": true
+    }
+  }
+} 

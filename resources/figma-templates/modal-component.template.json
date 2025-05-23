@@ -1,0 +1,239 @@
+{
+  "name": "Modal Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Flexible modal/dialog component for overlays and popups",
+  "variants": {
+    "Type": {
+      "values": ["Alert", "Confirm", "Form", "Full", "Custom"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large", "Full Screen"]
+    },
+    "State": {
+      "values": ["Closed", "Opening", "Open", "Closing"]
+    },
+    "Theme": {
+      "values": ["Light", "Dark"]
+    }
+  },
+  "structure": {
+    "layers": [
+      {
+        "name": "Overlay",
+        "type": "FRAME",
+        "fill": "rgba(0, 0, 0, 0.5)",
+        "position": "absolute",
+        "constraints": "SCALE"
+      },
+      {
+        "name": "Modal Container",
+        "type": "FRAME",
+        "autoLayout": true,
+        "direction": "VERTICAL",
+        "children": [
+          {
+            "name": "Header",
+            "type": "FRAME",
+            "autoLayout": true,
+            "direction": "HORIZONTAL",
+            "optional": true
+          },
+          {
+            "name": "Content",
+            "type": "FRAME",
+            "autoLayout": true,
+            "direction": "VERTICAL"
+          },
+          {
+            "name": "Footer",
+            "type": "FRAME",
+            "autoLayout": true,
+            "direction": "HORIZONTAL",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "width": {
+      "small": 400,
+      "medium": 600,
+      "large": 800,
+      "fullScreen": "100vw"
+    },
+    "maxWidth": "90vw",
+    "height": {
+      "auto": true,
+      "max": "90vh",
+      "fullScreen": "100vh"
+    },
+    "padding": {
+      "header": {
+        "x": 24,
+        "y": 20
+      },
+      "content": {
+        "x": 24,
+        "y": 24
+      },
+      "footer": {
+        "x": 24,
+        "y": 20
+      }
+    },
+    "borderRadius": {
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "fullScreen": 0
+    },
+    "gap": {
+      "sections": 0,
+      "content": 16,
+      "actions": 12
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "overlay": "rgba(0, 0, 0, 0.5)",
+      "border": "#E0E0E0",
+      "text": {
+        "primary": "#212121",
+        "secondary": "#616161"
+      }
+    },
+    "dark": {
+      "background": "#1E1E1E",
+      "overlay": "rgba(0, 0, 0, 0.7)",
+      "border": "#424242",
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#BDBDBD"
+      }
+    }
+  },
+  "header": {
+    "height": 64,
+    "title": {
+      "fontSize": 20,
+      "fontWeight": 600,
+      "lineHeight": 1.4
+    },
+    "closeButton": {
+      "size": 24,
+      "padding": 8,
+      "position": "right",
+      "icon": "X"
+    },
+    "divider": {
+      "show": true,
+      "height": 1,
+      "color": "#E0E0E0"
+    }
+  },
+  "content": {
+    "scrollable": true,
+    "maxHeight": "calc(90vh - 128px)",
+    "typography": {
+      "body": {
+        "fontSize": 16,
+        "lineHeight": 1.6
+      },
+      "caption": {
+        "fontSize": 14,
+        "color": "#757575"
+      }
+    }
+  },
+  "footer": {
+    "height": 72,
+    "alignment": "right",
+    "divider": {
+      "show": true,
+      "height": 1,
+      "color": "#E0E0E0"
+    },
+    "actions": {
+      "gap": 12,
+      "primaryButton": {
+        "variant": "primary",
+        "size": "medium"
+      },
+      "secondaryButton": {
+        "variant": "tertiary",
+        "size": "medium"
+      }
+    }
+  },
+  "animations": {
+    "overlay": {
+      "fadeIn": {
+        "opacity": "0 to 1",
+        "duration": 200
+      },
+      "fadeOut": {
+        "opacity": "1 to 0",
+        "duration": 150
+      }
+    },
+    "modal": {
+      "enter": {
+        "transform": "scale(0.95) to scale(1)",
+        "opacity": "0 to 1",
+        "duration": 250,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      },
+      "exit": {
+        "transform": "scale(1) to scale(0.95)",
+        "opacity": "1 to 0",
+        "duration": 200,
+        "easing": "cubic-bezier(0.4, 0, 1, 1)"
+      }
+    }
+  },
+  "effects": {
+    "shadow": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "backdropFilter": "blur(2px)"
+  },
+  "interactions": {
+    "closeOnOverlay": true,
+    "closeOnEscape": true,
+    "trapFocus": true,
+    "restoreFocus": true,
+    "preventScroll": true
+  },
+  "accessibility": {
+    "role": "dialog",
+    "ariaModal": true,
+    "ariaLabelledBy": "modal-title",
+    "ariaDescribedBy": "modal-content",
+    "focusFirst": true,
+    "announcements": {
+      "open": "Dialog opened",
+      "close": "Dialog closed"
+    }
+  },
+  "presets": {
+    "alert": {
+      "size": "small",
+      "header": true,
+      "footer": true,
+      "actions": ["OK"]
+    },
+    "confirm": {
+      "size": "small",
+      "header": true,
+      "footer": true,
+      "actions": ["Cancel", "Confirm"]
+    },
+    "form": {
+      "size": "medium",
+      "header": true,
+      "footer": true,
+      "scrollable": true,
+      "actions": ["Cancel", "Submit"]
+    }
+  }
+} 

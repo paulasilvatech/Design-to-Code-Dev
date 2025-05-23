@@ -27,6 +27,42 @@
 - Azure CLI installed
 - Admin access to create Azure resources
 
+### 📦 Workshop Resources for Azure AI
+
+The workshop provides several resources to accelerate your Azure AI setup:
+
+1. **Azure Setup Script** (`resources/01-azure-setup.sh`):
+   - Automated creation of all Azure resources
+   - Pre-configured with optimal settings
+   - Includes error handling and validation
+
+2. **Test Connection Script** (`resources/02-test-connections.sh`):
+   - Validates all Azure services
+   - Tests API endpoints
+   - Verifies credentials
+
+3. **Configuration Templates**:
+   - **Azure Config** (`resources/azure-ai-config.template.ts`): Complete TypeScript configuration
+   - **AI Analyzer** (`resources/azure-ai-analyzer.template.ts`): Design analysis implementation
+   - **Environment** (`resources/env.template`): All Azure variables pre-defined
+
+4. **Cleanup Script** (`resources/03-cleanup.sh`):
+   - Safely removes all Azure resources
+   - Prevents unexpected charges
+   - Preserves data if needed
+
+To use the automated setup:
+```bash
+# Make scripts executable
+chmod +x resources/*.sh
+
+# Run automated setup
+./resources/01-azure-setup.sh
+
+# Test connections
+./resources/02-test-connections.sh
+```
+
 ---
 
 ## ☁️ Module 1: Azure AI Foundry Deep Dive (45 minutes)

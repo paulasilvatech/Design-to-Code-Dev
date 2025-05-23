@@ -93,6 +93,30 @@ graph TB
 ### 1.2 Setting Up Figma MCP Server
 **Time Required**: 15 minutes
 
+#### Using Pre-configured Resources
+
+The workshop provides ready-to-use configurations:
+
+1. **MCP Configuration** (`resources/mcp-config/mcp.config.json`):
+   - Pre-configured server settings
+   - Figma integration setup
+   - AI prompt templates included
+   - Quality rules and standards
+
+2. **Docker Setup** (`resources/docker/`):
+   ```bash
+   # Use the provided Docker configuration
+   cd resources/docker
+   docker-compose up -d mcp-server
+   ```
+
+3. **Component Generation Script** (`resources/scripts/generate-component.js`):
+   - Ready-to-use script with MCP integration
+   - GitHub Copilot integration included
+   - Design analysis capabilities
+
+#### Manual Setup Steps
+
 1. **Clone the MCP Server Repository**:
 ```bash
 # Create a directory for MCP tools
@@ -115,24 +139,20 @@ npm install -g @modelcontextprotocol/cli
 
 3. **Configure Environment Variables**:
 
-Create `.env` file:
+Create `.env` file (or use the template):
 ```bash
-# Figma Configuration
-FIGMA_API_TOKEN=your_figma_personal_access_token
-FIGMA_FILE_KEY=your_figma_file_key
-FIGMA_TEAM_ID=your_figma_team_id
+# Copy the workshop template
+cp resources/env.template .env
 
-# MCP Server Configuration
-MCP_SERVER_PORT=3000
-MCP_SERVER_HOST=localhost
-
-# AI Integration
-OPENAI_API_KEY=your_openai_api_key  # Optional, for enhanced analysis
-GITHUB_TOKEN=your_github_token
-
-# Security
-MCP_AUTH_TOKEN=generate_secure_token_here
+# Edit with your credentials
+nano .env
 ```
+
+The template includes all necessary variables:
+- Figma API configuration
+- MCP Server settings
+- AI service credentials
+- Security tokens
 
 4. **Build and Start the Server**:
 ```bash
@@ -451,6 +471,34 @@ When analyzing a Figma component, follow these steps:
 
 ### 2.3 Creating Automated Workflows
 **Time Required**: 15 minutes
+
+#### Using Pre-built Workflows
+
+The workshop provides production-ready workflow templates:
+
+1. **Design-to-Code Workflow** (`resources/workflows/design-to-code.yml`):
+   - Complete automation pipeline
+   - Figma URL input support
+   - Automatic PR creation
+   - Test and build integration
+
+2. **Design Sync Pipeline** (`resources/workflows/design-sync-pipeline.yml`):
+   - Scheduled design synchronization
+   - Change detection
+   - Batch component generation
+   - Quality checks included
+
+To use these workflows:
+```bash
+# Copy to your project
+mkdir -p .github/workflows
+cp resources/workflows/*.yml .github/workflows/
+
+# Customize as needed
+nano .github/workflows/design-to-code.yml
+```
+
+#### Creating Custom Workflows
 
 1. **Create Design-to-Code Workflow**:
 

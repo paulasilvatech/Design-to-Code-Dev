@@ -32,6 +32,51 @@
 - **Module 3**: Practical Examples (30 minutes)
 - **Total**: 2 hours
 
+### 🚀 Workshop Resources for Advanced Workflows
+
+This module leverages several pre-built resources:
+
+1. **GitHub Workflows** (`resources/workflows/`):
+   - **Design-to-Code Pipeline**: Automated component generation from Figma
+   - **Design Sync Pipeline**: Scheduled synchronization with design updates
+   - Both workflows include AI analysis integration
+
+2. **Docker Infrastructure** (`resources/docker/`):
+   - Complete multi-container setup
+   - MCP Server with AI integration
+   - Redis for caching
+   - Storybook for component documentation
+   - Production-ready Nginx configuration
+
+3. **Automation Scripts** (`resources/scripts/`):
+   - Component generation with AI analysis
+   - Batch processing capabilities
+   - Error handling and retries
+
+4. **Integration Examples**:
+   - Azure AI configuration templates
+   - Complete analyzer implementation
+   - End-to-end workflow examples
+
+5. **Package Scripts** (`resources/package.json`):
+   - Pre-configured npm scripts
+   - Docker commands
+   - Workflow triggers
+   - Testing utilities
+
+To integrate these resources:
+```bash
+# Copy workflows to your project
+cp -r resources/workflows .github/
+
+# Set up Docker environment
+cd resources/docker
+docker-compose up -d
+
+# Use automation scripts
+node resources/scripts/generate-component.js --figma-url <URL>
+```
+
 ---
 
 ## 🤖 Module 1: Building the AI Design Analyzer (60 minutes)

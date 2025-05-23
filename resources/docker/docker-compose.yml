@@ -1,0 +1,108 @@
+version: '3.8'
+
+services:
+  # MCP Server for Figma integration
+  mcp-server:
+    build:
+      context: ../mcp-server
+      dockerfile: ../resources/docker/Dockerfile.mcp-server
+    container_name: design-to-code-mcp
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - FIGMA_API_TOKEN=${FIGMA_API_TOKEN}
+      - MCP_AUTH_TOKEN=${MCP_AUTH_TOKEN}
+      - REDIS_URL=redis://redis:6379
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    networks:
+      - design-to-code-network
+    restart: unless-stopped
+    volumes:
+      - mcp-data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Redis for caching and queue management
+  redis:
+    image: redis:7-alpine
+    container_name: design-to-code-redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    networks:
+      - design-to-code-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Design Analyzer service
+  design-analyzer:
+    build:
+      context: ../services/design-analyzer
+      dockerfile: Dockerfile
+    container_name: design-to-code-analyzer
+    environment:
+      - NODE_ENV=production
+      - AZURE_CV_ENDPOINT=${AZURE_CV_ENDPOINT}
+      - AZURE_CV_KEY=${AZURE_CV_KEY}
+      - AZURE_FR_ENDPOINT=${AZURE_FR_ENDPOINT}
+      - AZURE_FR_KEY=${AZURE_FR_KEY}
+      - AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT}
+      - AZURE_OPENAI_KEY=${AZURE_OPENAI_KEY}
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - design-to-code-network
+    restart: unless-stopped
+
+  # Storybook for component preview
+  storybook:
+    build:
+      context: ../
+      dockerfile: resources/docker/Dockerfile.storybook
+    container_name: design-to-code-storybook
+    ports:
+      - "6006:6006"
+    networks:
+      - design-to-code-network
+    volumes:
+      - ../src:/app/src:ro
+      - ../stories:/app/stories:ro
+    environment:
+      - NODE_ENV=production
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: design-to-code-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - mcp-server
+      - storybook
+    networks:
+      - design-to-code-network
+    restart: unless-stopped
+
+networks:
+  design-to-code-network:
+    driver: bridge
+
+volumes:
+  mcp-data:
+  redis-data: 

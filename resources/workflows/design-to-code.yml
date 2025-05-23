@@ -1,0 +1,118 @@
+name: Design-to-Code Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      figma_url:
+        description: 'Figma file URL'
+        required: true
+        type: string
+      component_name:
+        description: 'Component name to generate'
+        required: true
+        type: string
+      target_directory:
+        description: 'Target directory for component'
+        default: 'src/lib/components'
+        type: string
+
+env:
+  FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+  MCP_AUTH_TOKEN: ${{ secrets.MCP_AUTH_TOKEN }}
+  AZURE_CV_KEY: ${{ secrets.AZURE_CV_KEY }}
+  AZURE_CV_ENDPOINT: ${{ secrets.AZURE_CV_ENDPOINT }}
+  AZURE_FR_KEY: ${{ secrets.AZURE_FR_KEY }}
+  AZURE_FR_ENDPOINT: ${{ secrets.AZURE_FR_ENDPOINT }}
+  AZURE_OPENAI_KEY: ${{ secrets.AZURE_OPENAI_KEY }}
+  AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+
+jobs:
+  generate-component:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Start MCP Server
+      run: |
+        cd mcp-server
+        npm install
+        npm run build
+        npm run start &
+        sleep 10
+        
+    - name: Extract Figma Component ID
+      id: extract
+      run: |
+        FILE_KEY=$(echo "${{ github.event.inputs.figma_url }}" | grep -oP 'file/\K[^/]+')
+        NODE_ID=$(echo "${{ github.event.inputs.figma_url }}" | grep -oP 'node-id=\K[^&]+')
+        echo "file_key=$FILE_KEY" >> $GITHUB_OUTPUT
+        echo "node_id=$NODE_ID" >> $GITHUB_OUTPUT
+        
+    - name: Run Design Analysis
+      id: analyze
+      run: |
+        npm run analyze -- \
+          --file-key "${{ steps.extract.outputs.file_key }}" \
+          --node-id "${{ steps.extract.outputs.node_id }}" \
+          --output analysis.json
+        
+    - name: Generate Component Code
+      run: |
+        npm run generate -- \
+          --analysis analysis.json \
+          --component-name "${{ github.event.inputs.component_name }}" \
+          --target "${{ github.event.inputs.target_directory }}" \
+          --framework react \
+          --language typescript \
+          --styling styled-components
+        
+    - name: Run Tests
+      run: |
+        npm run test -- --coverage
+        npm run lint
+        
+    - name: Build Storybook
+      run: npm run build-storybook
+      
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'feat: add ${{ github.event.inputs.component_name }} component from Figma'
+        title: '🎨 Add ${{ github.event.inputs.component_name }} Component'
+        body: |
+          ## 🎨 New Component from Figma
+          
+          This PR adds the `${{ github.event.inputs.component_name }}` component generated from Figma design.
+          
+          ### 📋 Generated Files:
+          - Component implementation
+          - Styled components
+          - Unit tests
+          - Storybook story
+          
+          ### 🔗 Figma Source:
+          - [View in Figma](${{ github.event.inputs.figma_url }})
+          
+          ### 📊 Analysis Results:
+          - See `analysis.json` for detailed design analysis
+          
+          ### 🧪 Test Coverage:
+          - All tests passing ✅
+          - Coverage report available in Actions
+          
+          ---
+          *Generated automatically by Design-to-Code AI Pipeline*
+        branch: component/${{ github.event.inputs.component_name }}
+        delete-branch: true 

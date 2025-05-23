@@ -1,0 +1,220 @@
+{
+  "name": "Navigation Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Responsive navigation header component",
+  "variants": {
+    "Type": {
+      "values": ["Simple", "Complex", "Mega Menu", "Mobile", "Sidebar"]
+    },
+    "Theme": {
+      "values": ["Light", "Dark", "Transparent", "Gradient"]
+    },
+    "State": {
+      "values": ["Default", "Scrolled", "Expanded", "Collapsed"]
+    },
+    "Position": {
+      "values": ["Fixed", "Sticky", "Relative"]
+    }
+  },
+  "structure": {
+    "desktop": {
+      "container": {
+        "type": "FRAME",
+        "autoLayout": true,
+        "direction": "HORIZONTAL",
+        "alignment": "CENTER",
+        "height": 64
+      },
+      "sections": {
+        "logo": {
+          "width": 180,
+          "alignment": "LEFT"
+        },
+        "menu": {
+          "type": "FRAME",
+          "autoLayout": true,
+          "direction": "HORIZONTAL",
+          "gap": 32,
+          "alignment": "CENTER"
+        },
+        "actions": {
+          "type": "FRAME",
+          "autoLayout": true,
+          "direction": "HORIZONTAL",
+          "gap": 16,
+          "alignment": "RIGHT"
+        }
+      }
+    },
+    "mobile": {
+      "container": {
+        "height": 56,
+        "paddingX": 16
+      },
+      "hamburger": {
+        "size": 24,
+        "lines": 3,
+        "gap": 4
+      }
+    }
+  },
+  "properties": {
+    "maxWidth": 1280,
+    "padding": {
+      "desktop": {
+        "x": 32,
+        "y": 0
+      },
+      "mobile": {
+        "x": 16,
+        "y": 0
+      }
+    },
+    "blur": {
+      "background": 20,
+      "enabled": true
+    }
+  },
+  "menuItems": {
+    "properties": {
+      "padding": {
+        "x": 16,
+        "y": 8
+      },
+      "fontSize": 16,
+      "fontWeight": 500,
+      "borderRadius": 8,
+      "gap": 8
+    },
+    "states": {
+      "default": {
+        "color": "#616161",
+        "background": "transparent"
+      },
+      "hover": {
+        "color": "#212121",
+        "background": "rgba(0, 0, 0, 0.04)"
+      },
+      "active": {
+        "color": "#2196F3",
+        "background": "rgba(33, 150, 243, 0.08)"
+      }
+    },
+    "indicator": {
+      "height": 2,
+      "color": "#2196F3",
+      "position": "bottom",
+      "width": "100%"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "border": "#E0E0E0",
+      "text": {
+        "primary": "#212121",
+        "secondary": "#616161"
+      }
+    },
+    "dark": {
+      "background": "#1E1E1E",
+      "border": "#424242",
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#BDBDBD"
+      }
+    },
+    "transparent": {
+      "background": "rgba(255, 255, 255, 0.9)",
+      "backdropFilter": "blur(20px)",
+      "border": "rgba(0, 0, 0, 0.1)"
+    }
+  },
+  "dropdowns": {
+    "offset": 8,
+    "padding": 8,
+    "borderRadius": 12,
+    "shadow": "0 4px 12px rgba(0, 0, 0, 0.1)",
+    "animation": {
+      "duration": 200,
+      "easing": "ease-out"
+    },
+    "item": {
+      "padding": {
+        "x": 16,
+        "y": 12
+      },
+      "borderRadius": 8,
+      "gap": 12
+    }
+  },
+  "megaMenu": {
+    "columns": 4,
+    "columnGap": 32,
+    "padding": 32,
+    "maxWidth": 1024,
+    "sections": {
+      "header": {
+        "fontSize": 14,
+        "fontWeight": 600,
+        "color": "#9E9E9E",
+        "marginBottom": 16
+      },
+      "links": {
+        "fontSize": 16,
+        "gap": 8
+      }
+    }
+  },
+  "mobile": {
+    "drawer": {
+      "width": 280,
+      "background": "#FFFFFF",
+      "shadow": "0 0 20px rgba(0, 0, 0, 0.2)"
+    },
+    "overlay": {
+      "background": "rgba(0, 0, 0, 0.5)",
+      "backdropFilter": "blur(4px)"
+    },
+    "animation": {
+      "duration": 300,
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  },
+  "search": {
+    "expanded": {
+      "width": 320,
+      "height": 44
+    },
+    "collapsed": {
+      "width": 44,
+      "height": 44
+    },
+    "animation": {
+      "duration": 250
+    }
+  },
+  "accessibility": {
+    "role": "navigation",
+    "ariaLabel": "Main navigation",
+    "skipLink": {
+      "text": "Skip to main content",
+      "href": "#main"
+    },
+    "mobileMenu": {
+      "ariaLabel": "Toggle mobile menu",
+      "ariaExpanded": false
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "mobile": 768,
+      "tablet": 1024,
+      "desktop": 1280
+    },
+    "behavior": {
+      "collapseAt": 768,
+      "stackAt": 640
+    }
+  }
+} 

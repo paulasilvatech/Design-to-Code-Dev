@@ -13,6 +13,70 @@
 
 ---
 
+## 📋 Module 8 Overview
+
+### What You'll Build in This Final Module
+- **Complete Production Pipeline**: From Figma to deployed application
+- **Enterprise Integration**: Connect all tools and services
+- **Advanced Automation**: Fully automated design-to-code workflow
+- **Real-World Application**: Build a complete design system
+
+### Prerequisites
+- Completed all previous modules (Parts 1-7)
+- All services configured and tested
+- Understanding of the complete workflow
+
+### 🎯 Workshop Resources Summary
+
+This final module brings together all workshop resources:
+
+1. **Complete Workflow Integration**:
+   - GitHub Actions workflows for CI/CD
+   - Docker deployment configurations
+   - Production-ready scripts
+   - Environment management
+
+2. **Exercise Challenges** (`resources/exercises/workshop-exercises.md`):
+   - Module 8 final project specifications
+   - Integration challenges
+   - Performance optimization tasks
+   - Bonus advanced exercises
+
+3. **Production Deployment**:
+   - Docker production setup
+   - Nginx configuration
+   - SSL/TLS templates
+   - Monitoring setup
+
+4. **Documentation Templates**:
+   - Component documentation
+   - API documentation
+   - Deployment guides
+   - Maintenance procedures
+
+5. **All Workshop Resources**:
+   - Figma templates (8 components)
+   - MCP configuration
+   - Azure AI templates
+   - Automation scripts
+   - Testing utilities
+   - CI/CD pipelines
+
+Quick Resource Access:
+```bash
+# View all exercises
+cat resources/exercises/workshop-exercises.md
+
+# Deploy with Docker
+cd resources/docker
+docker-compose -f docker-compose.prod.yml up -d
+
+# Run complete workflow
+./resources/scripts/complete-workflow.sh
+```
+
+---
+
 ## Part 8 Overview
 
 ### What You'll Build in This Final Section

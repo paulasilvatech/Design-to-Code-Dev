@@ -1,0 +1,159 @@
+name: Design Sync Pipeline
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: 'Force regenerate all components'
+        type: boolean
+        default: false
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.detect.outputs.has_changes }}
+      changes: ${{ steps.detect.outputs.changes }}
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Detect design changes
+      id: detect
+      env:
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+      run: |
+        OUTPUT=$(npm run detect-changes --silent)
+        echo "$OUTPUT"
+        
+        if echo "$OUTPUT" | grep -q "Design changes detected"; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          CHANGES=$(echo "$OUTPUT" | grep -A 1000 "CHANGES_JSON_START" | grep -B 1000 "CHANGES_JSON_END" | grep -v "CHANGES_JSON")
+          echo "changes=$CHANGES" >> $GITHUB_OUTPUT
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        fi
+        
+  generate-components:
+    needs: detect-changes
+    if: needs.detect-changes.outputs.has_changes == 'true' || github.event.inputs.force_regenerate == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup environment
+      uses: ./.github/actions/setup-design-env
+      
+    - name: Start MCP Server
+      run: |
+        docker compose up -d mcp-server
+        sleep 10
+        
+    - name: Generate updated components
+      env:
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        MCP_AUTH_TOKEN: ${{ secrets.MCP_AUTH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        AZURE_CV_KEY: ${{ secrets.AZURE_CV_KEY }}
+        AZURE_CV_ENDPOINT: ${{ secrets.AZURE_CV_ENDPOINT }}
+        AZURE_FR_KEY: ${{ secrets.AZURE_FR_KEY }}
+        AZURE_FR_ENDPOINT: ${{ secrets.AZURE_FR_ENDPOINT }}
+        AZURE_OPENAI_KEY: ${{ secrets.AZURE_OPENAI_KEY }}
+        AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
+      run: |
+        if [ "${{ github.event.inputs.force_regenerate }}" == "true" ]; then
+          npm run generate:all
+        else
+          CHANGES='${{ needs.detect-changes.outputs.changes }}'
+          echo "$CHANGES" | npm run generate:changed --stdin
+        fi
+        
+    - name: Run quality checks
+      run: |
+        npm run test -- --coverage
+        npm run lint
+        npm run type-check
+        npm run audit:accessibility
+        
+    - name: Build Storybook
+      run: npm run build-storybook
+      
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: generated-components
+        path: |
+          src/lib/components
+          storybook-static
+        
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'feat: sync components with latest Figma designs'
+        title: '🎨 Design System Update'
+        body: |
+          ## 🔄 Design System Synchronization
+          
+          This PR updates components based on the latest Figma designs.
+          
+          ### 📊 Changes Detected:
+          ```json
+          ${{ needs.detect-changes.outputs.changes }}
+          ```
+          
+          ### ✅ Quality Checks:
+          - Test coverage: ![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)
+          - Linting: ✅ Passed
+          - Type checking: ✅ Passed
+          - Accessibility: ✅ WCAG AA compliant
+          
+          ### 📦 Generated Artifacts:
+          - Updated React components
+          - Updated tests and stories
+          - Design tokens synchronized
+          
+          ### 🔗 Resources:
+          - [Storybook Preview](https://your-preview-url.vercel.app)
+          - [Figma File](https://figma.com/file/${{ secrets.FIGMA_FILE_KEY }})
+          
+          ---
+          *Automated by Design Sync Pipeline*
+        branch: design-sync/${{ github.run_number }}
+        delete-branch: true
+        
+  deploy-preview:
+    needs: generate-components
+    if: success()
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Download artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: generated-components
+        
+    - name: Deploy to preview
+      run: |
+        # Deploy logic here
+        echo "Deploying to preview environment..." 

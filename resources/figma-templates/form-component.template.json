@@ -1,0 +1,302 @@
+{
+  "name": "Form Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Comprehensive form component with validation and various field types",
+  "variants": {
+    "Layout": {
+      "values": ["Vertical", "Horizontal", "Grid", "Inline"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large"]
+    },
+    "Theme": {
+      "values": ["Light", "Dark"]
+    },
+    "State": {
+      "values": ["Empty", "Partial", "Complete", "Error", "Success"]
+    }
+  },
+  "structure": {
+    "container": {
+      "type": "FRAME",
+      "autoLayout": true,
+      "direction": "VERTICAL",
+      "children": [
+        {
+          "name": "Form Header",
+          "type": "FRAME",
+          "optional": true,
+          "content": ["title", "description", "progress"]
+        },
+        {
+          "name": "Form Body",
+          "type": "FRAME",
+          "autoLayout": true,
+          "children": [
+            {
+              "name": "Field Groups",
+              "type": "FRAME",
+              "repeatable": true
+            }
+          ]
+        },
+        {
+          "name": "Form Footer",
+          "type": "FRAME",
+          "autoLayout": true,
+          "content": ["actions", "help"]
+        }
+      ]
+    }
+  },
+  "fieldTypes": {
+    "text": {
+      "variants": ["text", "email", "password", "tel", "url"],
+      "validation": ["required", "minLength", "maxLength", "pattern"]
+    },
+    "number": {
+      "variants": ["number", "currency", "percentage"],
+      "validation": ["required", "min", "max", "step"]
+    },
+    "select": {
+      "variants": ["dropdown", "radio", "checkbox", "toggle"],
+      "multiple": true,
+      "searchable": true
+    },
+    "date": {
+      "variants": ["date", "time", "datetime", "range"],
+      "format": "customizable"
+    },
+    "file": {
+      "variants": ["single", "multiple", "drag-drop"],
+      "preview": true
+    },
+    "textarea": {
+      "resizable": true,
+      "autoHeight": true,
+      "characterCount": true
+    }
+  },
+  "properties": {
+    "width": {
+      "default": "100%",
+      "max": 800,
+      "min": 320
+    },
+    "padding": {
+      "small": 16,
+      "medium": 24,
+      "large": 32
+    },
+    "gap": {
+      "sections": 32,
+      "fields": 24,
+      "elements": 12
+    },
+    "borderRadius": 8
+  },
+  "field": {
+    "structure": {
+      "label": {
+        "position": ["top", "left", "floating"],
+        "required": {
+          "indicator": "*",
+          "color": "#F44336"
+        }
+      },
+      "input": {
+        "height": {
+          "small": 36,
+          "medium": 44,
+          "large": 52
+        },
+        "padding": {
+          "x": 16,
+          "y": 8
+        }
+      },
+      "helper": {
+        "position": "bottom",
+        "types": ["hint", "error", "success", "warning"]
+      },
+      "icon": {
+        "position": ["left", "right"],
+        "size": 20
+      }
+    },
+    "states": {
+      "default": {
+        "border": "1px solid #E0E0E0",
+        "background": "#FFFFFF"
+      },
+      "hover": {
+        "border": "1px solid #BDBDBD",
+        "background": "#FAFAFA"
+      },
+      "focus": {
+        "border": "2px solid #2196F3",
+        "outline": "none",
+        "shadow": "0 0 0 3px rgba(33, 150, 243, 0.1)"
+      },
+      "disabled": {
+        "opacity": 0.6,
+        "cursor": "not-allowed",
+        "background": "#F5F5F5"
+      },
+      "error": {
+        "border": "2px solid #F44336",
+        "shadow": "0 0 0 3px rgba(244, 67, 54, 0.1)"
+      },
+      "success": {
+        "border": "2px solid #4CAF50",
+        "shadow": "0 0 0 3px rgba(76, 175, 80, 0.1)"
+      }
+    }
+  },
+  "validation": {
+    "realTime": true,
+    "onBlur": true,
+    "messages": {
+      "position": "below",
+      "animation": "fadeIn",
+      "icons": true
+    },
+    "summary": {
+      "position": "top",
+      "style": "alert",
+      "dismissible": true
+    }
+  },
+  "groups": {
+    "types": ["fieldset", "section", "card"],
+    "border": {
+      "style": "solid",
+      "width": 1,
+      "color": "#E0E0E0"
+    },
+    "padding": 24,
+    "gap": 16,
+    "title": {
+      "fontSize": 18,
+      "fontWeight": 600,
+      "marginBottom": 16
+    }
+  },
+  "layouts": {
+    "grid": {
+      "columns": {
+        "desktop": 2,
+        "tablet": 1,
+        "mobile": 1
+      },
+      "gap": 24,
+      "responsive": true
+    },
+    "inline": {
+      "alignment": "baseline",
+      "gap": 16,
+      "wrap": true
+    }
+  },
+  "actions": {
+    "alignment": ["left", "right", "center", "space-between"],
+    "primaryButton": {
+      "text": "Submit",
+      "type": "submit",
+      "variant": "primary"
+    },
+    "secondaryButton": {
+      "text": "Cancel",
+      "type": "button",
+      "variant": "tertiary"
+    },
+    "gap": 12,
+    "sticky": {
+      "enabled": false,
+      "position": "bottom"
+    }
+  },
+  "progress": {
+    "types": ["steps", "percentage", "dots"],
+    "position": "top",
+    "showLabels": true,
+    "animation": true
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "inputBg": "#FFFFFF",
+      "border": "#E0E0E0",
+      "text": {
+        "primary": "#212121",
+        "secondary": "#616161",
+        "helper": "#757575"
+      }
+    },
+    "dark": {
+      "background": "#1E1E1E",
+      "inputBg": "#2D2D2D",
+      "border": "#424242",
+      "text": {
+        "primary": "#FFFFFF",
+        "secondary": "#BDBDBD",
+        "helper": "#9E9E9E"
+      }
+    }
+  },
+  "typography": {
+    "label": {
+      "fontSize": 14,
+      "fontWeight": 500,
+      "lineHeight": 1.4,
+      "marginBottom": 8
+    },
+    "input": {
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.5
+    },
+    "helper": {
+      "fontSize": 12,
+      "fontWeight": 400,
+      "lineHeight": 1.3,
+      "marginTop": 4
+    }
+  },
+  "accessibility": {
+    "fieldset": {
+      "role": "group",
+      "legend": true
+    },
+    "labels": {
+      "forAttribute": true,
+      "required": {
+        "ariaRequired": true,
+        "ariaLabel": "required field"
+      }
+    },
+    "errors": {
+      "ariaLive": "polite",
+      "ariaInvalid": true,
+      "linkedToField": true
+    },
+    "keyboard": {
+      "tabOrder": true,
+      "enterSubmit": true
+    }
+  },
+  "responsive": {
+    "breakpoints": {
+      "mobile": 640,
+      "tablet": 768,
+      "desktop": 1024
+    },
+    "stackAt": 640,
+    "behavior": {
+      "labelPosition": {
+        "mobile": "top",
+        "desktop": "configurable"
+      }
+    }
+  }
+} 

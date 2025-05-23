@@ -3571,6 +3571,54 @@ Create `dashboard/index.html`:
 
 ---
 
+## 📋 Module 7 Overview
+
+### What You'll Learn in This Module
+- **Component Testing**: Unit and integration testing strategies
+- **Visual Testing**: Automated screenshot comparisons
+- **Accessibility Testing**: WCAG compliance verification
+- **Performance Testing**: Component optimization
+- **Design Compliance**: Ensuring code matches design specs
+
+### Prerequisites
+- Completed Parts 1-6 of this workshop
+- Generated components from Figma designs
+- Basic understanding of testing concepts
+
+### 📁 Available Workshop Resources
+
+This module includes comprehensive testing resources:
+
+1. **Testing Configurations**:
+   - Jest configuration for unit tests
+   - Playwright setup for E2E tests
+   - Storybook integration for visual tests
+   - Accessibility testing tools
+
+2. **Docker Testing Environment** (`resources/docker/`):
+   - Isolated testing containers
+   - Consistent test execution
+   - Visual regression testing setup
+   - Performance monitoring
+
+3. **Exercise Solutions** (`resources/solutions/`):
+   - Example test implementations
+   - Best practices demonstrations
+   - Common testing patterns
+
+4. **Automation Scripts**:
+   - Batch test execution
+   - Report generation
+   - CI/CD integration
+
+5. **Quality Checks**:
+   - Linting configurations
+   - Code formatting rules
+   - Type checking setup
+   - Coverage requirements
+
+---
+
 ## Summary and Next Steps
 
 ### What You've Completed in Part 7

@@ -177,6 +177,91 @@ A complete guide for leveraging AI tools like GitHub Copilot to optimize and imp
 ### [Agentic Operations & Observability](https://github.com/paulasilvatech/Agentic-Ops-Dev)
 A hands-on workshop for implementing comprehensive observability solutions for cloud applications using Azure Monitor, Application Insights, and AI-powered tools like Azure SRE Agent. This repository guides you through the journey from traditional monitoring to AI-enhanced observability, covering the three pillars (metrics, logs, traces), multi-cloud integration, and agentic DevOps practices.
 
+## 📦 Workshop Resources
+
+This workshop includes a comprehensive set of pre-built resources to accelerate your learning and implementation:
+
+### Available Resources
+
+- **Figma Component Templates** (`resources/figma-templates/`)
+  - 8 professional component templates (Button, Input, Card, Navigation, Modal, Table, Form, Tabs)
+  - Complete with variants, states, and design tokens
+  - Ready-to-use in your Figma projects
+
+- **MCP Configuration** (`resources/mcp-config/`)
+  - Pre-configured Model Context Protocol server
+  - Figma integration setup
+  - AI prompts and quality rules
+
+- **Docker Environment** (`resources/docker/`)
+  - Production-ready Docker configurations
+  - Multi-container setup with MCP Server, Redis, Storybook, and Nginx
+  - Development and production profiles
+
+- **Automation Scripts** (`resources/scripts/`)
+  - Component generation script with MCP and GitHub Copilot integration
+  - Batch processing capabilities
+  - Error handling and retry logic
+
+- **GitHub Workflows** (`resources/workflows/`)
+  - Complete CI/CD pipelines for design-to-code automation
+  - Design synchronization workflow
+  - Automated testing and deployment
+
+- **AI Prompts** (`resources/prompts/`)
+  - Comprehensive prompt templates for component generation
+  - Framework-specific prompts
+  - Advanced prompting strategies
+
+- **Azure AI Setup** (`resources/`)
+  - Automated Azure resource creation scripts
+  - Configuration templates for AI services
+  - Connection testing utilities
+
+- **Workshop Exercises** (`resources/exercises/`)
+  - Hands-on exercises for all 8 modules
+  - Progressive difficulty levels
+  - Bonus challenges for advanced users
+
+- **Solution Examples** (`resources/solutions/`)
+  - Reference implementations
+  - Best practices demonstrations
+  - Common patterns and anti-patterns
+
+### Using the Resources
+
+1. **Quick Setup**:
+   ```bash
+   # Copy environment template
+   cp resources/env.template .env
+   
+   # Install dependencies
+   cd resources && npm install
+   
+   # Run automated setup
+   ./resources/01-azure-setup.sh
+   ```
+
+2. **Access Templates**:
+   ```bash
+   # View available Figma templates
+   ls resources/figma-templates/
+   
+   # Use Docker environment
+   cd resources/docker && docker-compose up
+   ```
+
+3. **Run Workflows**:
+   ```bash
+   # Copy workflows to your project
+   cp -r resources/workflows .github/
+   
+   # Use automation scripts
+   node resources/scripts/generate-component.js
+   ```
+
+All resources are production-tested and follow enterprise best practices. They're designed to be customized for your specific needs while providing a solid foundation for design-to-code automation.
+
 ## 👤 Credits
 
 This Design to Code Workshop was developed by [Paula Silva](https://github.com/paulasilvatech), Developer Productivity [Global Black Belt at Microsoft Americas](https://www.linkedin.com/in/paulanunes/).focusing on bridging the gap between design and development through AI-powered automation. The workshop provides a comprehensive approach to implementing modern design-to-code workflows for enterprise software applications.

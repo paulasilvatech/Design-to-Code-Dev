@@ -1,0 +1,282 @@
+{
+  "name": "Tabs Component Template",
+  "type": "COMPONENT_SET",
+  "description": "Tabbed interface component for content organization",
+  "variants": {
+    "Type": {
+      "values": ["Basic", "Pills", "Underlined", "Enclosed", "Vertical"]
+    },
+    "Size": {
+      "values": ["Small", "Medium", "Large"]
+    },
+    "Theme": {
+      "values": ["Light", "Dark"]
+    },
+    "Icons": {
+      "values": ["None", "Leading", "Top"]
+    }
+  },
+  "structure": {
+    "container": {
+      "type": "FRAME",
+      "autoLayout": true,
+      "direction": "VERTICAL",
+      "children": [
+        {
+          "name": "Tab List",
+          "type": "FRAME",
+          "autoLayout": true,
+          "direction": "HORIZONTAL",
+          "scrollable": true
+        },
+        {
+          "name": "Tab Panels",
+          "type": "FRAME",
+          "autoLayout": true
+        }
+      ]
+    }
+  },
+  "tabList": {
+    "properties": {
+      "height": {
+        "small": 36,
+        "medium": 44,
+        "large": 52
+      },
+      "borderBottom": "1px solid #E0E0E0",
+      "scrollable": {
+        "enabled": true,
+        "fade": true,
+        "arrows": true
+      }
+    },
+    "alignment": {
+      "horizontal": ["start", "center", "end", "stretch"],
+      "vertical": "center"
+    }
+  },
+  "tabItem": {
+    "properties": {
+      "padding": {
+        "small": "8px 16px",
+        "medium": "10px 20px",
+        "large": "12px 24px"
+      },
+      "gap": 8,
+      "minWidth": {
+        "small": 60,
+        "medium": 80,
+        "large": 100
+      },
+      "borderRadius": {
+        "pills": 24,
+        "basic": 0,
+        "enclosed": "8px 8px 0 0"
+      }
+    },
+    "states": {
+      "default": {
+        "color": "#616161",
+        "background": "transparent",
+        "borderBottom": "2px solid transparent"
+      },
+      "hover": {
+        "color": "#212121",
+        "background": "rgba(0, 0, 0, 0.04)",
+        "cursor": "pointer"
+      },
+      "active": {
+        "color": "#2196F3",
+        "background": {
+          "basic": "transparent",
+          "pills": "#E3F2FD",
+          "enclosed": "#FFFFFF"
+        },
+        "borderBottom": "2px solid #2196F3",
+        "fontWeight": 500
+      },
+      "disabled": {
+        "opacity": 0.5,
+        "cursor": "not-allowed"
+      }
+    },
+    "indicator": {
+      "types": ["underline", "background", "bar"],
+      "height": 2,
+      "animation": {
+        "duration": 300,
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    }
+  },
+  "tabPanel": {
+    "properties": {
+      "padding": {
+        "small": 16,
+        "medium": 24,
+        "large": 32
+      },
+      "minHeight": 200,
+      "animation": {
+        "type": ["fade", "slide", "none"],
+        "duration": 200
+      }
+    },
+    "states": {
+      "hidden": {
+        "display": "none",
+        "ariaHidden": true
+      },
+      "visible": {
+        "display": "block",
+        "ariaHidden": false
+      }
+    }
+  },
+  "icons": {
+    "size": {
+      "small": 16,
+      "medium": 20,
+      "large": 24
+    },
+    "gap": 8,
+    "position": ["leading", "top"],
+    "color": "inherit"
+  },
+  "badges": {
+    "size": {
+      "small": 16,
+      "medium": 18,
+      "large": 20
+    },
+    "position": "trailing",
+    "types": ["count", "dot", "new"],
+    "colors": {
+      "default": "#9E9E9E",
+      "active": "#2196F3",
+      "alert": "#F44336"
+    }
+  },
+  "verticalLayout": {
+    "container": {
+      "direction": "HORIZONTAL",
+      "gap": 0
+    },
+    "tabList": {
+      "direction": "VERTICAL",
+      "width": 200,
+      "borderRight": "1px solid #E0E0E0",
+      "borderBottom": "none"
+    },
+    "tabItem": {
+      "width": "100%",
+      "borderLeft": "2px solid transparent",
+      "borderBottom": "none"
+    }
+  },
+  "responsive": {
+    "breakpoint": 768,
+    "mobile": {
+      "type": "dropdown",
+      "fullWidth": true,
+      "scrollButtons": false
+    },
+    "overflow": {
+      "behavior": "scroll",
+      "indicators": true,
+      "shadows": true
+    }
+  },
+  "scrolling": {
+    "buttons": {
+      "show": "auto",
+      "size": 32,
+      "icons": ["chevron-left", "chevron-right"]
+    },
+    "shadows": {
+      "left": "linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0))",
+      "right": "linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0))"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "border": "#E0E0E0",
+      "text": {
+        "default": "#616161",
+        "active": "#2196F3",
+        "hover": "#212121"
+      }
+    },
+    "dark": {
+      "background": "#1E1E1E",
+      "border": "#424242",
+      "text": {
+        "default": "#BDBDBD",
+        "active": "#64B5F6",
+        "hover": "#FFFFFF"
+      }
+    }
+  },
+  "typography": {
+    "tabLabel": {
+      "fontSize": {
+        "small": 14,
+        "medium": 16,
+        "large": 18
+      },
+      "fontWeight": {
+        "default": 400,
+        "active": 500
+      },
+      "textTransform": "none",
+      "letterSpacing": 0.5
+    }
+  },
+  "accessibility": {
+    "tabList": {
+      "role": "tablist",
+      "ariaLabel": "Tabs"
+    },
+    "tab": {
+      "role": "tab",
+      "ariaSelected": false,
+      "ariaControls": "tabpanel-id",
+      "tabIndex": -1
+    },
+    "tabPanel": {
+      "role": "tabpanel",
+      "ariaLabelledBy": "tab-id",
+      "tabIndex": 0
+    },
+    "keyboard": {
+      "arrows": true,
+      "home": "first",
+      "end": "last",
+      "activation": "automatic"
+    }
+  },
+  "advanced": {
+    "closeable": {
+      "enabled": false,
+      "icon": "x",
+      "size": 16,
+      "onClose": "callback"
+    },
+    "reorderable": {
+      "enabled": false,
+      "cursor": "grab",
+      "animation": true
+    },
+    "addable": {
+      "enabled": false,
+      "icon": "+",
+      "position": "end"
+    },
+    "lazy": {
+      "enabled": true,
+      "keepMounted": false
+    }
+  }
+} 

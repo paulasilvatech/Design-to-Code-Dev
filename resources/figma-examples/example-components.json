@@ -1,0 +1,434 @@
+{
+  "name": "Design-to-Code Workshop Components",
+  "description": "Example Figma components for workshop exercises",
+  "fileKey": "workshop-example-123",
+  "components": [
+    {
+      "id": "1:100",
+      "name": "Button / Primary / Medium",
+      "type": "COMPONENT",
+      "componentSetId": "1:99",
+      "absoluteBoundingBox": {
+        "x": 100,
+        "y": 100,
+        "width": 120,
+        "height": 48
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.129,
+            "g": 0.588,
+            "b": 0.953
+          }
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 0,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.1
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "radius": 4,
+          "spread": 0
+        }
+      ],
+      "cornerRadius": 8,
+      "paddingLeft": 24,
+      "paddingRight": 24,
+      "paddingTop": 12,
+      "paddingBottom": 12,
+      "layoutMode": "HORIZONTAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "children": [
+        {
+          "id": "1:101",
+          "name": "Label",
+          "type": "TEXT",
+          "characters": "Click me",
+          "style": {
+            "fontFamily": "Inter",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeightPx": 24,
+            "letterSpacing": 0,
+            "textAlignHorizontal": "CENTER",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:200",
+      "name": "Input / Default",
+      "type": "COMPONENT",
+      "componentSetId": "1:199",
+      "absoluteBoundingBox": {
+        "x": 100,
+        "y": 200,
+        "width": 320,
+        "height": 56
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.98,
+            "g": 0.98,
+            "b": 0.98
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 0.8,
+            "g": 0.8,
+            "b": 0.8
+          }
+        }
+      ],
+      "strokeWeight": 1,
+      "cornerRadius": 4,
+      "paddingLeft": 16,
+      "paddingRight": 16,
+      "paddingTop": 16,
+      "paddingBottom": 16,
+      "layoutMode": "HORIZONTAL",
+      "children": [
+        {
+          "id": "1:201",
+          "name": "Placeholder",
+          "type": "TEXT",
+          "characters": "Enter text...",
+          "style": {
+            "fontFamily": "Inter",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeightPx": 24,
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 0.6,
+                  "g": 0.6,
+                  "b": 0.6
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "1:300",
+      "name": "Card / Article",
+      "type": "COMPONENT",
+      "absoluteBoundingBox": {
+        "x": 100,
+        "y": 300,
+        "width": 360,
+        "height": 400
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.08
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "radius": 16,
+          "spread": 0
+        }
+      ],
+      "cornerRadius": 12,
+      "layoutMode": "VERTICAL",
+      "itemSpacing": 16,
+      "paddingLeft": 0,
+      "paddingRight": 0,
+      "paddingTop": 0,
+      "paddingBottom": 24,
+      "children": [
+        {
+          "id": "1:301",
+          "name": "Image Container",
+          "type": "FRAME",
+          "absoluteBoundingBox": {
+            "x": 100,
+            "y": 300,
+            "width": 360,
+            "height": 200
+          },
+          "fills": [
+            {
+              "type": "IMAGE",
+              "imageHash": "placeholder-image-hash",
+              "scaleMode": "FILL"
+            }
+          ],
+          "cornerRadius": [12, 12, 0, 0]
+        },
+        {
+          "id": "1:302",
+          "name": "Content",
+          "type": "FRAME",
+          "layoutMode": "VERTICAL",
+          "itemSpacing": 12,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "children": [
+            {
+              "id": "1:303",
+              "name": "Title",
+              "type": "TEXT",
+              "characters": "Article Title",
+              "style": {
+                "fontFamily": "Inter",
+                "fontWeight": 700,
+                "fontSize": 24,
+                "lineHeightPx": 32
+              }
+            },
+            {
+              "id": "1:304",
+              "name": "Description",
+              "type": "TEXT",
+              "characters": "This is a brief description of the article content that spans multiple lines.",
+              "style": {
+                "fontFamily": "Inter",
+                "fontWeight": 400,
+                "fontSize": 16,
+                "lineHeightPx": 24,
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.4,
+                      "g": 0.4,
+                      "b": 0.4
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1:400",
+      "name": "Navigation / Header",
+      "type": "COMPONENT",
+      "absoluteBoundingBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "radius": 0,
+          "spread": 0
+        }
+      ],
+      "layoutMode": "HORIZONTAL",
+      "primaryAxisAlignItems": "CENTER",
+      "counterAxisAlignItems": "CENTER",
+      "paddingLeft": 32,
+      "paddingRight": 32,
+      "children": [
+        {
+          "id": "1:401",
+          "name": "Logo",
+          "type": "FRAME",
+          "absoluteBoundingBox": {
+            "x": 32,
+            "y": 24,
+            "width": 120,
+            "height": 24
+          }
+        },
+        {
+          "id": "1:402",
+          "name": "Nav Items",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 32,
+          "children": [
+            {
+              "id": "1:403",
+              "name": "Home",
+              "type": "TEXT",
+              "characters": "Home",
+              "style": {
+                "fontFamily": "Inter",
+                "fontWeight": 500,
+                "fontSize": 16
+              }
+            },
+            {
+              "id": "1:404",
+              "name": "About",
+              "type": "TEXT",
+              "characters": "About",
+              "style": {
+                "fontFamily": "Inter",
+                "fontWeight": 500,
+                "fontSize": 16
+              }
+            },
+            {
+              "id": "1:405",
+              "name": "Services",
+              "type": "TEXT",
+              "characters": "Services",
+              "style": {
+                "fontFamily": "Inter",
+                "fontWeight": 500,
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "1:406",
+          "name": "Actions",
+          "type": "FRAME",
+          "layoutMode": "HORIZONTAL",
+          "itemSpacing": 16,
+          "layoutAlign": "STRETCH",
+          "layoutGrow": 1,
+          "primaryAxisAlignItems": "MAX",
+          "children": [
+            {
+              "id": "1:407",
+              "name": "Login Button",
+              "type": "INSTANCE",
+              "componentId": "1:100"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "colors": {
+      "primary": "#2196F3",
+      "secondary": "#FFC107",
+      "success": "#4CAF50",
+      "error": "#F44336",
+      "text": {
+        "primary": "#212121",
+        "secondary": "#666666",
+        "disabled": "#999999"
+      },
+      "background": {
+        "default": "#FFFFFF",
+        "paper": "#FAFAFA"
+      }
+    },
+    "typography": {
+      "fontFamily": "Inter",
+      "scales": {
+        "h1": {
+          "fontSize": 48,
+          "lineHeight": 56,
+          "fontWeight": 700
+        },
+        "h2": {
+          "fontSize": 36,
+          "lineHeight": 44,
+          "fontWeight": 700
+        },
+        "h3": {
+          "fontSize": 24,
+          "lineHeight": 32,
+          "fontWeight": 600
+        },
+        "body1": {
+          "fontSize": 16,
+          "lineHeight": 24,
+          "fontWeight": 400
+        },
+        "body2": {
+          "fontSize": 14,
+          "lineHeight": 20,
+          "fontWeight": 400
+        }
+      }
+    },
+    "spacing": {
+      "unit": 8,
+      "values": [0, 4, 8, 12, 16, 24, 32, 48, 64]
+    },
+    "borderRadius": {
+      "small": 4,
+      "medium": 8,
+      "large": 12
+    },
+    "shadows": {
+      "sm": "0 1px 2px rgba(0,0,0,0.05)",
+      "md": "0 4px 6px rgba(0,0,0,0.07)",
+      "lg": "0 10px 15px rgba(0,0,0,0.1)",
+      "xl": "0 20px 25px rgba(0,0,0,0.1)"
+    }
+  }
+} 
