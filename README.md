@@ -60,61 +60,61 @@ The workshop is organized into progressive modules, allowing you to choose the d
 
 ## 🗺️ Learning Path
 
-### 1️⃣ [Introduction to Design-to-Code Technologies](docs/intro-design-to-code.md#-what-is-design-to-code)
+### Module 1: [Introduction to Design-to-Code Technologies](docs/intro-design-to-code.md#-what-is-design-to-code)
 
 - Foundation concepts and modern workflow paradigms
 - The design-to-code pipeline: Figma → AI → Framework → Production
 - Tools ecosystem overview and integration strategies
 
-### 2️⃣ [Environment Setup & Basics](docs/design-to-code-workshop-part-01.md#-pre-workshop-preparation)
+### Module 2: [Environment Setup & Basics](docs/design-to-code-workshop-part-01.md#-pre-workshop-preparation)
 
 - Workshop preparation and tool configuration
 - Creating your first AI-generated component
 - Exploring Figma Dev Mode fundamentals
 
-### 3️⃣ [Figma Analysis & Component Extraction](docs/design-to-code-workshop-part-02.md#-module-3-github-copilot-for-component-generation-20-minutes)
+### Module 3: [Figma Analysis & Component Extraction](docs/design-to-code-workshop-part-02.md#-module-3-github-copilot-for-component-generation-20-minutes)
 
 - Advanced design analysis techniques
 - Component structure identification
 - Design token extraction and management
 
-### 4️⃣ [AI-Powered Code Generation](docs/design-to-code-workshop-part-03.md#-intermediate-workshop-overview)
+### Module 4: [AI-Powered Code Generation](docs/design-to-code-workshop-part-03.md#-intermediate-workshop-overview)
 
 - GitHub Copilot optimization for component development
 - Custom prompt engineering for design systems
 - Advanced code generation patterns
 
-### 5️⃣ [Design System Implementation](docs/design-to-code-workshop-part-04.md#-advanced-workshop-overview)
+### Module 5: [Design System Implementation](docs/design-to-code-workshop-part-04.md#-advanced-workshop-overview)
 
 - Automated design token synchronization
 - Cross-framework component architecture
 - Scalable design system patterns
 
-### 6️⃣ [Advanced Component Patterns](docs/design-to-code-workshop-part-05.md#-module-5-overview)
+### Module 6: [Advanced Component Patterns](docs/design-to-code-workshop-part-05.md#-module-5-overview)
 
 - Complex interaction implementations
 - State management integration
 - Performance optimization techniques
 
-### 7️⃣ [Responsive Design & Accessibility](docs/design-to-code-workshop-part-06.md#-module-6-overview)
+### Module 7: [Responsive Design & Accessibility](docs/design-to-code-workshop-part-06.md#-module-6-overview)
 
 - Mobile-first responsive generation
 - WCAG compliance automation
 - Cross-device testing strategies
 
-### 8️⃣ [Testing & Quality Assurance](docs/design-to-code-workshop-part-07.md#-enterprise-design-system-orchestration)
+### Module 8: [Testing & Quality Assurance](docs/design-to-code-workshop-part-07.md#-enterprise-design-system-orchestration)
 
 - Visual regression testing setup
 - Component testing automation
 - Performance monitoring implementation
 
-### 9️⃣ [Production Deployment & Optimization](docs/design-to-code-workshop-part-08.md#-complete-integration-and-challenge-lab)
+### Module 9: [Production Deployment & Optimization](docs/design-to-code-workshop-part-08.md#-complete-integration-and-challenge-lab)
 
 - CI/CD pipeline integration
 - Component library publishing
 - Performance optimization in production
 
-### 🧩 [Advanced Troubleshooting Guide](docs/advanced-troubleshooting-guide.md#-ai-tool-troubleshooting)
+### [Advanced Troubleshooting Guide](docs/advanced-troubleshooting-guide.md#-ai-tool-troubleshooting)
 
 - Common issues and solutions
 - Advanced debugging techniques
