@@ -1,7 +1,7 @@
-# Complete Design-to-Code Workshop Guide - Part 2
-## Basic Workshop Modules 3-5: GitHub Copilot and Component Generation
+# 🤖 Complete Design-to-Code Workshop Guide - Part 2
+## 🚀 Basic Workshop Modules 3-5: GitHub Copilot and Component Generation
 
-### Quick Navigation
+### 🧭 Quick Navigation
 - **Part 1**: Setup and Basic Workshop Foundation ✅
 - **Part 2**: Basic Workshop Modules 3-5 (This Document) 📍
 - **Part 3**: Intermediate Workshop (2 hours)
@@ -10,9 +10,9 @@
 
 ---
 
-## Module 3: GitHub Copilot for Component Generation (20 minutes)
+## 🤖 Module 3: GitHub Copilot for Component Generation (20 minutes)
 
-### 3.1 Understanding GitHub Copilot's Design-to-Code Capabilities
+### 🔍 3.1 Understanding GitHub Copilot's Design-to-Code Capabilities
 **Time Required**: 5 minutes
 
 #### What GitHub Copilot Can Do for Design-to-Code
