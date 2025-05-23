@@ -33,7 +33,7 @@ Quickly scan these essential sections:
 
 ### Step 3: Try Your First Conversion (7 minutes)
 
-Follow the [Part 1: Environment Setup & Basics](design-to-code-workshop-part-01.md) guide to:
+Follow the [Module 1: Environment Setup & Basics](design-to-code-workshop-part-01.md#-basic-workshop-90-minutes) guide to:
 - Set up GitHub Copilot
 - Create your first Figma-to-React component
 - See AI-powered code generation in action
@@ -73,20 +73,20 @@ graph TD
 ```
 
 ### 🟢 New to Design-to-Code (90 minutes total)
-1. Start with [Part 1: Environment Setup](design-to-code-workshop-part-01.md) (30 min)
-2. Continue to [Part 2: Figma Analysis](design-to-code-workshop-part-02.md) (30 min)
-3. Try [Part 3: AI Code Generation](design-to-code-workshop-part-03.md) (30 min)
+1. Start with [Module 1: Environment Setup](design-to-code-workshop-part-01.md#-pre-workshop-preparation) (30 min)
+2. Continue to [Module 2: Figma Analysis](design-to-code-workshop-part-02.md#-module-3-github-copilot-for-component-generation-20-minutes) (30 min)
+3. Try [Module 3: AI Code Generation](design-to-code-workshop-part-03.md#-intermediate-workshop-overview) (30 min)
 
 ### 🟡 Some Experience (2-3 hours total)
 1. Review [Workshop Structure Guide](workshop-structure-guide.md) (15 min)
-2. Jump to [Part 4: Design System Implementation](design-to-code-workshop-part-04.md) (60 min)
-3. Explore [Part 5: Advanced Component Patterns](design-to-code-workshop-part-05.md) (45 min)
-4. Practice with [Part 6: Responsive Design](design-to-code-workshop-part-06.md) (60 min)
+2. Jump to [Module 4: Design System Implementation](design-to-code-workshop-part-04.md#-advanced-workshop-overview) (60 min)
+3. Explore [Module 5: Advanced Component Patterns](design-to-code-workshop-part-05.md#-module-5-overview) (45 min)
+4. Practice with [Module 6: Responsive Design](design-to-code-workshop-part-06.md#-module-6-overview) (60 min)
 
 ### 🔴 Advanced/Enterprise (6+ hours total)
-1. Complete Parts 1-6 as foundation (3 hours)
-2. Deep dive into [Part 7: Testing & QA](design-to-code-workshop-part-07.md) (90 min)
-3. Master [Part 8: Production Deployment](design-to-code-workshop-part-08.md) (90 min)
+1. Complete Modules 1-6 as foundation (3 hours)
+2. Deep dive into [Module 7: Testing & QA](design-to-code-workshop-part-07.md#-enterprise-design-system-orchestration) (90 min)
+3. Master [Module 8: Production Deployment](design-to-code-workshop-part-08.md#-complete-integration-and-challenge-lab) (90 min)
 4. Review [Advanced Troubleshooting Guide](advanced-troubleshooting-guide.md) (60 min)
 
 ## 🛠️ Essential Tools Setup
