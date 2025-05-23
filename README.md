@@ -1,6 +1,6 @@
 # 🚀 Design to Code with AI
 
-Welcome to the **Design-to-Code Enterprise Playbook**! This hands-on workshop guides you through implementing comprehensive design-to-code solutions using Figma, GitHub Copilot, and Azure AI Foundry for modern UI development.
+Welcome to the **Design to Code**! This hands-on workshop guides you through implementing comprehensive design-to-code solutions using Figma, GitHub Copilot, and Azure AI Foundry for modern UI development.
 
 [![Workshop Website](https://img.shields.io/badge/Workshop_Website-design--to--code.dev-blue)](https://design-to-code.dev) [![GitHub Stars](https://img.shields.io/github/stars/paulasilvatech/Design-to-Code-Dev?style=social)](https://github.com/paulasilvatech/Design-to-Code-Dev/stargazers) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 
