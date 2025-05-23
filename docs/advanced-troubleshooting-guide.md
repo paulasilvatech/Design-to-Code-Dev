@@ -26,9 +26,9 @@ This comprehensive guide addresses complex issues and edge cases in the design-t
 flowchart TD
     A[Copilot Generates Wrong Code] --> B{Check Context}
     
-    B -->|Insufficient Context| C[Add Context Files<br/>📁 .github/copilot-context.js]
-    B -->|Conflicting Patterns| D[Clean Up Codebase<br/>🔄 Remove conflicting code]
-    B -->|Outdated Cache| E[Clear Copilot Cache<br/>🗄️ Reset model cache]
+    B -->|Insufficient Context| C[Add Context Files<br/>.github/copilot-context.js]
+    B -->|Conflicting Patterns| D[Clean Up Codebase<br/>Remove conflicting code]
+    B -->|Outdated Cache| E[Clear Copilot Cache<br/>Reset model cache]
     
     C --> F[Configure Workspace Settings]
     D --> G[Establish Coding Standards]
@@ -38,7 +38,7 @@ flowchart TD
     G --> I
     H --> I
     
-    I -->|Yes| J[✅ Success]
+    I -->|Yes| J[Success]
     I -->|No| K[Advanced Diagnostics]
     
     K --> L[Check Extension Logs]
@@ -48,9 +48,9 @@ flowchart TD
 
 | **Symptoms** | **Root Causes** |
 |---|---|
-| ❌ Generated code doesn't match design system | 📁 Insufficient context in workspace |
-| ❌ Inconsistent naming conventions | 🔄 Conflicting code patterns in project |
-| ❌ Wrong framework patterns | 🗄️ Outdated Copilot model cache |
+| Generated code doesn't match design system | Insufficient context in workspace |
+| Inconsistent naming conventions | Conflicting code patterns in project |
+| Wrong framework patterns | Outdated Copilot model cache |
 
 **Advanced Solutions**:
 
@@ -1177,7 +1177,7 @@ graph TD
     I --> J
     
     J --> K{System Operational?}
-    K -->|Yes| L[✅ Recovery Complete]
+    K -->|Yes| L[Recovery Complete]
     K -->|No| M[Advanced Recovery]
     
     M --> N[Contact Expert Support]

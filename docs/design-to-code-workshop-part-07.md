@@ -270,7 +270,7 @@ export class EnterpriseDesignSystemOrchestrator {
   }
   
   private async initialize(): Promise<void> {
-    logger.info('🚀 Initializing Enterprise Design System Orchestrator');
+    logger.info('Initializing Enterprise Design System Orchestrator');
     
     // Initialize core services
     await this.initializeServices();
@@ -287,7 +287,7 @@ export class EnterpriseDesignSystemOrchestrator {
     // Start monitoring
     this.startMonitoring();
     
-    logger.info('✅ Orchestrator initialized successfully');
+    logger.info('Orchestrator initialized successfully');
   }
   
   /**

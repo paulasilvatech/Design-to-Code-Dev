@@ -251,7 +251,7 @@ export class MasterIntegrationService {
         );
       }
 
-      logger.info('✅ All components initialized successfully');
+      logger.info('All components initialized successfully');
     } catch (error) {
       logger.error('Failed to initialize components:', error);
       throw error;
@@ -295,7 +295,7 @@ export class MasterIntegrationService {
       this.startPeriodicSync();
 
       this.isRunning = true;
-      logger.info('✅ Master Integration Service started successfully');
+      logger.info('Master Integration Service started successfully');
 
     } catch (error) {
       logger.error('Failed to start service:', error);

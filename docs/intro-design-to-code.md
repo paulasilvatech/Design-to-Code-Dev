@@ -47,9 +47,9 @@ timeline
 
 | Era | Period | Characteristics | Efficiency |
 |---|---|---|---|
-| **🏺 Manual Era** | Pre-2010 | Static mockups, manual recreation, interpretation errors | ❌ Low |
-| **🔧 Tool-Assisted Era** | 2010-2020 | Basic exports, improved handoffs, still manual | 🔶 Medium |
-| **🤖 AI-Powered Era** | 2020-Present | Intelligent generation, automated systems | ✅ High |
+| **Manual Era** | Pre-2010 | Static mockups, manual recreation, interpretation errors | Low |
+| **Tool-Assisted Era** | 2010-2020 | Basic exports, improved handoffs, still manual | Medium |
+| **AI-Powered Era** | 2020-Present | Intelligent generation, automated systems | High |
 
 ### The Modern Design-to-Code Pipeline
 

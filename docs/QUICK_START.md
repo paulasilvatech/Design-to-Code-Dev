@@ -46,9 +46,9 @@ Based on your experience and available time:
 graph TD
     A[Start Here] --> B{Experience Level?}
     
-    B -->|New to Design-to-Code| C[🟢 Beginner Path<br/>90 minutes total]
-    B -->|Some Experience| D[🟡 Intermediate Path<br/>2-3 hours total]
-    B -->|Advanced/Enterprise| E[🔴 Expert Path<br/>6+ hours total]
+    B -->|New to Design-to-Code| C[Beginner Path<br/>90 minutes total]
+    B -->|Some Experience| D[Intermediate Path<br/>2-3 hours total]
+    B -->|Advanced/Enterprise| E[Expert Path<br/>6+ hours total]
     
     C --> C1[Module 1: Environment Setup<br/>30 min]
     C1 --> C2[Module 2: Figma Analysis<br/>30 min]
@@ -91,7 +91,7 @@ graph TD
 
 ## 🛠️ Essential Tools Setup
 
-### 🤖 GitHub Copilot
+### GitHub Copilot
 ```bash
 # Install VS Code extension
 code --install-extension GitHub.copilot
@@ -120,7 +120,7 @@ To practice with real designs, use these Figma community files:
 
 ## 🚨 Common First-Time Issues
 
-### 🤖 GitHub Copilot Not Working
+### GitHub Copilot Not Working
 ```bash
 # Check Copilot status
 code --list-extensions | grep copilot
@@ -129,12 +129,12 @@ code --list-extensions | grep copilot
 gh auth login
 ```
 
-### 🎨 Figma Access Issues
+### Figma Access Issues
 - Ensure you're logged into Figma
 - Check file permissions (view or edit access needed)
 - Try opening files in incognito mode
 
-### 📦 Node.js Version Issues
+### Node.js Version Issues
 ```bash
 # Check Node version
 node --version
@@ -145,7 +145,7 @@ node --version
 
 ## 📚 Key Concepts to Understand
 
-### 🎯 Design Tokens
+### Design Tokens
 Values that represent design decisions (colors, spacing, typography):
 ```css
 :root {
@@ -155,7 +155,7 @@ Values that represent design decisions (colors, spacing, typography):
 }
 ```
 
-### 🧩 Component-Based Architecture
+### Component-Based Architecture
 Building UIs from reusable, isolated components:
 ```jsx
 // Atomic component
@@ -166,7 +166,7 @@ const Button = ({ variant, children }) => (
 );
 ```
 
-### 📐 Figma Auto Layout → CSS Flexbox
+### Figma Auto Layout → CSS Flexbox
 
 | Figma Property | CSS Property | Description |
 |---|---|---|
