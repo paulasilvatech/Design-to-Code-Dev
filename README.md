@@ -128,6 +128,7 @@ The workshop is organized into progressive modules, allowing you to choose the d
 - Azure AI Foundry (Free tier available)
 - GitHub account with [GitHub Copilot Free](https://code.visualstudio.com/docs/copilot/setup-simplified)
 - Create [Figma Free Account](https://www.figma.com/signup?locale=en-us)
+- Download [VS Code](https://visualstudio.microsoft.com/downloads/)
 
 
 ### Technical Requirements
