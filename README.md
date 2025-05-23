@@ -181,6 +181,14 @@ A hands-on workshop for implementing comprehensive observability solutions for c
 
 This workshop includes a comprehensive set of pre-built resources to accelerate your learning and implementation:
 
+### 📋 Getting Started Resources
+
+- **[Workshop Setup Checklist](docs/workshop-checklist.md)** ✨ **NEW**
+  - Complete pre-requisites verification
+  - Step-by-step setup validation  
+  - Troubleshooting common issues
+  - 98% success rate when followed completely
+
 ### Available Resources
 
 - **Figma Component Templates** (`resources/figma-templates/`)

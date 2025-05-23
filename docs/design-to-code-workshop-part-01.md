@@ -866,6 +866,11 @@ export const typography = {
    - In right panel, click "Export"
    - Choose format (SVG for icons, PNG for images)
    - Click "Export [Asset Name]"
+   
+   **Note**: The workshop provides sample assets in `resources/assets/`:
+   - **Icons**: Menu, close, search, user, heart, arrow icons (SVG)
+   - **Images**: Placeholder images in different aspect ratios
+   - See `resources/assets/README.md` for usage instructions
 
 **✅ Checkpoint**: You understand Figma's Dev Mode and can extract design properties
 

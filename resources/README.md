@@ -6,6 +6,9 @@ This directory contains all the resources, templates, scripts, and tools needed 
 
 ```
 resources/
+├── assets/                 # Sample icons and images for exercises
+│   ├── icons/             # SVG icon files
+│   └── images/            # Placeholder images
 ├── docker/                  # Docker configurations
 ├── exercises/              # Hands-on workshop exercises
 ├── figma-examples/         # Example Figma components
@@ -61,6 +64,27 @@ Located in `figma-templates/`:
 - **`table-component.template.json`** - Data tables with sorting/filtering
 - **`form-component.template.json`** - Complete form components
 - **`tabs-component.template.json`** - Tabbed interfaces
+
+### 🖼️ Sample Assets
+Located in `assets/`:
+
+#### Icons (`assets/icons/`)
+SVG icons optimized for web use:
+- **`arrow-right.svg`** - Navigation arrow
+- **`close.svg`** - Close/dismiss icon
+- **`heart.svg`** - Favorite/like icon
+- **`menu.svg`** - Hamburger menu icon
+- **`search.svg`** - Search/magnifying glass
+- **`user.svg`** - User profile icon
+
+All icons use `currentColor` for easy theming and are 24x24px viewBox.
+
+#### Images (`assets/images/`)
+Placeholder images for development:
+- **`placeholder-16-9.svg`** - 16:9 aspect ratio placeholder
+- **`placeholder-square.svg`** - Square placeholder
+
+These can be used when exporting from Figma or as temporary placeholders during development.
 
 ### 🤖 AI & Automation
 

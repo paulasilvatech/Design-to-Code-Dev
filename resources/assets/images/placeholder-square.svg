@@ -1,0 +1,7 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#E5E7EB"/>
+  <rect x="250" y="250" width="300" height="200" rx="8" fill="#9CA3AF"/>
+  <path d="M400 325L340 385V355L400 295L460 355V385L400 325Z" fill="white"/>
+  <circle cx="360" cy="315" r="15" fill="white"/>
+  <text x="400" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#6B7280">800 x 800</text>
+</svg> 

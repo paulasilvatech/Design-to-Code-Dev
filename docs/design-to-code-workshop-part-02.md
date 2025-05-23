@@ -622,6 +622,8 @@ import Card from './components/Card/Card';
 import './App.css';
 
 // Sample icon components
+// Note: You can also use the icons from resources/assets/icons/
+// Example: import MenuIcon from '../resources/assets/icons/menu.svg';
 const StarIcon = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
     <path d="M8 12.173l-4.702 2.472.898-5.236L.392 5.705l5.257-.764L8 0l2.351 4.941 5.257.764-3.804 3.704.898 5.236z"/>
@@ -1185,43 +1187,32 @@ import Button from './components/Button/Button';
 import './App.css';
 
 // Icon components for features
-const CodeIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-    <path d="M11 22L5 16l6-6 1.414 1.414L8.828 15H18v2H8.828l3.586 3.586L11 22z"/>
-    <path d="M21 10l6 6-6 6-1.414-1.414L23.172 17H14v-2h9.172l-3.586-3.586L21 10z"/>
+const StarIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M8 12.173l-4.702 2.472.898-5.236L.392 5.705l5.257-.764L8 0l2.351 4.941 5.257.764-3.804 3.704.898 5.236z"/>
   </svg>
 );
 
-const DesignIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-    <path d="M26 2H6C3.8 2 2 3.8 2 6v20c0 2.2 1.8 4 4 4h20c2.2 0 4-1.8 4-4V6c0-2.2-1.8-4-4-4zM6 4h20c1.1 0 2 .9 2 2v4H4V6c0-1.1.9-2 2-2zm20 24H6c-1.1 0-2-.9-2-2V12h24v14c0 1.1-.9 2-2 2z"/>
-    <circle cx="8" cy="7" r="1"/>
-    <circle cx="12" cy="7" r="1"/>
-    <circle cx="16" cy="7" r="1"/>
-  </svg>
-);
-
-const SpeedIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
-    <path d="M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12-5.4 12-12 12z"/>
-    <path d="M16 8v8l5.7 5.7 1.4-1.4L18 15.2V8h-2z"/>
+const ArrowIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
   </svg>
 );
 
 function App() {
   const features = [
     {
-      icon: <DesignIcon />,
+      icon: <StarIcon />,
       title: "Pixel-Perfect Design",
       description: "Convert your Figma designs to code with precise accuracy and attention to detail."
     },
     {
-      icon: <CodeIcon />,
+      icon: <ArrowIcon />,
       title: "Clean Code Output",
       description: "Generate maintainable, well-structured code following industry best practices."
     },
     {
-      icon: <SpeedIcon />,
+      icon: <StarIcon />,
       title: "Lightning Fast",
       description: "Transform designs to production-ready code in minutes, not hours or days."
     }
