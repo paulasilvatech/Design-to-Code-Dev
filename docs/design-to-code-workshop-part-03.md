@@ -1,12 +1,12 @@
-# 🎨 Complete Design-to-Code Workshop Guide - Part 3
+# 🎨 Complete Design-to-Code Workshop Guide - Module 3
 ## 🛠️ Intermediate Workshop: Advanced Figma and Component Libraries (2 hours)
 
 ### 🧭 Quick Navigation
-- **Part 1**: Setup and Basic Workshop Foundation ✅
-- **Part 2**: Basic Workshop Modules 3-5 ✅
-- **Part 3**: Intermediate Workshop (This Document) 📍
-- **Part 4**: Advanced Workshop Part 1 (3 hours)
-- **Part 5**: Advanced Workshop Part 2 (3 hours)
+- **Module 1**: Setup and Basic Workshop Foundation ✅
+- **Module 2**: Basic Workshop Modules 3-5 ✅
+- **Module 3**: Intermediate Workshop (This Document) 📍
+- **Module 4**: Advanced Workshop Module 1 (3 hours)
+- **Module 5**: Advanced Workshop Module 2 (3 hours)
 
 ---
 
@@ -1482,11 +1482,11 @@ Before proceeding to Parts 4 and 5:
 
 You're now ready for the advanced workshops where you'll learn:
 
-- **[Part 4](design-to-code-workshop-part-04.md)**: MCP Server integration, GitHub Agent Mode, and automated workflows
-- **[Part 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry integration and enterprise-scale design system automation
-- **[Part 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
-- **[Part 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
-- **[Part 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
+- **[Module 4](design-to-code-workshop-part-04.md)**: MCP Server integration, GitHub Agent Mode, and automated workflows
+- **[Module 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry integration and enterprise-scale design system automation
+- **[Module 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
+- **[Module 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
+- **[Module 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
 
 These advanced topics will transform your design-to-code workflow into a fully automated, AI-powered system capable of handling enterprise-scale projects.
 

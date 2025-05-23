@@ -50,20 +50,20 @@ graph TD
     B -->|Some Experience| D[🟡 Intermediate Path<br/>2-3 hours total]
     B -->|Advanced/Enterprise| E[🔴 Expert Path<br/>6+ hours total]
     
-    C --> C1[Part 1: Environment Setup<br/>30 min]
-    C1 --> C2[Part 2: Figma Analysis<br/>30 min]
-    C2 --> C3[Part 3: AI Code Generation<br/>30 min]
+    C --> C1[Module 1: Environment Setup<br/>30 min]
+    C1 --> C2[Module 2: Figma Analysis<br/>30 min]
+    C2 --> C3[Module 3: AI Code Generation<br/>30 min]
     C3 --> F[Start Building Projects]
     
     D --> D1[Workshop Structure Guide<br/>15 min]
-    D1 --> D2[Part 4: Design System Implementation<br/>60 min]
-    D2 --> D3[Part 5: Advanced Component Patterns<br/>45 min]
-    D3 --> D4[Part 6: Responsive Design<br/>60 min]
+    D1 --> D2[Module 4: Design System Implementation<br/>60 min]
+    D2 --> D3[Module 5: Advanced Component Patterns<br/>45 min]
+    D3 --> D4[Module 6: Responsive Design<br/>60 min]
     D4 --> G[Create Component Library]
     
-    E --> E1[Complete Parts 1-6<br/>3 hours foundation]
-    E1 --> E2[Part 7: Testing & QA<br/>90 min]
-    E2 --> E3[Part 8: Production Deployment<br/>90 min]
+    E --> E1[Complete Modules 1-6<br/>3 hours foundation]
+    E1 --> E2[Module 7: Testing & QA<br/>90 min]
+    E2 --> E3[Module 8: Production Deployment<br/>90 min]
     E3 --> E4[Advanced Troubleshooting Guide<br/>60 min]
     E4 --> H[Enterprise Implementation]
     
@@ -199,9 +199,9 @@ After completing the quick start, you should be able to:
 
 Once you've completed the quick start:
 
-1. **Build a Complete Component Library** following Parts 4-6
-2. **Implement Testing Strategies** from Part 7
-3. **Set Up Production Deployment** with Part 8
+1. **Build a Complete Component Library** following Modules 4-6
+2. **Implement Testing Strategies** from Module 7
+3. **Set Up Production Deployment** with Module 8
 4. **Contribute Back** to the community via [GitHub Issues](https://github.com/paulasilvatech/Design-to-Code-Dev/issues)
 
 ---
@@ -219,4 +219,4 @@ Once you've completed the quick start:
 |----------|----|----- |
 | [📖 Main README](../README.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🚀 Start Learning: Introduction](intro-design-to-code.md) |
 
-**Ready to Begin?**: [📚 Read Introduction](intro-design-to-code.md) • [🚀 Jump to Part 1](design-to-code-workshop-part-01.md) • [🛠️ Need Help?](advanced-troubleshooting-guide.md) 
+**Ready to Begin?**: [📚 Read Introduction](intro-design-to-code.md) • [🚀 Jump to Module 1](design-to-code-workshop-part-01.md) • [🛠️ Need Help?](advanced-troubleshooting-guide.md) 

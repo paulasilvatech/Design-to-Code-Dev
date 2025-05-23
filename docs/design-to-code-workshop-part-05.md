@@ -1,15 +1,15 @@
 # ☁️ Complete Design-to-Code Workshop Guide - Module 5
-## ☁️ Advanced Workshop Part 2: Azure AI Foundry Setup and Configuration
+## ☁️ Advanced Workshop Module 2: Azure AI Foundry Setup and Configuration
 
 ### Quick Navigation
-- **Part 1**: Setup and Basic Workshop Foundation ✅
-- **Part 2**: Basic Workshop Modules 3-5 ✅
-- **Part 3**: Intermediate Workshop ✅
-- **Part 4**: Advanced Workshop Part 1 ✅
-- **Part 5**: Azure AI Foundry Setup (This Document) 📍
-- **Part 6**: Azure AI Design Analysis Implementation
-- **Part 7**: Enterprise Design System Orchestration
-- **Part 8**: Complete Integration and Challenge Lab
+- **Module 1**: Setup and Basic Workshop Foundation ✅
+- **Module 2**: Basic Workshop Modules 3-5 ✅
+- **Module 3**: Intermediate Workshop ✅
+- **Module 4**: Advanced Workshop Module 1 ✅
+- **Module 5**: Azure AI Foundry Setup (This Document) 📍
+- **Module 6**: Azure AI Design Analysis Implementation
+- **Module 7**: Enterprise Design System Orchestration
+- **Module 8**: Complete Integration and Challenge Lab
 
 ---
 
@@ -950,7 +950,7 @@ if (require.main === module) {
 
 ## 🎯 Summary and Next Steps
 
-### What You've Completed in Part 5
+### What You've Completed in Module 5
 
 ✅ **Azure CLI Installation and Configuration**
 - Installed Azure CLI on your platform
@@ -995,7 +995,7 @@ If you encounter issues:
 5. ✓ Verify network connectivity to Azure
 6. ✓ Check quota limits haven't been exceeded
 
-### Continue to Part 6
+### Continue to Module 6
 
 In the next part, you'll implement the Azure AI Design Analyzer that uses these configured services to:
 - Analyze Figma designs with Computer Vision
@@ -1003,7 +1003,7 @@ In the next part, you'll implement the Azure AI Design Analyzer that uses these 
 - Generate intelligent code with GPT-4 Vision
 - Build the complete AI-powered design-to-code pipeline
 
-**Next**: [Part 6 - Azure AI Design Analysis Implementation →]
+**Next**: [Module 6 - Azure AI Design Analysis Implementation →]
 
 ---
 

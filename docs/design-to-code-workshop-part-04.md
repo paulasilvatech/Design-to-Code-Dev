@@ -1,12 +1,12 @@
-# 🔗 Complete Design-to-Code Workshop Guide - Part 4
-## 🤖 Advanced Workshop Part 1: MCP Server and GitHub Agent Automation (3 hours)
+# 🔗 Complete Design-to-Code Workshop Guide - Module 4
+## 🤖 Advanced Workshop Module 1: MCP Server and GitHub Agent Automation (3 hours)
 
 ### Quick Navigation
-- **Part 1**: Setup and Basic Workshop Foundation ✅
-- **Part 2**: Basic Workshop Modules 3-5 ✅
-- **Part 3**: Intermediate Workshop ✅
-- **Part 4**: Advanced Workshop Part 1 (This Document) 📍
-- **Part 5**: Advanced Workshop Part 2 (3 hours)
+- **Module 1**: Setup and Basic Workshop Foundation ✅
+- **Module 2**: Basic Workshop Modules 3-5 ✅
+- **Module 3**: Intermediate Workshop ✅
+- **Module 4**: Advanced Workshop Module 1 (This Document) 📍
+- **Module 5**: Advanced Workshop Module 2 (3 hours)
 
 ---
 
@@ -2308,7 +2308,7 @@ export const errorRecovery = new ErrorRecoveryManager();
 
 ## 🎯 Workshop Summary and Next Steps
 
-### What You've Accomplished in Part 4
+### What You've Accomplished in Module 4
 
 1. ✅ **MCP Server Integration**:
    - Set up and configured Figma MCP Server
@@ -2364,10 +2364,10 @@ export const errorRecovery = new ErrorRecoveryManager();
 
 You're now ready for the advanced Azure AI workshops:
 
-- **[Part 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry Setup and Configuration
-- **[Part 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
-- **[Part 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
-- **[Part 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
+- **[Module 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry Setup and Configuration
+- **[Module 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
+- **[Module 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
+- **[Module 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
 
 This final part will complete your journey to becoming an expert in AI-powered design-to-code workflows!
 

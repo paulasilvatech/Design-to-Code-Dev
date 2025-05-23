@@ -1367,4 +1367,4 @@ For hands-on practice with these troubleshooting techniques, check out the [Work
 
 **Need Immediate Help?**: [🚑 Emergency Recovery](#emergency-recovery-procedures) | [📞 Community Support](https://github.com/paulasilvatech/Design-to-Code-Dev/discussions) | [📚 Documentation](../README.md)
 
-**Workshop Parts**: [🚀 Part 1](design-to-code-workshop-part-01.md) | [📊 Part 2](design-to-code-workshop-part-02.md) | [🤖 Part 3](design-to-code-workshop-part-03.md) | [🏗️ All Parts](workshop-structure-guide.md)
+**Workshop Modules**: [🚀 Module 1](design-to-code-workshop-part-01.md) | [📊 Module 2](design-to-code-workshop-part-02.md) | [🤖 Module 3](design-to-code-workshop-part-03.md) | [🏗️ All Modules](workshop-structure-guide.md)

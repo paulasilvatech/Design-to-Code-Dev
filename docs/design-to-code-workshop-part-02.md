@@ -1447,9 +1447,9 @@ In this basic workshop, you have:
 
 You've completed the Basic Workshop! To continue your journey:
 
-- **[Part 3](design-to-code-workshop-part-03.md)**: Intermediate Workshop - Advanced Figma features, component libraries, and design systems
-- **[Part 4](design-to-code-workshop-part-04.md)**: Advanced Workshop Part 1 - MCP Server integration and GitHub Agent automation
-- **[Part 5](design-to-code-workshop-part-05.md)**: Advanced Workshop Part 2 - Azure AI Foundry and enterprise-scale automation
+- **[Module 3](design-to-code-workshop-part-03.md)**: Intermediate Workshop - Advanced Figma features, component libraries, and design systems
+- **[Module 4](design-to-code-workshop-part-04.md)**: Advanced Workshop Module 1 - MCP Server integration and GitHub Agent automation
+- **[Module 5](design-to-code-workshop-part-05.md)**: Advanced Workshop Module 2 - Azure AI Foundry and enterprise-scale automation
 
 Each subsequent workshop builds on these foundations to create increasingly sophisticated design-to-code workflows.
 

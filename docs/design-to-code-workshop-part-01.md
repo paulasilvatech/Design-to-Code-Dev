@@ -1,13 +1,13 @@
 # 🚀 Complete Design-to-Code Workshop Guide - Module 1
 ## 🎨 From Figma Design to Production Code with AI Assistance
 
-[![Part 1](https://img.shields.io/badge/part-1-blue.svg)](#)
+[![Module 1](https://img.shields.io/badge/module-1-blue.svg)](#)
 [![Beginner Friendly](https://img.shields.io/badge/level-beginner-green.svg)](#)
 [![90 Minutes](https://img.shields.io/badge/duration-90%20min-yellow.svg)](#)
 
 ### Table of Contents - Complete Workshop Series
 
-**Part 1** - Setup and Basic Workshop Foundation (This Document)
+**Module 1** - Setup and Basic Workshop Foundation (This Document)
 - [Pre-Workshop Preparation](#pre-workshop-preparation)
 - [Step 1: Create Required Accounts](#step-1-create-required-accounts)
 - [Step 2: Install Required Tools](#step-2-install-required-tools)
@@ -832,7 +832,7 @@ export const typography = {
 
 ---
 
-## 🚀 Continue to Part 2
+## 🚀 Continue to Module 2
 
 This document has covered:
 - ✅ Complete workshop preparation and setup
@@ -841,7 +841,7 @@ This document has covered:
 - ✅ Basic Figma component creation
 - ✅ Design token extraction
 
-**Part 2** will continue with:
+**Module 2** will continue with:
 - Module 3: GitHub Copilot for Component Generation
 - Module 4: Converting Your First Design
 - Module 5: Final Exercise - Complete Landing Page
