@@ -161,16 +161,17 @@ The workshop is organized into progressive modules, allowing you to choose the d
 
 ## 📱 Connect With Us
 
-- **Official Website**: https://design-to-code.dev
+- **Official Website**:[design-to-code.dev](https://design-to-code.dev)
 
 ## 🔗 Related Repositories
 
-### Azure AI Ops Observability Workshop
+### [Design-to-Code](https://github.com/paulasilvatech/Design-to-Code-Dev)
+A comprehensive guide for transforming Figma designs into production-ready code. This playbook provides a structured approach to converting design assets into high-quality, accessible, and maintainable code with practical workflows, code examples, and hands-on exercises using modern tools like VS Code, GitHub Copilot, and Azure AI.
 
-A comprehensive guide for implementing AI-enhanced observability solutions using Azure Monitor, Application Insights, and Azure SRE Agent. This workshop provides hands-on experience with modern monitoring strategies, multi-cloud observability, and intelligent incident detection for enterprise cloud applications.
+### [AI Code Development](https://github.com/paulasilvatech/Code-AI-Dev)
+A complete guide for leveraging AI tools like GitHub Copilot to optimize and improve code quality in enterprise environments. This repository covers advanced AI-assisted workflows, refactoring techniques, code optimization strategies, and best practices for integrating AI tools into your development process.
 
-### Enterprise AI-Assisted Code Optimization
-
+### [Agentic Operations & Observability](https://github.com/paulasilvatech/Agentic-Ops-Dev)
 A complete guide for leveraging AI tools like GitHub Copilot to optimize and improve code quality in enterprise environments. This repository covers advanced AI-assisted workflows, refactoring techniques, code optimization strategies, and best practices for integrating AI tools into your development process.
 
 ## 👤 Credits
