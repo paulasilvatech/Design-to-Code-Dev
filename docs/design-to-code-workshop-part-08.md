@@ -1995,4 +1995,4 @@ Thank you for participating in the Complete Design-to-Code Workshop!
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 7](design-to-code-workshop-part-07.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Back to Main README](../README.md) →

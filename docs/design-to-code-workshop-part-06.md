@@ -2991,4 +2991,4 @@ In the next part, you'll build the Enterprise Design System Orchestrator that:
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 5](design-to-code-workshop-part-05.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 7](design-to-code-workshop-part-07.md) →

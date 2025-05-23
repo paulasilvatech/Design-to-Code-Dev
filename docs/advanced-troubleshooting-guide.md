@@ -1355,7 +1355,7 @@ jobs:
 
 ## 🔜 Next Steps
 
-For hands-on practice with these troubleshooting techniques, check out the [Workshop Structure Guide](../workshop-structure/README.md) which includes debugging exercises and real-world scenarios.
+For hands-on practice with these troubleshooting techniques, check out the [Workshop Structure Guide](workshop-structure-guide.md) which includes debugging exercises and real-world scenarios.
 
 ---
 

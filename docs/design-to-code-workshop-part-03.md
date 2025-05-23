@@ -1482,8 +1482,11 @@ Before proceeding to Parts 4 and 5:
 
 You're now ready for the advanced workshops where you'll learn:
 
-- **Part 4**: MCP Server integration, GitHub Agent Mode, and automated workflows
-- **Part 5**: Azure AI Foundry integration and enterprise-scale design system automation
+- **[Part 4](design-to-code-workshop-part-04.md)**: MCP Server integration, GitHub Agent Mode, and automated workflows
+- **[Part 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry integration and enterprise-scale design system automation
+- **[Part 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
+- **[Part 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
+- **[Part 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
 
 These advanced topics will transform your design-to-code workflow into a fully automated, AI-powered system capable of handling enterprise-scale projects.
 
@@ -1491,4 +1494,4 @@ These advanced topics will transform your design-to-code workflow into a fully a
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 2](design-to-code-workshop-part-02.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 4](design-to-code-workshop-part-04.md) →

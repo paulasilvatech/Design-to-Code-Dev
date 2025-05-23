@@ -3632,4 +3632,4 @@ In the final part, you'll:
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 6](design-to-code-workshop-part-06.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 8](design-to-code-workshop-part-08.md) →

@@ -536,10 +536,14 @@ gantt
 
 ## 🔜 Next Steps
 
-Ready to begin your design-to-code journey? Start with the [Setting Up Your Development Environment](../01-environment/README.md) guide to configure all the necessary tools and begin transforming designs into production-ready code.
+Ready to begin your design-to-code journey? Start with the [Environment Setup & Basics](design-to-code-workshop-part-01.md) guide to configure all the necessary tools and begin transforming designs into production-ready code.
 
 ---
 
-## 🔙 Navigation
+## 🧭 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+| Previous | Up | Next |
+|----------|----|----- |
+| [📖 Main README](../README.md) | [🏗️ Workshop Structure](workshop-structure-guide.md) | [🚀 Part 1: Environment Setup](design-to-code-workshop-part-01.md) |
+
+**Quick Links**: [📋 Quick Start](QUICK_START.md) | [🛠️ Troubleshooting](advanced-troubleshooting-guide.md)

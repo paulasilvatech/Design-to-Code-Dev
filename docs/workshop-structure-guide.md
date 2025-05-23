@@ -657,7 +657,7 @@ const autoFix = async (issues) => {
 
 ## 🔜 Next Steps
 
-Ready to join a workshop or facilitate one? Check out the [Workshop Guides: Hands-on Practice](../10-workshops/README.md) for detailed exercise instructions and materials.
+Ready to join a workshop or facilitate one? Check out the [Quick Start Guide](QUICK_START.md) for detailed exercise instructions and materials.
 
 ---
 

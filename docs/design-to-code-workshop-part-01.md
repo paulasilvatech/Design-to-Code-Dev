@@ -15,22 +15,22 @@
 - [Module 1: Understanding Design-to-Code Workflow](#module-1-understanding-design-to-code-workflow-20-minutes)
 - [Module 2: Setting Up Your First Figma Design](#module-2-setting-up-your-first-figma-design-20-minutes)
 
-**Part 2** - Basic Workshop Modules 3-5
+**[Part 2](design-to-code-workshop-part-02.md)** - Basic Workshop Modules 3-5
 - Module 3: GitHub Copilot for Component Generation
 - Module 4: Converting Your First Design
 - Module 5: Final Exercise - Complete Landing Page
 
-**Part 3** - Intermediate Workshop (2 hours)
+**[Part 3](design-to-code-workshop-part-03.md)** - Intermediate Workshop (2 hours)
 - Module 1: Advanced Figma Features and Auto Layout
 - Module 2: Component Library Creation
 - Module 3: Design Systems Integration
 - Module 4: Responsive Design Implementation
 
-**Part 4** - Advanced Workshop Part 1 (3 hours)
+**[Part 4](design-to-code-workshop-part-04.md)** - Advanced Workshop Part 1 (3 hours)
 - Module 1: Figma MCP Server Integration
 - Module 2: GitHub Agent Mode for Design Automation
 
-**Part 5** - Advanced Workshop Part 2 (3 hours)
+**[Part 5](design-to-code-workshop-part-05.md)** - Advanced Workshop Part 2 (3 hours)
 - Module 3: Azure AI Foundry for Design Analysis
 - Module 4: Enterprise Design System Automation
 - Challenge Lab: End-to-End Design-to-Code Pipeline
@@ -838,4 +838,4 @@ The workshop continues with hands-on coding exercises where you'll use GitHub Co
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 2](design-to-code-workshop-part-02.md) →

@@ -2362,11 +2362,12 @@ export const errorRecovery = new ErrorRecoveryManager();
 
 ## Ready for the Final Part?
 
-You're now ready for **Part 5** where you'll learn:
-- Azure AI Foundry integration for advanced design analysis
-- Enterprise-scale design system automation
-- AI-powered design optimization
-- Complete end-to-end automation challenge
+You're now ready for the advanced Azure AI workshops:
+
+- **[Part 5](design-to-code-workshop-part-05.md)**: Azure AI Foundry Setup and Configuration
+- **[Part 6](design-to-code-workshop-part-06.md)**: Azure AI Design Analysis Implementation
+- **[Part 7](design-to-code-workshop-part-07.md)**: Enterprise Design System Orchestration
+- **[Part 8](design-to-code-workshop-part-08.md)**: Complete Integration and Challenge Lab
 
 This final part will complete your journey to becoming an expert in AI-powered design-to-code workflows!
 
@@ -2374,4 +2375,4 @@ This final part will complete your journey to becoming an expert in AI-powered d
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 3](design-to-code-workshop-part-03.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 5](design-to-code-workshop-part-05.md) →

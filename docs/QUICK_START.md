@@ -202,7 +202,7 @@ Once you've completed the quick start:
 1. **Build a Complete Component Library** following Parts 4-6
 2. **Implement Testing Strategies** from Part 7
 3. **Set Up Production Deployment** with Part 8
-4. **Contribute Back** to the community via [CONTRIBUTING.md](CONTRIBUTING.md)
+4. **Contribute Back** to the community via [GitHub Issues](https://github.com/paulasilvatech/Design-to-Code-Dev/issues)
 
 ---
 

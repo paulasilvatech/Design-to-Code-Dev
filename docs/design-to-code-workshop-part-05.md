@@ -1009,4 +1009,4 @@ In the next part, you'll implement the Azure AI Design Analyzer that uses these 
 
 ## 🔙 Navigation
 
-← [Back to Main README](../README.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Quick Start](QUICK_START.md) →
+← [Part 4](design-to-code-workshop-part-04.md) | [Workshop Structure Guide](workshop-structure-guide.md) | [Next: Part 6](design-to-code-workshop-part-06.md) →
