@@ -48,7 +48,7 @@ Advanced design-to-code workflows enable progression through four maturity stage
   <img src="images/ai-design-to-code-architecture.svg" alt="AI Design-to-Code Architecture" width="700">
 </div>
 
-## ⭐ Business Impact
+## 📋 Workshop Structure
 
 The workshop is organized into progressive modules, allowing you to choose the depth of coverage based on your time and experience:
 
