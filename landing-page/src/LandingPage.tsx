@@ -172,9 +172,7 @@ const LandingPage = () => {
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center">
-          <div className="flex justify-center mb-8">
-            <DesignToCodeLogo className="w-24 h-24 animate-pulse" />
-          </div>
+
           
           <div className="flex justify-center mb-6">
             <span className="bg-emerald-600/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
@@ -191,8 +189,8 @@ const LandingPage = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://design-to-code.dev" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all transform hover:scale-105">
-              <span>Visit Workshop Website</span>
+            <a href="https://github.com/paulasilvatech/Design-to-Code-Dev/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="group bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all transform hover:scale-105">
+              <span>Visit GitHub Repository</span>
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a href="#start" className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all">
@@ -318,9 +316,6 @@ const LandingPage = () => {
               </ul>
             </div>
             <div className="bg-gradient-to-br from-emerald-600/20 to-teal-600/20 rounded-2xl p-8 backdrop-blur-sm">
-              <div className="flex justify-center mb-6">
-                <DesignToCodeLogo className="w-20 h-20" />
-              </div>
               <h3 className="text-2xl font-semibold mb-4 text-center">AI-Powered Development</h3>
               <p className="text-gray-300 mb-6 text-center">
                 Learn to leverage GitHub Copilot and Azure AI to accelerate your design-to-code workflow by 70% while maintaining design fidelity.
