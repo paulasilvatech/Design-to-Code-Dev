@@ -1,0 +1,16 @@
+{
+  "name": "Design to Code AI",
+  "short_name": "D2C AI",
+  "description": "Transform Designs into Code with AI",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#10b981",
+  "background_color": "#064e3b",
+  "display": "standalone",
+  "start_url": "/"
+} 

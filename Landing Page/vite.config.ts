@@ -7,5 +7,6 @@ export default defineConfig({
   base: '/Design-to-Code-Dev/',
   build: {
     outDir: 'dist'
-  }
+  },
+  publicDir: 'public'
 }) 

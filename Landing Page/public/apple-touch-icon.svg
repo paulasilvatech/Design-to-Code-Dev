@@ -1,0 +1,20 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#064e3b"/>
+  
+  <!-- Design Side - Left -->
+  <rect x="25" y="45" width="55" height="90" rx="8" fill="#10b981" opacity="0.9"/>
+  <rect x="35" y="55" width="35" height="6" rx="3" fill="#34d399"/>
+  <rect x="35" y="68" width="25" height="6" rx="3" fill="#34d399"/>
+  <circle cx="52.5" cy="90" r="12" fill="#34d399"/>
+  
+  <!-- Arrow -->
+  <path d="M85 90L95 90" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+  <path d="M90 80L100 90L90 100" stroke="#10b981" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Code Side - Right -->
+  <rect x="105" y="45" width="55" height="90" rx="8" fill="#14b8a6" opacity="0.9"/>
+  <text x="118" y="75" fill="#5eead4" font-size="18" font-family="monospace">&lt;/&gt;</text>
+  <rect x="115" y="100" width="35" height="6" rx="3" fill="#2dd4bf"/>
+  <rect x="115" y="113" width="25" height="6" rx="3" fill="#2dd4bf"/>
+</svg> 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Generator</title>
+</head>
+<body>
+    <h1>Favicon Generator</h1>
+    <p>Right-click and save each image:</p>
+    
+    <h2>16x16</h2>
+    <canvas id="canvas16" width="16" height="16"></canvas>
+    
+    <h2>32x32</h2>
+    <canvas id="canvas32" width="32" height="32"></canvas>
+    
+    <h2>192x192 (Android)</h2>
+    <canvas id="canvas192" width="192" height="192"></canvas>
+    
+    <h2>512x512 (PWA)</h2>
+    <canvas id="canvas512" width="512" height="512"></canvas>
+
+    <script>
+        function drawFavicon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            const scale = size / 32;
+            
+            // Background
+            ctx.fillStyle = '#064e3b';
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size/2, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Design Side - Left
+            ctx.fillStyle = '#10b981';
+            ctx.globalAlpha = 0.9;
+            ctx.fillRect(4*scale, 8*scale, 10*scale, 16*scale);
+            
+            // Code Side - Right
+            ctx.fillStyle = '#14b8a6';
+            ctx.fillRect(19*scale, 8*scale, 10*scale, 16*scale);
+            
+            // Details
+            ctx.globalAlpha = 1;
+            ctx.fillStyle = '#34d399';
+            ctx.fillRect(6*scale, 10*scale, 6*scale, 1*scale);
+            ctx.fillRect(6*scale, 12*scale, 4*scale, 1*scale);
+            
+            // Arrow
+            ctx.strokeStyle = '#10b981';
+            ctx.lineWidth = 1.5*scale;
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(15*scale, 16*scale);
+            ctx.lineTo(17*scale, 16*scale);
+            ctx.stroke();
+            
+            // Code symbol
+            ctx.fillStyle = '#5eead4';
+            ctx.font = `${3*scale}px monospace`;
+            ctx.fillText('</>', 21*scale, 13*scale);
+        }
+        
+        drawFavicon(document.getElementById('canvas16'), 16);
+        drawFavicon(document.getElementById('canvas32'), 32);
+        drawFavicon(document.getElementById('canvas192'), 192);
+        drawFavicon(document.getElementById('canvas512'), 512);
+    </script>
+</body>
+</html> 
