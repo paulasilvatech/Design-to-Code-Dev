@@ -1,7 +1,13 @@
 import LandingPage from './LandingPage'
+// import TestTailwind from './TestTailwind'
 
 function App() {
-  return <LandingPage />
+  return (
+    <>
+      {/* <TestTailwind /> */}
+      <LandingPage />
+    </>
+  )
 }
 
 export default App 
