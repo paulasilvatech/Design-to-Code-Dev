@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'Landing Page/**'
+      - 'landing-page/**'
       - '.github/workflows/deploy-landing-page.yml'
   workflow_dispatch:
 
@@ -29,14 +29,14 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: 'Landing Page/package-lock.json'
+          cache-dependency-path: 'landing-page/package-lock.json'
 
       - name: Install dependencies
-        working-directory: ./Landing Page
+        working-directory: ./landing-page
         run: npm install
 
       - name: Build
-        working-directory: ./Landing Page
+        working-directory: ./landing-page
         run: npm run build
 
       - name: Setup Pages
@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './Landing Page/dist'
+          path: './landing-page/dist'
 
   deploy:
     environment:
