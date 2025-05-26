@@ -1,0 +1,40 @@
+{
+  "servers": {
+    "figma": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "figma-developer-mcp",
+        "--figma-api-key=figd_YOUR_API_KEY_HERE"
+      ]
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "github-mcp-server",
+        "--token=ghp_YOUR_GITHUB_TOKEN"
+      ]
+    },
+    "database": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "database-mcp-server",
+        "--connection-string=postgresql://user:pass@localhost:5432/mydb"
+      ]
+    }
+  },
+  "mcpServers": {
+    "figma": {
+      "command": "npx",
+      "args": [
+        "figma-developer-mcp",
+        "--figma-api-key=${FIGMA_API_KEY}"
+      ],
+      "env": {
+        "FIGMA_API_KEY": "figd_YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}

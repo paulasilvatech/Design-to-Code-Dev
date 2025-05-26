@@ -153,6 +153,11 @@ The workshop is organized into progressive modules, allowing you to choose the d
    - Progress through modules based on your experience level
    - Use the [Advanced Troubleshooting Guide](docs/advanced-troubleshooting-guide.md) if needed
 
+4. **🚀 Try the Extra Module**
+   - Check out the **[Extra Module: Practical Demo](practical-demo/README.md)** for hands-on exercises
+   - Includes complete landing page, React components, and automation scripts
+   - Perfect for applying what you've learned in a real-world context
+
 ## 🌟 Key Features
 
 - **AI-Enhanced Development**: Learn to implement GitHub Copilot for intelligent component generation
