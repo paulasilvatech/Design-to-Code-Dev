@@ -424,7 +424,7 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-gray-400 mb-4">
             Developed by{' '}
-            <a href="https://github.com/paulasilvatech" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300">
+            <a href="https://github.com/paulanunes85" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300">
               Paula Silva
             </a>
             , Developer Productivity Global Black Belt at Microsoft Americas
