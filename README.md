@@ -160,7 +160,7 @@ Comprehensive workshop for implementing secure coding practices using AI-powered
 ### [Agentic Operations & Observability](https://github.com/paulasilvatech/Agentic-Ops-Dev)
 Hands-on workshop for implementing comprehensive observability solutions using Azure Monitor, Application Insights, and AI-powered tools. Learn to build modern monitoring systems, implement AI-enhanced observability, and create intelligent DevOps practices for cloud applications.
 
-### [Design-to-Code Development](https://github.com/paulasilvatech/Design-to-Code-Dev)
+### [Design-to-Code Development](https://github.com/paulasilvatech/Design-to-Code-Dev) *(This Workshop)*
 Comprehensive workshop for implementing design-to-code workflows using AI-powered tools, Figma integration, and modern development practices. Learn to bridge the gap between design and development, creating consistent and maintainable user interfaces with intelligent automation.
 
 ### [Figma-to-Code Development](https://github.com/paulasilvatech/Figma-to-Code-Dev)
