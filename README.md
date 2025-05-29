@@ -27,23 +27,6 @@ This workshop provides hands-on guidance to implement modern design-to-code work
 
 > *"Design-to-code is not about replacing designers or developers, but about amplifying their abilities to create consistent, accessible, and maintainable user interfaces faster than ever before."*
 
-## ⭐ Business Impact
-
-Organizations implementing comprehensive design-to-code automation report significant benefits:
-
-- **Faster Development Cycles**: Reduce component development time from days to hours
-- **Design System Consistency**: Maintain 99% design fidelity across implementations
-- **Reduced Technical Debt**: 70% reduction in design-related bugs and inconsistencies
-- **Cross-Framework Efficiency**: Generate components for multiple frameworks simultaneously
-- **Team Productivity**: Shift from 60% manual coding to 70% strategic feature development
-
-Advanced design-to-code workflows enable progression through four maturity stages:
-
-1. **Manual**: Traditional design interpretation and hand-coding
-2. **Assisted**: AI-powered code generation with manual refinement
-3. **Automated**: Full design system synchronization and component generation
-4. **Intelligent**: Self-optimizing components with performance and accessibility enhancements
-
 <div align="center">
   <img src="images/ai-design-to-code-architecture.svg" alt="AI Design-to-Code Architecture" width="700">
 </div>
